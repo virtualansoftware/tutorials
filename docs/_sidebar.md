@@ -11,5 +11,5 @@
   - [Postman](Postman.md)
   - [Excel](Excel.md)
 
-- [Idaithalam-server](Idaithalam-server.md)
+- [Idaithalam-server](Idaiserver.md)
   
