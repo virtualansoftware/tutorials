@@ -2,13 +2,12 @@
   - [Quick start](quickstart.md)
   
 - Virtualan
-  - [Demo](demo.md)
+  - [virtualan-plugin](demo.md)
+  - [virtulization](demo.md)
   
-- Mapson
-  - [Demo](demo.md)
+- [Mapson](demo.md)
 
-- Cucumblan
-  - [Demo](demo.md)
+- Cucumblan(demo.md)
 
 - [Idaithalam](Idaithalam.md)
   - [Postman](Postman.md)
