@@ -16,7 +16,7 @@ Virtualan is Product development company that help solves customer problem in un
     - MAPson library represents JSON as MAP with key as Json-Path. MAPson provides options to work json as MAP. It removes technical dependency between gherkin and Json. This would help lot more for Product Owner/Business analysts(Non technical team members) can create a features without knowing the details and simply using JSON hierarchy
 - [Cucumblan](https://github.com/virtualansoftware/cucumblan)
     - Cucumblan is a test automation framework that supports Behavior Driven Development (BDD), allowing users to create feature using predefined step definition with low code. I t works based on the Gherkin Domain Specific Language (DSL). This simple but powerful api framework while keeping it comprehensible to even non-technical(product owner, business analyst and domain experts) users.
-- [Idaithalam](https://github.com/virtualansoftware/idaithalam)
+- [Idaithalam - Lowcode automation](https://github.com/virtualansoftware/idaithalam)
     - Low code Test automation framework using cucumber and supports Behavior Driven Development (BDD). Can build test cases using Excel and Postman collection. It allows to build and test api workflow in minutes.
 - [Idaithalam-server](https://github.com/virtualansoftware/idaithalam-server)
     - Idaiserver is a reference implementation of Idaithalam.It implements the API services to execute contract tests based on Postman collections.

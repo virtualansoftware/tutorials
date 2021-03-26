@@ -12,7 +12,7 @@
    - [cucumblan-ui](demo.md)
    - [cucumblan-jdbc](demo.md)
 
-- [Idaithalam](Idaithalam.md)
+- [Idaithalam - Lowcode automation](Idaithalam.md)
   - [Postman](Postman.md)
   - [Excel](Excel.md)
 
