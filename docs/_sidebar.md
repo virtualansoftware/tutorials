@@ -8,5 +8,10 @@
   - [Demo](demo.md)
 
 - Idaithalam
+  - [Idaithalam](Idaithalam.md)
   - [Postman](postman.md)
   - [Excel](excel.md)
+
+- Idaithalam-server
+  - [Postman](Idaithalam-server.md)
+  

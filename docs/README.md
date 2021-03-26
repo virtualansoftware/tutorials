@@ -4,15 +4,28 @@
 
 ## What it is
 
-Virtualan is Product development company that help solves customer problem with unique way.  
+Virtualan is Product development company that help solves customer problem in unique way.  
 
 ## Products
 - [virtualan-plugin](https://github.com/virtualansoftware/virtualan/tree/master/modules/virtualan-plugin)
+    - virtualan-plugin is an open source-based Open API Interface driven Service virtualization tool. Simply as Virtualized service which currently support Open API Interface.
 - [virtualization](https://github.com/virtualansoftware/virtualan/tree/master/modules/virtualization)
+    - Service virtualization is the simulation of the behavior of software components that are unavailable or otherwise restricted during the preproduction stage of the software development lifecycle. Supports Open API(Rest), Kafka, AMQ, Soap and IBM MQ.
 - [cucumblan](https://github.com/virtualansoftware/cucumblan)
+    - Cucumblan is a test automation framework that supports Behavior Driven Development (BDD), allowing users to create feature using predefined step definition with low code. I t works based on the Gherkin Domain Specific Language (DSL). This simple but powerful api framework while keeping it comprehensible to even non-technical(product owner, business analyst and domain experts) users.
 - [idaithalam](https://github.com/virtualansoftware/idaithalam)
+    - Low code Test automation framework using cucumber and supports Behavior Driven Development (BDD). Can build test cases using Excel and Postman collection. It allows to build and test api workflow in minutes.
 - [idaithalam-server](https://github.com/virtualansoftware/idaithalam-server)
-
+    - Idaiserver is a reference implementation of Idaithalam.It implements the API services to execute contract tests based on Postman collections.
+        Idaiserver provides APIs for 
+        - uploading a new contract
+        - run the test
+        - update the configuration
+        - re-run existing test configurations
+        - get the report
+        - get the feature file
+        - get the configuration properties file
+        - get a test summary.
 ## Examples
 
 Check out the Showcase to see in use.
