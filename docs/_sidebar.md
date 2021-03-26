@@ -7,11 +7,9 @@
 - Cucumblan
   - [Demo](demo.md)
 
-- Idaithalam
-  - [Idaithalam](Idaithalam.md)
-  - [Postman](postman.md)
-  - [Excel](excel.md)
+- [Idaithalam](Idaithalam.md)
+  - [Postman](Postman.md)
+  - [Excel](Excel.md)
 
-- Idaithalam-server
-  - [Postman](Idaithalam-server.md)
+- [Idaithalam-server](Idaithalam-server.md)
   

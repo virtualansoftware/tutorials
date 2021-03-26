@@ -11,10 +11,64 @@
 <body>
   <div id="app"></div>
   <script>
-    window.$docsify = {
-      name: '',
-      repo: ''
-    }
+      // Docsify configuration
+      window.$docsify = {
+        alias: {
+          '.*?/awesome':
+            'https://github.com/virtualansoftware/tutorials/blob/master/docs/README.md',
+          '/.*/_navbar.md': '/_navbar.md',
+        },
+        auto2top: true,
+        coverpage: true,
+        executeScript: true,
+        loadSidebar: true,
+        loadNavbar: true,
+        mergeNavbar: true,
+        maxLevel: 4,
+        subMaxLevel: 2,
+        name: 'virtualan',
+        search: {
+          noData: {
+            '/': 'No results!'
+          },
+          paths: 'auto',
+          placeholder: {
+            '/': 'Search'
+          },
+        },
+        vueGlobalOptions: {
+          computed: {
+            timeOfDay: function() {
+              const date = new Date();
+              const hours = date.getHours();
+
+              if (hours < 12) {
+                return 'morning';
+              } else if (hours < 18) {
+                return 'afternoon';
+              } else {
+                return 'evening';
+              }
+            },
+          },
+          methods: {
+            hello: function() {
+              alert(this.message);
+            },
+          },
+        },
+        vueMounts: {
+          '#counter': {
+            data: function() {
+              return {
+                count: 0,
+              };
+            },
+          },
+        },
+        plugins: [
+                ],
+      };
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>

@@ -1,12 +1,13 @@
-## virtualan
+## Virtualan
 
 > Our Mission: Enable our customers, partners, and stakeholders to be more successful and build products that perpetuate social good.
 
-## What it is
+## Who we are
 
 Virtualan is Product development company that help solves customer problem in unique way.  
 
 ## Products
+
 - [virtualan-plugin](https://github.com/virtualansoftware/virtualan/tree/master/modules/virtualan-plugin)
     - virtualan-plugin is an open source-based Open API Interface driven Service virtualization tool. Simply as Virtualized service which currently support Open API Interface.
 - [virtualization](https://github.com/virtualansoftware/virtualan/tree/master/modules/virtualization)
@@ -26,6 +27,7 @@ Virtualan is Product development company that help solves customer problem in un
         - get the feature file
         - get the configuration properties file
         - get a test summary.
+
 ## Examples
 
 Check out the Showcase to see in use.
