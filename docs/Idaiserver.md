@@ -1,11 +1,6 @@
 # Idaiserver
 
-[![Build Status](https://travis-ci.com/virtualansoftware/idaithalam-server.svg?branch=master)](https://travis-ci.com/virtualansoftware/idaithalam-server)
-
 Idaiserver provides APIs to execute REST API contract tests, generate test reports and feature files.
-
-[Powered by INSS ![INSS](https://inss.ch/wp-content/uploads/2021/01/favicon-32x32-1.png)](https://inss.ch) and
-[Virtualan Software ![Virtualan](https://inss.ch/wp-content/uploads/2021/01/virtualan32x32.png)](https://virtualansoftware.com)
 
 Idaiserver consists of two main parts:
 1. idaithalam to execute the tests and generate Cucumber reports.
