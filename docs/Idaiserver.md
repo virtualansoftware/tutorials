@@ -156,3 +156,7 @@ Here the APIs provided by Idaiserver.
 ## Project members
 This project is a collaboration of Elan Thangamani and Oliver Glas. 
 Elan is responsible for Idaithalam. Oliver and Elan are responsible for the reference implementation.
+
+
+----
+ Copyright 2021 Virtualan Software Contributors (https://virtualan.io)

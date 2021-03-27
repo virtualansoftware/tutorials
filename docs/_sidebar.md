@@ -8,7 +8,7 @@
 
 - Service Virtualization
   - [virtualan-plugin](demo.md)
-  - [virtulization](demo.md)
+  - [virtualization](demo.md)
   
 - Mapson
   - [Getting started](Mapson.md)

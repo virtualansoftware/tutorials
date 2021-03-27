@@ -1,15 +1,27 @@
 # Idaithalam - Scriptless Automation Framework
 
-**Idaithalam:** [![Maven Central](https://img.shields.io/maven-central/v/io.virtualan/idaithalam.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.virtualan%22%20AND%20a:%22idaithalam%22) 
+[![Maven Central](https://img.shields.io/maven-central/v/io.virtualan/idaithalam.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.virtualan%22%20AND%20a:%22idaithalam%22) 
                           
-## What is Idaithalam:
+## What is it:
 
-Idaithalam is a Cucumber feature file generation product.
+Low code Test automation framework using cucumber and supports Behavior Driven Development (BDD). Can build test cases using Excel and Postman collection. It allows to build and test api workflow in minutes. 
 
-As a user: You need to export the POSTMAN Collection and pass to Idaithalam. 
+**Idaithalam is a BDD style Cucumber based low code automation product.**
+
+As a user: You need to export the POSTMAN Collection or create Excel and pass to Idaithalam. 
 
 Currently It supports generate Feature files for **POSTMAN Collection** and  **Excel** format. 
 This will covert REST APIs based on POST, GET, PUT, DELETE and PATCH action as respective domain specific language which helps you to describe API/business behavior without the need to go into detail of implementation. 
+
+ ## Maven dependency:
+  
+  ```mvn 
+    <dependency>
+      <groupId>io.virtualan</groupId>
+       <artifactId>idaithalam</artifactId>
+       <version>${idaithalam.version}</version>
+    </dependency>
+  ```  
 
 ## How to Integrate: 
 
@@ -54,7 +66,7 @@ if(status != 0) {
 > Example Project: [idaithalam-excel-apitesting](https://github.com/virtualansoftware/idaithalam/tree/master/samples/idaithalam-excel-apitesting)
 ```
 //Initiate the contract testing
-//Generate feature file from EXCEL Collection
+//Generate feature file from EXCEL/VIRTUALAN Collection
 //Execute and Generate the HTML Cucumber report
 int testPlanIndex = 1;
 //pass the spreadsheet that you want to pass to the user
@@ -85,3 +97,6 @@ int status = IdaithalamExecutor
 
 ## Used for Agile sprint-end Regression testing.
 * During the sprint, You can run all the test cases Manually and then save the response via POSTMAN. Using Idaithalam, Export the POSTMAN Collection and Pass Collection to Idaithalam and will execute and produce the Excellent cucumber HTML Report with all the charts.
+
+----
+ Copyright 2021 Virtualan Software Contributors (https://virtualan.io)

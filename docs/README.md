@@ -33,3 +33,6 @@ Virtualan is Product development company that help solves customer problem in un
 ## Examples
 
 Check out the Showcase to see in use.
+
+----
+ Copyright 2021 Virtualan Software Contributors (https://virtualan.io)
