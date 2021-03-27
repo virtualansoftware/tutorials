@@ -54,7 +54,7 @@ if(status != 0) {
 > Example Project: [idaithalam-excel-apitesting](https://github.com/virtualansoftware/idaithalam/tree/master/samples/idaithalam-excel-apitesting)
 ```
 //Initiate the contract testing
-//Generate feature file from POSTMAN Collection
+//Generate feature file from EXCEL Collection
 //Execute and Generate the HTML Cucumber report
 int testPlanIndex = 1;
 //pass the spreadsheet that you want to pass to the user
