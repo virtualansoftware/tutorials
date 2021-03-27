@@ -2,10 +2,11 @@
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.virtualan/mapson.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.virtualan%22%20AND%20a:%22mapson%22) 
 
+## 1. What is it:
   CSVson library represents JSON as Comma separted valyes. MAPson provides options to work json as CSV.
   **It removes dependency between Gherkin and Json**. This would **help lot more for Product Owner/Business analysts(Non technical team members) can compare json as csv without knowing** the technical details. Simply knowing the JSON hierarchy.
   
- ## Maven dependency:
+## 2. Maven dependency:
   
   ```mvn 
     <dependency>
@@ -15,7 +16,7 @@
     </dependency>
   ```  
 
-## Json 
+## 3. Json 
 
 ```
 {
@@ -76,14 +77,14 @@
 }
 ```
 
-## CSVson
+## 4. CSVson for above equivalent Json   
 ```
 |ppu,name,topping/id:type,id,type, batters.batter/id:type|
 |d~[ppu],Cake,5001:None\|5002:Glazed\|5005:Sugar\|5007:Powdered Sugar\|5006:Chocolate with Sprinkles\|5003:Chocolate\|[TOPPING]:Maple\|,0001,donut,1001:Regular\|1002:Chocolate\|1003:Blueberry\|1004:Devil's Food\| |
 
 ```
 
-## MAPson
+## 5. MAPson for above equivalent Json
 ```
     | id                        |  0001                         |
     | type                      |  donut                        |
@@ -113,7 +114,8 @@
     | topping[6].type           |   Maple                       |
 
 ```
-## Example: CSVson and equivalent JSON:
+## 6. Writting Gherkin feature file using Mapson and Csvson:
+
 ```
 Scenario: Create and validate how to create MAPson data and replace with context value for digit
     Given create a Json with given MAPson input
@@ -151,6 +153,8 @@ Scenario: Create and validate how to create MAPson data and replace with context
     Then validate csvson rows
       |ppu,name,topping/id:type,id,type, batters.batter/id:type|
       |d~[ppu],Cake,5001:None\|5002:Glazed\|5005:Sugar\|5007:Powdered Sugar\|5006:Chocolate with Sprinkles\|5003:Chocolate\|[TOPPING]:Maple\|,0001,donut,1001:Regular\|1002:Chocolate\|1003:Blueberry\|1004:Devil's Food\| |
-    
-    ```
+```
 
+
+----
+ Copyright 2021 Virtualan Software Contributors (https://virtualan.io)
