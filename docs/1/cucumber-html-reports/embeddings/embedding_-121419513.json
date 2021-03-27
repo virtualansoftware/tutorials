@@ -1,0 +1,1 @@
+{"AcceptContentType":"application/json","resource":"https://live.virtualandemo.com/api/pets/findByTags","context":{"okta_user_password.bin":"xxxxxxxxxxxx","okta_user_id.bin":"test","basic_auth_password.api":"xxxxxxxxxxxx","tag":"grey","basic_auth_user_id.api":"test"},"url":"https://live.virtualandemo.com"}

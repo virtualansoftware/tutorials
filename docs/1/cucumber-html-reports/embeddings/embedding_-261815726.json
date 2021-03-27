@@ -1,0 +1,1 @@
+{"AcceptContentType":"application/json","resource":"http://www.okta.com/okta2api_token","context":{"petName":"doggie","okta_user_id.bin":"test","category_name":"Bulldog","petId":"201","basic_auth_password.api":"xxxxxxxxxxxx","basic_auth_user_id.api":"test","okta_user_password.bin":"xxxxxxxxxxxx","Id":"201","tag":"grey"},"url":"http://www.okta.com/okta2"}
