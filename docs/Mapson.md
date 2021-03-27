@@ -152,7 +152,9 @@ public void validateJson(Map<String, String> jsonPathMap) {
 ```
 
 #### 5.2 Example 2: Convert map as json for API testing with context value
-**API:** MAPson.buildMAPsonAsJson(jsonPathMap, contextMap)
+> **import** io.virtualan.mapson.Mapson; \
+> **API:** MAPson.buildMAPsonAsJson(jsonPathMap, contextMap)
+
 ```gherkin
 Scenario: Create and validate how to create MAPson data and replace with context value
     Given create a Json with given MAPson input
