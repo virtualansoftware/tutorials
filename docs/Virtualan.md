@@ -1,7 +1,13 @@
 
-<h1 align="center">Virtualan</h1>
+<h1 align="center">Virtualan-Plugin</h1>
 
-**virtualan-plugin:**  [![Maven Central](https://img.shields.io/maven-central/v/io.virtualan/virtualan-plugin.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.virtualan%22%20AND%20a:%22virtualan-plugin%22)
+ [![Maven Central](https://img.shields.io/maven-central/v/io.virtualan/virtualan-plugin.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.virtualan%22%20AND%20a:%22virtualan-plugin%22)
+
+# What is it: 
+Virtualan-Plugin is a Service virtualization Product and is the simulation of the behavior of Open API that are unavailable or otherwise restricted during the preproduction stage of the software development lifecycle. 
+
+## How it could be useful:
+In the Agile world, We need to develop (Micro)services & Test the services in parallel. How can tester or development team can develop or test parallel to all the APIs before the real Microservices would be developed? Here Virtualized service comes into the picture.
 
 ## Maven dependency:
   
@@ -18,12 +24,6 @@
   1. [OpenAPI Only](https://live.virtualandemo.com/virtualan-ui)
   2. [OpenAPI and SOAP](https://sforce.virtualandemo.com/virtualan-ui)
 
-
-# What is it: 
-Virtualan-Plugin is a Service virtualization Product and is the simulation of the behavior of Open API that are unavailable or otherwise restricted during the preproduction stage of the software development lifecycle. 
-
-**How it could be useful:**
-In the Agile world, We need to develop (Micro)services & Test the services in parallel. How can tester or development team can develop or test parallel to all the APIs before the real Microservices would be developed? Here Virtualized service comes into the picture.
 
 ## **What would be the benefits for?**
 
