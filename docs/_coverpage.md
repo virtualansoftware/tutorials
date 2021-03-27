@@ -1,6 +1,6 @@
-![logo](_media/icon.svg)
+![logo](_media/favicon.ico)
 
-![image info](_media/virtualan.png)
+![Virtualan Software](_media/virtualan.png)
 
 > Our Mission: Enable our customers, partners, and stakeholders to be more successful and build products that perpetuate social good.
 
