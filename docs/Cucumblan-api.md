@@ -349,8 +349,8 @@ Scenario: post API Testing - POST api call
 
 ### Verify by JsonPath or XPath for the Actual and Expected XML or JSON used:
 > And Verify <about> response <contentType> include byPath <filename> includes in the response \
->       | <xpath for xml>       |  \
->       | <jsonpath for json>   |
+>       | \<xpath for xml>       |  \
+>       | \<jsonpath for json>   |
             
 ```gherkin
     And Verify <api> response <aplication/json> include byPath <respose.json/xml> includes in the response
