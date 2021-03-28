@@ -70,8 +70,3 @@ Developing  a sprint boot(supports from 2.0.1.RELEASE) REST services using Rest 
 		virtualan.datasource.jdbc-url=<jdbc:hsqldb:mem:dataSource>
 		virtualan.datasource.username=<sa>
 		virtualan.datasource.password=<>
-
--------
-Copyright 2021 Virtualan Contributors (https://virtualan.io)  
-
-

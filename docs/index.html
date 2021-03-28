@@ -8,6 +8,15 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    .right {
+      position: absolute;
+      right: 0px;
+      width: 300px;
+      /* border: 3px solid #73AD21;  */
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
@@ -20,6 +29,7 @@
         },
         noCompileLinks: ['/1/.*'],
         auto2top: true,
+        repo: 'https://github.com/virtualansoftware',
         coverpage: true,
         executeScript: true,
         loadSidebar: true,
@@ -27,12 +37,24 @@
         mergeNavbar: true,
         maxLevel: 4,
         subMaxLevel: 2,
-        name: 'virtualan'
+        name: 'virtualan',
+        plugins: [
+          function (hook, vm) {
+            hook.afterEach(function (html) {
+              return (
+                html + 'Copyright 2021 Virtualan Contributors(<a href="http://virtualan.io">http://virtualan.io</a>)  <span class="right"><a href="mailto:support@virtualansoftware.com"><b>support@virtualansoftware.com</b></a></span>  '
+              )
+            })
+          },
+        ],
       };
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@latest/dist/docsify-copy-code.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+
 </body>
 </html>

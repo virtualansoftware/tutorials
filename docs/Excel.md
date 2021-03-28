@@ -121,4 +121,3 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
    3. [cucumblan.properties](/1/cucumblan.properties)
 
 ----
- Copyright 2021 Virtualan Software Contributors (https://virtualan.io)

@@ -159,4 +159,3 @@ Elan is responsible for Idaithalam. Oliver and Elan are responsible for the refe
 
 
 ----
- Copyright 2021 Virtualan Software Contributors (https://virtualan.io)

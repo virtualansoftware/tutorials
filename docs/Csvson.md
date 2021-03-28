@@ -193,6 +193,4 @@ public void validateJson(List<String> csvline) throws BadInputDataException {
 }
 ```
 
-
 ----
- Copyright 2021 Virtualan Software Contributors (https://virtualan.io)

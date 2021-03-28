@@ -99,4 +99,3 @@ int status = IdaithalamExecutor
 * During the sprint, You can run all the test cases Manually and then save the response via POSTMAN. Using Idaithalam, Export the POSTMAN Collection and Pass Collection to Idaithalam and will execute and produce the Excellent cucumber HTML Report with all the charts.
 
 ----
- Copyright 2021 Virtualan Software Contributors (https://virtualan.io)

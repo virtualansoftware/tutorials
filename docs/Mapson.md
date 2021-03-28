@@ -184,6 +184,4 @@ public void validateJsonWithContext(Map<String, String> JsonExpected) throws Bad
 ### 6.2 StepDefinition File: 
 [MapsonStepDefinition.java](https://github.com/virtualansoftware/mapson/blob/develop/src/test/java/io/virtualan/mapson/step/MapsonStepDefinition.java)
  
----
- Copyright 2021 Virtualan Software Contributors (https://virtualan.io)
- 
+ ----

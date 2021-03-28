@@ -17,4 +17,3 @@
 [https://github.com/virtualansoftware/idaithalam-contract-testing-demo](https://github.com/virtualansoftware/idaithalam-contract-testing-demo)
 
 ----
- Copyright 2021 Virtualan Software Contributors (https://virtualan.io)
