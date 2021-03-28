@@ -1,14 +1,11 @@
-- Getting started
-  - [Quick start](quickstart.md)
-
-- Idaithalam-Lowcode automation
+- Idaithalam
   - [Getting started](Idaithalam.md)
   - [Postman](Postman.md)
   - [Excel](Excel.md)
 
 - Service Virtualization
   - [virtualan-plugin](Virtualan.md)
-  - [virtualization](demo.md)
+  - virtualization
 
 - Mapson
   - [Getting started](Mapson.md)
@@ -17,10 +14,9 @@
   - [Getting started](Csvson.md)
 
 - Cucumblan
-  - [cucumblan-api](demo.md)
-  - [cucumblan-ui](demo.md)
-  - [cucumblan-jdbc](demo.md)
+  - cucumblan-api
+  - cucumblan-ui
+  - cucumblan-jdbc
 
 - Idaithalam-server
   - [Getting started](Idaiserver.md)
-  
