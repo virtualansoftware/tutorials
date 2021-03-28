@@ -412,7 +412,7 @@ And Verify-standard EDI-271 all /bin/3f64e65d-c657-42d5-bcc9-5b13e71ca493  file 
     
 ```
 
-## Non standard respons support 
+## Non standard response support 
 The process to redefine the unstandard responses as JSON and compared with Actula response. Little coding needed for unstandard response. Like EDI response. EDI is not a standard reponse but can be compared like JSON to valdiate the data with Actual response. Example value: VirtualanStdType=EDI-271  [EDI270And271Parser](https://raw.githubusercontent.com/virtualansoftware/idaithalam/master/samples/idaithalam-excel-apitesting/src/test/java/io/virtualan/cucumblan/standard/EDI270And271Parser.java)   
  
 >    And add request with given header params    \
