@@ -158,7 +158,6 @@ Scenario: User calls service to CREATE and Create Pet
 ```
 
 ## 10. Add basic authentication:
-Scenario: get API testing - GET api call
 > And basic authentication with <username> and <password> / 
 > And basic authentication with [basic_auth_user_id.api] and [basic_auth_password.api] 
   
@@ -175,7 +174,6 @@ Scenario: get API testing - GET api call
 ```
 
 ## 11. Add Okta authentication:
-Scenario: get API testing - GET api call
 >  And Bearer auth with [AccessToken.{{{resource}}}] token 
   
 ```gherkin
@@ -319,11 +317,11 @@ Scenario: post API Testing - POST api call
 ```
 
 ## Non standard respons support 
-    The process to redefine the unstandard responses as JSON and compared with Actula response. Little coding needed for unstandard response. Like EDI response. EDI is not a standard reponse but can be compared like JSON to valdiate the data with Actual response. Example value: VirtualanStdType=EDI-271  [EDI270And271Parser](https://raw.githubusercontent.com/virtualansoftware/idaithalam/master/samples/idaithalam-excel-apitesting/src/test/java/io/virtualan/cucumblan/standard/EDI270And271Parser.java)   
+The process to redefine the unstandard responses as JSON and compared with Actula response. Little coding needed for unstandard response. Like EDI response. EDI is not a standard reponse but can be compared like JSON to valdiate the data with Actual response. Example value: VirtualanStdType=EDI-271  [EDI270And271Parser](https://raw.githubusercontent.com/virtualansoftware/idaithalam/master/samples/idaithalam-excel-apitesting/src/test/java/io/virtualan/cucumblan/standard/EDI270And271Parser.java)   
  
->    And add request with given header params  /
->        | contentType       | application/xml  | /
->        | VirtualanStdType  | EDI-271          | /
+>    And add request with given header params    \
+>        | contentType       | application/xml  |  \
+>        | **VirtualanStdType**  | **EDI-271**          | 
 
 ```gherkin
     Scenario: EDI-271 API test - POST api call
