@@ -8,7 +8,7 @@ Virtualan Software is Product development company that help solves customer prob
     - virtualan-plugin is an open source-based Open API Interface driven Service virtualization tool. Simply as Virtualized service which currently support Open API Interface.
 - [Virtualization](https://github.com/virtualansoftware/virtualan/tree/master/modules/virtualization)
     - Service virtualization is the simulation of the behavior of software components that are unavailable or otherwise restricted during the preproduction stage of the software development lifecycle. Supports Open API(Rest), Kafka, AMQ, Soap and IBM MQ.
-- [Mapson && Csvson](https://github.com/virtualansoftware/mapson)
+- [Mapson & Csvson](https://github.com/virtualansoftware/mapson)
     - **Mapson**
         - MAPson library represents JSON as MAP with key as Json-Path. MAPson provides options to work json as MAP. It removes technical dependency between gherkin and Json. This would help lot more for Product Owner/Business analysts(Non technical team members) can create a features without knowing the details and simply using JSON hierarchy
     - **Csvson**
