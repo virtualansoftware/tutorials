@@ -1,8 +1,4 @@
-## Virtualan
-
-> Our Mission: Enable our customers, partners, and stakeholders to be more successful and build products that perpetuate social good.
-
-## Who we are
+## Virtualan Software
 
 Virtualan is Product development company that help solves customer problem in unique way.  
 
