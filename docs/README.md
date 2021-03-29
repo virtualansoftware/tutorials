@@ -1,6 +1,6 @@
 # Virtualan
 
-Virtualan Software is Product development company that help solves customer problem cost effictive way with  unique way.   
+Virtualan Software is Product development company that help solves customer problem cost effictive way with unique approach.   
 
 ## Products
 
