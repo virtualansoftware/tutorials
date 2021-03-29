@@ -14,11 +14,8 @@
   - [Getting started](Csvson.md)
 
 - Cucumblan
-  - **cucumblan-api**
-    - [Getting started](Cucumblan-api.md) 
-  - cucumblan-ui
-    - Getting started
-  - cucumblan-jdbc
-    - Getting started
+  - [cucumblan-api](Cucumblan-api.md) 
+  - [cucumblan-ui](Cucumblan-ui.md)
+  - [cucumblan-jdbc](Cucumblan-jdbc.md)
 - Idaithalam-server
   - [Getting started](Idaiserver.md)
