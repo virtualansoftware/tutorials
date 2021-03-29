@@ -1,4 +1,4 @@
-# Excel as TestPlan executor 
+# Excel as TestPlan Executor 
 
 Can create Excel with all the required Field to execute the API test workflow. 
 
