@@ -13,6 +13,10 @@ As a user: You need to export the POSTMAN Collection or create Excel and pass to
 Currently It supports generate Feature files for **POSTMAN Collection** and  **Excel** format. 
 This will covert REST APIs based on POST, GET, PUT, DELETE and PATCH action as respective domain specific language which helps you to describe API/business behavior without the need to go into detail of implementation. 
 
+## Project Setup 
+ - [POSTMAN Collection Project](https://github.com/virtualansoftware/idaithalam-postman-collection-lowcode-automation) 
+ - [Excel Project](https://github.com/virtualansoftware/idaithalam/tree/master/samples/idaithalam-excel-apitesting) 
+
  ## Maven dependency:
   
   ```mvn 

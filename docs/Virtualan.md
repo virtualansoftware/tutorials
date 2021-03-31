@@ -5,6 +5,15 @@
 # What is it: 
 Virtualan-Plugin is a Service virtualization Product and is the simulation of the behavior of Open API that are unavailable or otherwise restricted during the preproduction stage of the software development lifecycle. 
 
+## Project setup and Live demo link
+
+ |  Project |  Demo |
+ |----------|:------:|
+ |[Service Virtualization Project](https://github.com/virtualansoftware/service-virtualization) | [OpenAPI and SOAP Demo](https://sforce.virtualandemo.com/virtualan-ui) |
+  | [Service Virtualization OpenApi only Project](https://github.com/virtualansoftware/service-virtualization-openapi)| [OpenAPI Only Demo](https://live.virtualandemo.com/virtualan-ui) |
+ |[Service Virtualization Hl7 FHIR Project](https://github.com/virtualansoftware/HL7-FHIR-service-virtualization-openapi)| [OpenAPI and FHIR Hl7 Demo](https://fhir.virtualandemo.com/virtualan-ui) |
+
+
 ## How it could be useful:
 In the Agile world, We need to develop (Micro)services & Test the services in parallel. How can tester or development team can develop or test parallel to all the APIs before the real Microservices would be developed? Here Virtualized service comes into the picture.
 
@@ -16,13 +25,7 @@ In the Agile world, We need to develop (Micro)services & Test the services in pa
         <artifactId>virtualan-plugin</artifactId>
         <version>${virtualan.version}</version>
     </dependency>
-  ```  
- 
-
-## Live demo link
-  1. [OpenAPI Only](https://live.virtualandemo.com/virtualan-ui)
-  2. [OpenAPI and SOAP](https://sforce.virtualandemo.com/virtualan-ui)
-
+  ``` 
 
 ## **What would be the benefits for?**
 

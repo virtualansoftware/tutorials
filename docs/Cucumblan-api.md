@@ -65,9 +65,9 @@ basic_auth_password.api=test
     .*=IGNORE
     ```
 
-## Example project
-> REST API  - https://github.com/virtualansoftware/cucumblan/tree/master/samples/cucumblan-apitesting \
-> REST/SOAP xml API - https://github.com/virtualansoftware/cucumblan/tree/master/samples/cucumblan-soapapitesting 
+## Project setup and Live demo link
+- [REST API Project](https://github.com/virtualansoftware/cucumblan/tree/master/samples/cucumblan-apitesting)
+- [REST/SOAP xml API Project](https://github.com/virtualansoftware/cucumblan/tree/master/samples/cucumblan-soapapitesting) 
 
 ## Predefined GET:
 
