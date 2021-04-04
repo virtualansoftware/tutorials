@@ -59,6 +59,25 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
  
     Cookie included in the request.
  
+ - **SkipScenario:**
+ 
+   build excel formula condition to skip the scenario based on the context data.
+      > Example EXACT ("[petName]","Ethan")
+
+ - **MultiRun**
+   
+   Parameterization is implemented using "MultiRun values"
+   > petId|petName;1000|Ethan;1000|John
+   
+   ```gherkin
+   This translated into this value
+   Examples:
+      | petId | petName |
+      | 1000  | Ethan   |
+      | 1000  | John    |
+   ```
+
+
  - **ResponseFile:**
  
     Actual response valdiated agaist the expected response.
@@ -70,7 +89,9 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
  - **ResponseByFields:**
  
     Validate specific fields in the repsonse using key value pairs. Key is your JsonPath and values is Expected value.
+    > id=[petId];name=[petName];<json-path>=<value>
  
+
  - **IncludesByPath:**
   
     In the "ResponseFile" response given JsonPath for Json (or) XPath for Xml responses.
