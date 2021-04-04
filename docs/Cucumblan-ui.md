@@ -15,8 +15,13 @@ Cucumblan-ui library contains predefined Gherkin step defination for UI testing.
 ```  
 ## How to Integrate: 
 1. cucumblan.properties  - Should be added in classpath
+
+> service.ui.**/<RESOURCE>**=http://servername:xxxx/abc-ui \
+> action-package==\<PACKANGE IMPL>
+
 ```properties
     service.ui.virtualan=http://localhost:8800/virtualan-ui
+    action-package=io.virtualan.cucumblan.ui.actionimpl
 ```
 
 2. cucumblan-env.properties
@@ -28,11 +33,20 @@ basic_auth_user_id.api=test
 basic_auth_password.api=test
 ```
 
-## Example project
-> REST API  - https://github.com/virtualansoftware/cucumblan/tree/master/samples/cucumblan-apitesting \
-> REST/SOAP xml API - https://github.com/virtualansoftware/cucumblan/tree/master/samples/cucumblan-soapapitesting 
+3. How to define a page 
 
-## Predefined GET:
+> login.page
+
+```
+1=Username<~~>SET_TEXT<~~>//input[@name='email']<~~>DATA
+2=Password<~~>SET_TEXT<~~>//input[@name='password']<~~>DATA
+3=Login<~~>CLICK<~~>//button[text()='Log in']<~~>NAVIGATION
+```
+
+## Project setup and Live demo link
+> UI TESTING  - https://github.com/virtualansoftware/cucumblan/tree/master/samples/cucumblan-lakesidemutual-uitesting 
+
+## Predefined Page action:
 
 ```gherkin
 Scenario: <User calls service to READ a pet by its id>**

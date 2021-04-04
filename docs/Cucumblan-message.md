@@ -73,6 +73,7 @@ bootstrap.servers=localhost:9092
 key.serializer=org.apache.kafka.common.serialization.IntegerSerializer
 value.serializer=org.apache.kafka.common.serialization.StringSerializer
 ```
+
 4. topic.properties
 
 > Event name associated with Topic to read the message.\
@@ -200,5 +201,4 @@ public class JSONMessage implements MessageType<Integer, String> {
   }
 }
 ```
-
 ----
