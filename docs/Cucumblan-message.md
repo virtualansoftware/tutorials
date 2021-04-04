@@ -29,18 +29,24 @@ Given send message event TEST on pet with type JSON
 ```
 
 ### Predefined Verify Kafka Message event using JSON PATH way:
-> verify-by-elements **\<EVENT NAME>** contains **\<IDENTIFIER>** on **\<RESOURCE>** with type **\<PREDEINED MESSAGE TYPE>**
+> verify-by-elements **\<EVENT NAME>** contains **\<IDENTIFIER>** on **\<RESOURCE>** with type **\<PREDEINED MESSAGE TYPE>** \
+> IDENTIFIER - //public Integer getId() is mandatory to test the verfication process
+
 
 ```gherkin
+
   When verify-by-elements TEST contains 200 on pet with type JSON
     | id            | i~200           |
     | <jsonpath>      | <value>         |
 ```
 
 ### Predefined Verify Kafka Message event using CSVSON way:
-> verify **\<EVENT NAME>** contains **\<IDENTIFIER>** on **\<RESOURCE>** with type **\<PREDEINED MESSAGE TYPE>**
+> verify **\<EVENT NAME>** contains **\<IDENTIFIER>** on **\<RESOURCE>** with type **\<PREDEINED MESSAGE TYPE>** \
+> IDENTIFIER - //public Integer getId() is mandatory to test the verfication process
+
 
 ```gherkin
+
   And verify TEST contains 200 on pet with type JSON
     |id,name, category/id:name,tags/id:name,status,photoUrls|
     |i~200,doggie,i~100:string,i~0:string\|,available,string\|text\||
@@ -149,8 +155,16 @@ public class JSONMessage implements MessageType<Integer, String> {
     return null;
   }
 
+ // Unique Message identifier
+ // Mandatory to fill this details otherwise verfication will not work
   @Override
   public Integer getId() {
+    return id;
+  }
+
+ //Kafka message key
+  @Override
+  public Integer getKey() {
     return id;
   }
 
