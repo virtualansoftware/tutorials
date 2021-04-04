@@ -1,6 +1,6 @@
 # Cucumblan-API
 
-[![Maven Central](https://img.shields.io/maven-central/v/io.virtualan/mapson.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.virtualan%22%20AND%20a:%22cucumblan-api%22) 
+[![Maven Central](https://img.shields.io/maven-central/v/io.virtualan/cucumblan-api.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.virtualan%22%20AND%20a:%22cucumblan-api%22) 
 
 ## What is it
 Cucumblan-api library contains predefined Gherkin step defination for Rest API testing. Cucumblan-api provides options to Test engineer, Manual Testers and Subject Matter Exports write feature files without having development excelency. This would **help lot more for Product Owner/Business analysts(Non technical team members) can create a features without knowing** the technical details. Simply knowing the Step definations.
