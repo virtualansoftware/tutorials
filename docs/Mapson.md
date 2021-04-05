@@ -2,10 +2,10 @@
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.virtualan/mapson.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.virtualan%22%20AND%20a:%22mapson%22) 
 
-## 1. What is it
+## What is it
 MAPson library represents JSON as MAP with key as Json-Path. MAPson provides options to work json as MAP. **It removes dependency between Gherkin and Json**. This would **help lot more for Product Owner/Business analysts(Non technical team members) can create a features without knowing** the technical details. Simply knowing the JSON hierarchy.
   
-## 2. Maven dependency:
+## Maven dependency:
   
   ```mvn 
     <dependency>
@@ -14,7 +14,7 @@ MAPson library represents JSON as MAP with key as Json-Path. MAPson provides opt
        <version>${mapson.version}</version>
     </dependency>
   ```  
-## 3. JSON:
+## JSON:
   
 ```json 
  {
@@ -76,7 +76,7 @@ MAPson library represents JSON as MAP with key as Json-Path. MAPson provides opt
     }
 ```    
     
-## 4. MAPson for above equivalent Json:
+## MAPson for above equivalent Json:
 
   | key  | value |
   | ---------- | ----- |
@@ -107,7 +107,7 @@ MAPson library represents JSON as MAP with key as Json-Path. MAPson provides opt
   | topping[6].id             |   5004                        |
   | topping[6].type           |   Maple                       |
    
-## 5. Example
+## Example
 
 #### 5.1 Example 1: Convert map as json for API testing 
 **API:** MAPson.buildMAPsonAsJson(jsonPathMap)
@@ -150,7 +150,7 @@ public void validateJson(Map<String, String> jsonPathMap) {
 }
 ```
 
-#### 5.2 Example 2: Convert map as json for API testing with context value
+#### Example 2: Convert map as json for API testing with context value
 > **import** io.virtualan.mapson.Mapson; \
 > **API:** MAPson.buildMAPsonAsJson(jsonPathMap, contextMap)
 
@@ -175,12 +175,12 @@ public void validateJsonWithContext(Map<String, String> JsonExpected) throws Bad
     Assert.assertEquals(JsonExpected.get("key"), jsonActual);
 }
 ```
-## 6. Reference
+## Reference
 
-### 6.1 Feature File: 
+### Feature File: 
 [mapson.feature](https://github.com/virtualansoftware/mapson/blob/develop/src/test/resources/features/mapson.feature)
 
-### 6.2 StepDefinition File: 
+### StepDefinition File: 
 [MapsonStepDefinition.java](https://github.com/virtualansoftware/mapson/blob/develop/src/test/java/io/virtualan/mapson/step/MapsonStepDefinition.java)
  
  ----

@@ -3,10 +3,19 @@
   - [Postman](Postman.md)
   - [Excel](Excel.md)
 
-- Service Virtualization
-  - [virtualan-plugin](Virtualan.md)
-  - virtualization
-
+- Service Virtualization (Open API only)
+  - [Getting started](Virtualan.md)
+  - [Data setup API & UI](Mock-data.md)
+  - [Init load](Virtualan-init-load.md)
+  - [Business Rule](Virtualan-business-rule.md)
+  - [Dynamic Script](Virtualan-dynamic-script.md)
+  - [Cloud Deployment](Virtualan-container.md)
+- Service Virtualization 
+  - Getting started
+  - Kafka
+  - AMQ
+  - IBMMQ
+  - SOAP-WSDL
 - Mapson
   - [Getting started](Mapson.md)
 
@@ -14,9 +23,9 @@
   - [Getting started](Csvson.md)
 
 - Cucumblan
-  - [**cucumblan-api**](Cucumblan-api.md) 
-  - **cucumblan-ui**
-  - [**cucumblan-db**](Cucumblan-db.md)
-  - [**cucumblan-kafka**](Cucumblan-message.md)
+  - [Cucumblan-api](Cucumblan-api.md) 
+  - Cucumblan-ui
+  - [Cucumblan-db](Cucumblan-db.md)
+  - [Cucumblan-kafka](Cucumblan-message.md)
 - Idaithalam-server
   - [Getting started](Idaiserver.md)

@@ -2,11 +2,11 @@
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.virtualan/mapson.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.virtualan%22%20AND%20a:%22mapson%22) 
 
-## 1. What is it:
+## What is it:
   CSVson library represents JSON as Comma separted valyes. MAPson provides options to work json as CSV.
   **It removes dependency between Gherkin and Json**. This would **help lot more for Product Owner/Business analysts(Non technical team members) can compare json as csv without knowing** the technical details. Simply knowing the JSON hierarchy.
   
-## 2. Maven dependency:
+## Maven dependency:
   
   ```mvn 
     <dependency>
@@ -16,7 +16,7 @@
     </dependency>
   ```  
 
-## 3. Json 
+## Json 
 
 ```
 {
@@ -77,7 +77,7 @@
 }
 ```
 
-## 4. CSVson for above equivalent Json
+## CSVson for above equivalent Json
 > **import** io.virtualan.csvson.Csvson;\
 >  **API:**  Csvson.buildCSVson(csvline , contextObject)
 
@@ -87,7 +87,7 @@
 
 ```
 
-## 5. MAPson for above equivalent Json
+## MAPson for above equivalent Json
 
 | key                       | value                         |
 | ------------------------- | ----------------------------- |
@@ -119,7 +119,7 @@
 | topping[6].type           |   Maple                       |
 
 
-## 6. Gherkin feature file using Mapson and Csvson:
+## Gherkin feature file using Mapson and Csvson:
 
 ```gherkin
 Scenario: Create and validate how to create MAPson data and replace with context value for digit
@@ -159,9 +159,9 @@ Scenario: Create and validate how to create MAPson data and replace with context
       |ppu,name,topping/id:type,id,type, batters.batter/id:type|
       |d~[ppu],Cake,5001:None\|5002:Glazed\|5005:Sugar\|5007:Powdered Sugar\|5006:Chocolate with Sprinkles\|5003:Chocolate\|[TOPPING]:Maple\|,0001,donut,1001:Regular\|1002:Chocolate\|1003:Blueberry\|1004:Devil's Food\| |
 ```
-## 7. Example
+## Example
 
-### 7.1 Example : Convert map as json for API testing with context value
+### Example : Convert map as json for API testing with context value
 > **import** io.virtualan.mapson.Mapson; \
 > **API:** MAPson.buildMAPsonAsJson(jsonPathMap, contextMap)
 ```gherkin
@@ -192,5 +192,4 @@ public void validateJson(List<String> csvline) throws BadInputDataException {
     Assert.assertTrue(VirtualJSONAssert.jAssertObject(jsonArray.optJSONObject(0), new JSONObject(jsonActual), JSONCompareMode.STRICT));
 }
 ```
-
 ----
