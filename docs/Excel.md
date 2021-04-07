@@ -46,6 +46,11 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
  - **FormParams:**
  
     Used for form based API request and also Multipart support.
+
+ - **RequestContent:**
+   > Takes precedence
+
+    Actual request can be included in this column.
  
  - **RequestFile:**
  
@@ -77,6 +82,10 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
       | 1000  | John    |
    ```
 
+ - **ResponseContent:**
+   > Takes precedence
+
+    Actual response can be included in this column.
 
  - **ResponseFile:**
  
