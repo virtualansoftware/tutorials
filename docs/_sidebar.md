@@ -12,8 +12,8 @@
   - [Cloud Deployment](Virtualan-container.md)
 - Service Virtualization 
   - Getting started
-  - Kafka
-  - [AMQ](Amq.md) 
+  - [Kafka](SV_kafka.md)
+  - [AMQ](SV_Amq.md) 
   - IBMMQ
   - SOAP-WSDL
 - Mapson

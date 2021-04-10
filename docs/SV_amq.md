@@ -4,7 +4,7 @@
 
 
 ## What it is
->  Allows to Virtualize/Mocking message for Active AQ.virtualization is a Service virtualization Product and is the simulation of the behavior of Open API that are unavailable or otherwise restricted during the preproduction stage of the software development lifecycle. 
+>  Allows to Virtualize/Mocking message for Active AQ. Virtualization is a Service virtualization Product and is the simulation of the behavior of Open API that are unavailable or otherwise restricted during the preproduction stage of the software development lifecycle. 
 Virtualization has RESTAPI and user-friendly interface (UI) to set up the test data for your specific type of Rest APIs. This UI would help Developer, Functional Tester or Automation Tester to set up the test data for their specific use cases and test scenarios 
 
 ## Project setup/Live demo
@@ -39,7 +39,7 @@ Virtualization has RESTAPI and user-friendly interface (UI) to set up the test d
   ]
 }
 ```
-**Example:**
+**Example Config:**
 ```JSON
 {
   "AMQ" : [
@@ -55,9 +55,35 @@ Virtualization has RESTAPI and user-friendly interface (UI) to set up the test d
 ```
 
 ## How to add Mock data
-> Adding Message Mock data
+### Adding Message Mock data via REST API
+- API endpoint: http://localhost:8800/virtualservices/message
+- Http Action: Post
 
-![Add Mock](_images/sv/amq/AMQ_Add_Mock.png)
+```JSON
+[{
+  "brokerUrl": "vm://embedded",
+  "requestTopicOrQueueName": "virtualan.input_1",
+  "resource": "virtualan.input_1",
+  "requestType" : "AMQ",
+  "responseTopicOrQueueName": "virtualan.output",
+  "input": "{\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"id\": 101,\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"status\": \"available\",\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ]\n}"  ,
+  "output": "{\n  \"category\": {\n    \"id\": 10,\n    \"name\": \"Elan\"\n  },\n  \"id\": 101,\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"status\": \"available\",\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ]\n}"
+}]
 
+```
+
+### Adding Message Mock data via UI
+
+![Add Mock](_images/sv/amq/amq_add_mock.png)
+
+
+## How to view Mock data
+### View Message Mock data via REST API
+> Access via following rest endpoint ad JSON format: http://localhost:8800/virtualservices
+
+
+### View Message Mock data via UI
+
+![View Mock](_images/sv/kafka/view_messages.png)
 
 ----
