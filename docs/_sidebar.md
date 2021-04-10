@@ -5,7 +5,7 @@
 
 - Service Virtualization (Open API only)
   - [Getting started](Virtualan.md)
-  - [Data setup API & UI](Mock-data.md)
+  - [Data setup API & UI](Virtualan-Mock-data.md)
   - [Init load](Virtualan-init-load.md)
   - [Business Rule](Virtualan-business-rule.md)
   - [Dynamic Script](Virtualan-dynamic-script.md)
@@ -13,7 +13,7 @@
 - Service Virtualization 
   - Getting started
   - Kafka
-  - AMQ
+  - [AMQ](Amq.md) 
   - IBMMQ
   - SOAP-WSDL
 - Mapson
