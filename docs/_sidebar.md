@@ -13,7 +13,7 @@
 - Service Virtualization 
   - Getting started
   - [Kafka](SV_kafka.md)
-  - [AMQ](SV_Amq.md) 
+  - [AMQ](SV_amq.md) 
   - IBMMQ
   - SOAP-WSDL
 - Mapson
