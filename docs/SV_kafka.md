@@ -86,6 +86,6 @@ Virtualization has RESTAPI and user-friendly interface (UI) to set up the test d
 
 ### View Message Mock data via UI
 
-![View Mock](_images/sv/kafka/view_messages.png)
+![View Mock](_images/sv/kafka/view_mock.png)
 
 ----

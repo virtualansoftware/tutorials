@@ -60,7 +60,7 @@ Virtualization has RESTAPI and user-friendly interface (UI) to set up the test d
 - Http Action: Post
 
 ```JSON
-[{
+{
   "brokerUrl": "vm://embedded",
   "requestTopicOrQueueName": "virtualan.input_1",
   "resource": "virtualan.input_1",
@@ -68,7 +68,7 @@ Virtualization has RESTAPI and user-friendly interface (UI) to set up the test d
   "responseTopicOrQueueName": "virtualan.output",
   "input": "{\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"id\": 101,\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"status\": \"available\",\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ]\n}"  ,
   "output": "{\n  \"category\": {\n    \"id\": 10,\n    \"name\": \"Elan\"\n  },\n  \"id\": 101,\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"status\": \"available\",\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ]\n}"
-}]
+}
 
 ```
 
@@ -84,6 +84,6 @@ Virtualization has RESTAPI and user-friendly interface (UI) to set up the test d
 
 ### View Message Mock data via UI
 
-![View Mock](_images/sv/kafka/view_messages.png)
+![View Mock](_images/sv/amq/view_mock.png)
 
 ----

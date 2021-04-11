@@ -14,8 +14,7 @@
   - Getting started
   - [Kafka](SV_kafka.md)
   - [AMQ](SV_amq.md) 
-  - IBMMQ
-  - SOAP-WSDL
+  - [SOAP-WSDL](SV_soap.md)
 - Mapson
   - [Getting started](Mapson.md)
 
