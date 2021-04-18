@@ -28,7 +28,7 @@ Virtualan would be built with spring boot  framework that would convert API serv
 		virtualan.datasource.username=<sa>
 		virtualan.datasource.password=<>
     
-## Api First code 
+## Api First
 The API first (or design first) approach focuses on the API’s design before starting to write the code. The resulting code will be the output of our design, which means that the first thing we need to do is to write the API specification (OpenApi). That is, we will design how our API will look like and how it should work before starting to write any line of the code. 
 
 
@@ -90,7 +90,7 @@ The API first (or design first) approach focuses on the API’s design before st
 <!-- END Virtual Service API support -->
 ```
 
-### Virtalize Generated API:
+### Virtualize Generated API
 Add **\<virtualService>true\</virtualService>** under configOptions and this will generate code and create service virtulization or Mocking
 > Virtualized code: https://github.com/elans3/binary-mindset-api-first-tutorial \
 > Change required to make virtulize: https://github.com/elans3/binary-mindset-api-first-tutorial/pull/1/files 
