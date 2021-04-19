@@ -34,17 +34,17 @@
 ![](_images/pmcollection/export.png ':size=30%')
 
 
-## Demo POSTMAN Collection: 
+## Sample POSTMAN Collection
 > Sample postman collection created.
 
 [https://github.com/virtualansoftware/idaithalam-contract-testing-demo/blob/master/src/test/resources/idaithalan.postman_collection.json](https://github.com/virtualansoftware/idaithalam-contract-testing-demo/blob/master/src/test/resources/idaithalan.postman_collection.json) 
 
-## Auto Generated Feature file: 
+## Auto Generated Feature file
 > Auto generated feature file for the given postman collection.
 
 [https://github.com/virtualansoftware/idaithalam-contract-testing-demo/blob/master/conf/virtualan-contract.feature](https://github.com/virtualansoftware/idaithalam-contract-testing-demo/blob/master/conf/virtualan-contract.feature)
 
-## Demo Code Base:
+## Demo Code Base
 > Sample application with postman collection.
 
 [https://github.com/virtualansoftware/idaithalam-contract-testing-demo](https://github.com/virtualansoftware/idaithalam-contract-testing-demo)
