@@ -1,6 +1,6 @@
 # Postman
 
-## Steps to create POSTMAN Collection
+## Create POSTMAN Collection
 * Most of the common use case, You can execute as Regression test suite for the test case executed manually via POSTMAN.
 * Run the testcase via POSTMAN and store the response as Example in the POSTMAN.
 * Run all the apis via POSTMAN for all the test cases and capture and save the response. 
