@@ -6,7 +6,7 @@
 
 - Service Virtualization (Open API only)
   - [Getting started](Virtualan.md)
-  - [API First with Spring-boot](Api-first.md) 
+  - [API First with Spring-boot](Api-first.md)
   - [Data setup API & UI](Virtualan-mock-data.md)
   - [Init load](Virtualan-init-load.md)
   - [Business Rule](Virtualan-business-rule.md)
