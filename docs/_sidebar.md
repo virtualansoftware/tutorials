@@ -20,7 +20,7 @@
   - [SOAP-WSDL](SV_soap.md)
 
 - Test Automation Framework
-  - [Cucumblan-api](Cucumblan-api.md) 
+  - [Cucumblan-api](Cucumblan-api.md)
   - [Cucumblan-db](Cucumblan-db.md)
   - [Cucumblan-kafka](Cucumblan-message.md)
   - Cucumblan-ui
