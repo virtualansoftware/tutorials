@@ -216,11 +216,13 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
     > B.  OKTA has the API Interface
         
       1) Access the OKAT API using the API Way and use "basicAuth" to login to the api. 
-      2) Store the access token with JSON path using "StoreResponseVariables".
-         And Store the **pet_accessToken** value of the key as **access_token**   
-      3) Build the Header using  in RequestHeaders as  "Authorization=Bearer [pet_accessToken]"  will generate following.
-         And add request with given header params
-            | Authorization                   | Bearer [pet_accessToken]                         |
+      2) Store the access token with JSON path using "StoreResponseVariables" 
+         a. add it in the spreadsheet column "pet_accessToken=access_token".
+         b. And Store the **access_token** value of the key as **pet_accessToken**   
+      3) Build the Header using  in RequestHeaders 
+         a. add it as "Authorization=Bearer [pet_accessToken]"  in the spreadsheet column.
+         b. And add request with given header params
+             | Authorization  | Bearer [pet_accessToken]  |
  - **Tags:**
     
     Cucumber tags and can be used to categorize the apis.
