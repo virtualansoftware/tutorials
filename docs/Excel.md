@@ -116,15 +116,56 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
  - **StoreResponseVariables:**
  
     Can create variable with values from the response using JsonPath, Http request header or Cookie in the request and The stored variable and the value utlized for further api execution steps. 
- 
+   > And Store the **category.name** value of the key as **category_name**
+   ```JSON
+      {
+      "category": {
+         "id": 100,
+         "name": "string"
+      },
+      "id": 100,
+      "name": "doggie",
+      "photoUrls": [
+         "string"
+      ],
+      "status": "available",
+      "tags": [
+         {
+            "id": 0,
+            "name": "string"
+         }
+      ]
+      }
+   ```
+
  - **AddifyVariables:**
  
     Can create new variables with values for and store the value utlized for further api execution steps. 
  
+    >  And Add the [petId] value of the key as Id # variable based  \
+    > And Add the doggie value of the key as petName # direct value
+
  - **Security:**
  
     API login authentication steps for "basicAuth" or okta=htttp://xxx.okat.com 
- 
+   
+   > A. BASIC AUTH:
+      1. setup  Example: https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_8.xlsx 
+         > Security=basicAuth  in the Security column in the api
+        
+      2. https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/cucumblan-env.properties
+         > basic_auth_user_id.api=admin \
+         > basic_auth_password.api=testing2 \
+         > *api denotes as resources of the api 
+    > B.  OKTA has the API Interface
+        1) Access the OKAT API using the API Way and use "basicAuth" to login to the api. 
+        2) Store the access token with JSON path using "StoreResponseVariables".
+          And Store the **pet_accessToken** value of the key as **access_token**   
+        3) Build the Header using  in RequestHeaders as  "Authorization=Bearer [pet_accessToken]"  will generate following.
+            And add request with given header params
+            | Authorization                   | Bearer [pet_accessToken]                         |
+
+
  - **Tags:**
     
     Cucumber tags and can be used to categorize the apis.

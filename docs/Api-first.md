@@ -4,7 +4,7 @@
 
 
 
-## How Virtualan works? 
+## 1. How Virtualan works? 
 Virtualan would be built with spring boot  framework that would convert API service as Virtualized service in matter of adding couple of annotations. **_Simply as Virtualized service_** which currently supports spring-boot based Rest service(API) with **Spring-RestController** or **CXF-Jaxrs** as Virtualized service with **@VirtualService** and **@ApiVirtual** annotations.
 
 ### Add the "virtualan-plugin" dependency
@@ -21,14 +21,14 @@ Virtualan would be built with spring boot  framework that would convert API serv
 	• @ApiVirtual - Annotation should be added in the method level that the API would you like to Virtualize.
 	
 
-### Service Data base setup
+### Service Data base setup (Optional)
 	• Add the entries in the **application.properties** of the database to be used to store the test data (Example: hsql with in memory DB).
 		virtualan.datasource.driver-class-name=<org.hsqldb.jdbcDriver>
 		virtualan.datasource.jdbc-url=<jdbc:hsqldb:mem:dataSource>
 		virtualan.datasource.username=<sa>
 		virtualan.datasource.password=<>
     
-## Api First
+## 2. Api First
 The API first (or design first) approach focuses on the API’s design before starting to write the code. The resulting code will be the output of our design, which means that the first thing we need to do is to write the API specification (OpenApi). That is, we will design how our API will look like and how it should work before starting to write any line of the code. 
 
 
