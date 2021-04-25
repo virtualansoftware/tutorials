@@ -98,16 +98,68 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
  - **ResponseByFields:**
  
     Validate specific fields in the repsonse using key value pairs. Key is your JsonPath and values is Expected value.
-    > id=[petId];name=[petName];<json-path>=<value>
- 
+    > id=[petId];name=[petName]; \<json-path>=\<value>
+
+   ```gerhkin
+       Scenario: Read petId and Not Found - GET api call
+      Given a user perform a api action
+      And add request with given header params
+        | contentType | application/json |
+      When a user get application/json in /api/pets/1000 resource on api
+      Then Verify the status code is 500
+      And Verify across response includes following in the response
+        | code | MOCK_DATA_NOT_SET |
+
+   ```   
 
  - **IncludesByPath:**
   
     In the "ResponseFile" response given JsonPath for Json (or) XPath for Xml responses.
-  
+
+   ```gerhkin
+       Scenario: Create Pet for Given Input - POST api call
+      Given a user perform a api action
+      And add request with given header params
+        | contentType | application/json |
+      And Create api with given input
+        | photoUrls[0]  | string    |
+        | name          | doggie-1  |
+        | id            | i~100     |
+        | category.name | string    |
+        | category.id   | i~100     |
+        | status        | available |
+        | tags[0].name  | string    |
+        | tags[0].id    | i~0       |
+      When a user post application/json in /api/pets resource on api
+      Then Verify the status code is 201
+      And Verify api response application/json include byPath Create-Pet-for-Given-Input_response.txt includes in the response
+        | id            |
+        | name          |
+        | category.id   |
+        | category.name |
+
+   ```
   - **Csvson:**
   
     Compare the API response with given CSV. CSV would be converted as JSON and compared with the Actula Response.  
+  
+   Example:
+      |ppu,name,toppings,id,type | 
+      |d~0.55,Cake,i~5001\|i~2001\|,0001,donut |
+  
+   ```gerhkin
+    Scenario: Read petId by Tag - GET api call
+      Given a user perform a api action
+      And add request with given query params
+        | tags | spring-grey |
+      And add request with given header params
+        | contentType | application/json |
+      When a user get application/json in /api/pets/findByTags resource on api
+      Then Verify the status code is 200
+      And Verify api response csvson includes in the response
+        | id,name,category/id:name,photoUrls,status,tags/id:name           |
+        | i~201,Butch,i~200:Bulldog,string\|,available,i~201:spring-grey\| |
+   ```
   
   - **ExcludeFields:**
     
@@ -151,21 +203,24 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
    
    > A. BASIC AUTH:
       1. setup  Example: https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_8.xlsx 
-         > Security=basicAuth  in the Security column in the api
+      
+      a. Security=basicAuth  in the Security column in the api
         
       2. https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/cucumblan-env.properties
-         > basic_auth_user_id.api=admin \
-         > basic_auth_password.api=testing2 \
-         > *api denotes as resources of the api 
+      
+      a. basic_auth_user_id.api=admin \
+      b. basic_auth_password.api=testing2 \
+      c. *api denotes as resources of the api 
+   
+   
     > B.  OKTA has the API Interface
-        1) Access the OKAT API using the API Way and use "basicAuth" to login to the api. 
-        2) Store the access token with JSON path using "StoreResponseVariables".
-          And Store the **pet_accessToken** value of the key as **access_token**   
-        3) Build the Header using  in RequestHeaders as  "Authorization=Bearer [pet_accessToken]"  will generate following.
-            And add request with given header params
+        
+      1) Access the OKAT API using the API Way and use "basicAuth" to login to the api. 
+      2) Store the access token with JSON path using "StoreResponseVariables".
+         And Store the **pet_accessToken** value of the key as **access_token**   
+      3) Build the Header using  in RequestHeaders as  "Authorization=Bearer [pet_accessToken]"  will generate following.
+         And add request with given header params
             | Authorization                   | Bearer [pet_accessToken]                         |
-
-
  - **Tags:**
     
     Cucumber tags and can be used to categorize the apis.
