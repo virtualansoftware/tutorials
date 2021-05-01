@@ -2,7 +2,8 @@
   - [Idaithalam](Idaithalam.md)
   - [Postman](Postman.md)
   - [Excel](Excel.md)
-  - [Reports](/1/cucumber-html-reports/overview-features.html)
+  - [API Reports](/api/cucumber-html-reports/overview-features.html)
+  - [API DB Kafka Reports](/kafka/cucumber-html-reports/overview-features.html)
   - CI/CD
 
 - Service Virtualization (Open API only)
