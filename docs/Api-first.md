@@ -60,9 +60,6 @@ The API first (or design first) approach focuses on the API’s design before st
                 <generateModelDocumentation>true</generateModelDocumentation>
                 <configOptions>
                     <configPackage>${project-base-package}.swagger</configPackage>
-                    <!-----START: FOLLOWING TAG converts and generate OPEN API AS MOCK SERVICE  --->
-                    <virtualService>true</virtualService>
-                    <!-----END--->
                 </configOptions>
             </configuration>
         </execution>
@@ -78,7 +75,7 @@ The API first (or design first) approach focuses on the API’s design before st
 <dependency>
     <groupId>io.virtualan</groupId>
     <artifactId>virtualan-plugin</artifactId>
-    <version>2.1.10</version>
+    <version>${virtualan.version}</version>
 </dependency>
 
 <!-- HyperSQL DB -->
@@ -92,8 +89,8 @@ The API first (or design first) approach focuses on the API’s design before st
 
 ### Virtualize Generated API
 Add **\<virtualService>true\</virtualService>** under configOptions and this will generate code and create service virtulization or Mocking
-> Virtualized code: https://github.com/virtualansoftware/virtualan-api-first-openapi/  \
- 
+> Virtualized code: https://github.com/virtualansoftware/virtualan-api-first-openapi/  
+
 ```mvn
 <plugin>
     <groupId>org.openapitools</groupId>
@@ -118,7 +115,9 @@ Add **\<virtualService>true\</virtualService>** under configOptions and this wil
                 <generateModelDocumentation>true</generateModelDocumentation>
                 <configOptions>
                     <configPackage>${project-base-package}.swagger</configPackage>
+                    <!-----START: FOLLOWING TAG converts and generate OPEN API AS MOCK SERVICE  --->
                     <virtualService>true</virtualService>
+                    <!-----END--->
                 </configOptions>
             </configuration>
         </execution>
