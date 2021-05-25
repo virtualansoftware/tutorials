@@ -8,11 +8,6 @@ Virtualan Software is a Product development company that helps to solve customer
         - [Service virtualization as code](https://www.linkedin.com/groups/13908063/) 
         - cloud ready solution for the application needed
         - Light weight and easy setup and configuration for your company. 
-        - Api first strategy with spring boot application development: 
-            -  [API First with Spring-boot](Api-first.md) 
-            - Generate your code as Mock service and can start development on top of the generated service for spring boot services
-            - Build application as mock and then you can developm your solutions on top of the generated code. 
-            - You can partially virtualize the service in your contract
         - deployed as centralized virtulization service for to simulate any software component.      
         - It performs contract validation upfront without any coding or configuration
         - It’s not just mocking and more then a mocking 
@@ -23,6 +18,10 @@ Virtualan Software is a Product development company that helps to solve customer
         - virtualan-plugin is an open source-based Open API Interface driven Service virtualization tool. Simply as Virtualized service which currently support Open API Interface.
     - [Virtualization](https://github.com/virtualansoftware/virtualan/tree/master/modules/virtualization)
         - Service virtualization is the simulation of the behavior of software components that are unavailable or otherwise restricted during the preproduction stage of the software development lifecycle. Supports Open API(Rest), Kafka, AMQ, Soap and IBM MQ.
+     - [API first strategy with spring boot application development](Api-first.md) 
+        - Generate your code as Mock service and can start development on top of the generated service for spring boot services
+        - Build application as mock and then you can developm your solutions on top of the generated code. 
+        - You can partially virtualize the service in your contract
 - [Mapson & Csvson](https://github.com/virtualansoftware/mapson)
     - **Mapson**
         - MAPson library represents JSON as MAP with key as Json-Path. MAPson provides options to work json as MAP. It removes technical dependency between gherkin and Json. This would help lot more for Product Owner/Business analysts(Non technical team members) can create a features without knowing the details and simply using JSON hierarchy

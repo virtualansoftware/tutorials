@@ -31,11 +31,8 @@ Virtualan would be built with spring boot  framework that would convert API serv
 ## 2. Api First
 The API first (or design first) approach focuses on the API’s design before starting to write the code. The resulting code will be the output of our design, which means that the first thing we need to do is to write the API specification (OpenApi). That is, we will design how our API will look like and how it should work before starting to write any line of the code. 
 
+> https://github.com/virtualansoftware/virtualan-api-first-openapi/ 
 
-> https://binarymindset.com/api-first-development-with-springboot-and-openapi/ \
-> https://github.com/elans3/binary-mindset-api-first-tutorial/tree/develop 
-
-(Courtesy: Iván Pérez)
 
 ### Open API generator
 > Generate the open api spring boot rest application using the following plugin for the Open API contract 
@@ -63,6 +60,9 @@ The API first (or design first) approach focuses on the API’s design before st
                 <generateModelDocumentation>true</generateModelDocumentation>
                 <configOptions>
                     <configPackage>${project-base-package}.swagger</configPackage>
+                    <!-----START: FOLLOWING TAG converts and generate OPEN API AS MOCK SERVICE  --->
+                    <virtualService>true</virtualService>
+                    <!-----END--->
                 </configOptions>
             </configuration>
         </execution>
