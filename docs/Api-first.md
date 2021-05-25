@@ -92,8 +92,8 @@ The API first (or design first) approach focuses on the API’s design before st
 
 ### Virtualize Generated API
 Add **\<virtualService>true\</virtualService>** under configOptions and this will generate code and create service virtulization or Mocking
-> Virtualized code: https://github.com/elans3/binary-mindset-api-first-tutorial \
-> Change required to make virtulize: https://github.com/elans3/binary-mindset-api-first-tutorial/pull/1/files 
+> Virtualized code: https://github.com/virtualansoftware/virtualan-api-first-openapi/  \
+ 
 ```mvn
 <plugin>
     <groupId>org.openapitools</groupId>
