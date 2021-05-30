@@ -8,8 +8,128 @@
   <meta name="description" content="Virtualan plugin and Virtualization is a Service virtualization software and supports rest api, oas, kafka. Active MQ and IBM MQ. Idaithalam is low code test automation framework. Cucumblan is a test automation framework that supports Behavior Driven Development (BDD), allowing users to create feature using predefined step definition with low code. It works based on the Gherkin Domain Specific Language (DSL) for REST API, UI, KAFKA and JDBC. Virtualan can be Deployed in Cloud. Idaithalam and Cucumblan can integrated with CI/CD pipeline">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    .right {
+	.fa  {
+		padding: 0px;
+		font-size: 25px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		margin: 0px 0px;
+	}
+
+	.fa:hover a {
+			opacity: 0.7;
+	}
+
+	.fa-facebook a {
+		background: #3B5998;
+		color: white;
+	}
+
+	.fa-twitter a {
+		background: #55ACEE;
+		color: white;
+	}
+
+	.fa-google a {
+		background: #dd4b39;
+		color: white;
+	}
+
+	.fa-linkedin a {
+		background: #007bb5;
+		color: white;
+	}
+
+	.fa-youtube a {
+		background: #bb0000;
+		color: white;
+	}
+
+	.fa-instagram a {
+		background: #125688;
+		color: white;
+	}
+
+	.fa-pinterest a {
+		background: #cb2027;
+		color: white;
+	}
+
+	.fa-snapchat-ghost a {
+		background: #fffc00;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+	.fa-skype a {
+		background: #00aff0;
+		color: white;
+	}
+
+	.fa-android a {
+		background: #a4c639;
+		color: white;
+	}
+
+	.fa-dribbble a {
+		background: #ea4c89;
+		color: white;
+	}
+
+	.fa-vimeo a {
+		background: #45bbff;
+		color: white;
+	}
+
+	.fa-tumblr a {
+		background: #2c4762;
+		color: white;
+	}
+
+	.fa-vine a {
+		background: #00b489;
+		color: white;
+	}
+
+	.fa-foursquare a {
+		background: #45bbff;
+		color: white;
+	}
+
+	.fa-stumbleupon a {
+		background: #eb4924;
+		color: white;
+	}
+
+	.fa-flickr a {
+		background: #f40083;
+		color: white;
+	}
+
+	.fa-yahoo a {
+		background: #430297;
+		color: white;
+	}
+
+	.fa-soundcloud a {
+		background: #ff5500;
+		color: white;
+	}
+
+	.fa-reddit a {
+		background: #ff5700;
+		color: white;
+	}
+
+	.fa-rss a {
+		background: #ff6600;
+		color: white;
+	}
+  
+  .right {
       position: absolute;
       right: 0px;
       width: 300px;
@@ -43,7 +163,11 @@
           function (hook, vm) {
             hook.afterEach(function (html) {
               return (
-                html + 'Copyright 2021 Virtualan Contributors(<a href="https://www.virtualan.io">https://www.virtualan.io</a>)  <span class="right"><a href="mailto:support@virtualan.io"><b>support@virtualan.io</b></a></span>  '
+                html + 'Copyright 2021 Virtualan Contributors(<a href="https://www.virtualan.io">https://www.virtualan.io</a>) '
+                +'<span class="right"> <a href="https://twitter.com/VirtualanS" target="_NEW"  class="fa fa-twitter"></a>'     
+                +' <a href="mailto:info@virtualan.io" target="_NEW"  class="fa fa-google"></a>   '
+                +' <a href="https://www.linkedin.com/company/virtualan-software" target="_NEW"  class="fa fa-linkedin"></a> '
+                +' <a href="https://www.youtube.com/channel/UCny1F1GiYoo2pARDaSDIzYw" target="_NEW" class="fa fa-youtube"></a> </span> '
               )
             })
           },
