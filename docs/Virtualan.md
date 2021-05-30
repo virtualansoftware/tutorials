@@ -68,7 +68,7 @@ virtualan.datasource.password=<>
   - java -jar target/\<virtualan-pet>.jar         
   - To set up  data:    
 	- [Using Virtualan-UI](Mock-data)
-	- [open API Contract](https://github.com/virtualansoftware/virtualan/blob/master/modules/virtualan-plugin/src/main/resources/virtualservices.yaml)
+	- [open API Contract](https://github.com/virtualansoftware/virtualan/blob/master/modules/virtualan-plugin/src/main/resources/META-INF/resources/yaml/VirtualService/virtualservices.yaml)
 	- Using Virtualan-Rest service: 
 		[for automation usecases](https://github.com/virtualansoftware/virtualan-openapi-demo/blob/master/src/test/resources/features/demo/demo.feature)
 
