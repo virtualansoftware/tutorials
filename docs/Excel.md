@@ -219,7 +219,7 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
 
  - **EvaluateFunctionVariables:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_bdd_testcase_run_manager.xlsx)
  
-   Evaluate the variable created for during execution. 
+   Evaluate the variable created during workflow execution. 
  
     
  - **Security:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_8.xlsx)
