@@ -269,8 +269,8 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
    [idaithalam-excel-apitesting](https://github.com/virtualansoftware/idaithalam/tree/master/samples/idaithalam-excel-apitesting)
 
 ## Example Generated file and reports:
-   1. [cucumber-html-reports](/1/cucumber-html-reports/overview-features.html)
-   2. [virtualan-contract.0.feature](/1/feature/virtualan-contract.0.feature)
-   3. [cucumblan.properties](/1/cucumblan.properties)
+   1. [cucumber-html-reports](/api/cucumber-html-reports/overview-features.html)
+   2. [virtualan-contract.0.feature](/api/feature/virtualan-contract.0.feature)
+   3. [cucumblan.properties](/api/cucumblan.properties)
 
 ----
