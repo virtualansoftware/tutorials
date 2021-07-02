@@ -14,6 +14,3 @@
 
 [GitHub](https://github.com/virtualansoftware)
 [Getting Started](#Virtualan)
-
-
-
