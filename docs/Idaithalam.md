@@ -15,7 +15,7 @@ This will covert REST APIs based on POST, GET, PUT, DELETE and PATCH action as r
 
 ## Project Setup 
  - [POSTMAN Collection Project](https://github.com/virtualansoftware/idaithalam-postman-collection-lowcode-automation) 
- - [Excel Project](https://github.com/virtualansoftware/idaithalam/tree/master/samples/idaithalam-excel-apitesting) 
+ - [Microservices-lowcode-testautomation Project](https://github.com/virtualansoftware/microservices-lowcode-testautomation) 
 
  ## Maven dependency:
   
