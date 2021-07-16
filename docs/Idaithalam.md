@@ -29,59 +29,53 @@ This will covert REST APIs based on POST, GET, PUT, DELETE and PATCH action as r
 
 ## How to Integrate: 
 
-1. cucumblan.properties  - Should be added in classpath
 
-    ```
-    service.api=https://live.virtualandemo.com              # Service Endpoint URL
-    virtualan.data.load=idaithalan.postman_collection.json  # Collection file should be in CLASSPATH. added POSTMAN Collection  
-    virtualan.data.type=POSTMAN                             # Collection Type.  POSTMAN, VIRTUALAN/EXCEL
-    ```
-2.  "conf" directory: 
+1. Code to Invoke Automation testcase Execution for POSTMAN Collection:
+> Example Project: [idaithalam-postman-apitesting](https://github.com/virtualansoftware/idaithalam-postman-collection-lowcode-automation)
 
-    ``` 
-    1. Should be created in the project root folder. 
-    2. Feature file will be Auto generated here. 
-    3. You can keep cucumblan.properties and Collection files in this location.
-
-    Example: 
-    https://github.com/virtualansoftware/idaithalam-contract-testing-demo/tree/master/conf 
-    ```
-3. IdaithalamExecutor.validateContract(args1, args2);
-
-    ```
-    args 1: Test Plan Name  
-    args 2: Auto generated location of testplan, test cases, feature file and testcase results/reports 
-    ```
-
-4. Code to Invoke Automation testcase Execution for POSTMAN Collection:
-> Example Project: [idaithalam-postman-apitesting](https://github.com/virtualansoftware/idaithalam/tree/master/samples/idaithalam-postmancoll-apitesting)
-```
-//Initiate the contract testing
-//Generate feature file from POSTMAN Collection
-//Execute and Generate the HTML Cucumber report
-int status = IdaithalamExecutor.validateContract("Pet API Testing");
-if(status != 0) {
-    Assert.assertTrue(false); //to make CI CD pipeline fail during the Execution
- }
- Assert.assertTrue(true); //to confirm the successful Execution of testplan
+```yml
+parallelExecution: 4
+timeout:  30000
+apiExecutor:
+  - reportTitle: "API Testing POSTMAN Collection 1 with 2 files"
+    env: dev
+    outputDir: target/postman/1
+    cucumblanProperties:
+      service.api: https://live.virtualandemo.com
+      service.api.xml: https://www.w3schools.com
+      virtualan.data.load: idaithalan.postman_collection.json;virtualan-xml.json;
+      virtualan.data.heading: PETAPI-Testing;SOAP-Temperature-Testing;
+      virtualan.data.type: POSTMAN
 ```
 
-5. Code to Invoke Automation testcase Execution for Excel:
+2. Code to Invoke Automation testcase Execution for Excel:
 > Example Project: [idaithalam-excel-apitesting](https://github.com/virtualansoftware/idaithalam/tree/master/samples/idaithalam-excel-apitesting)
+
+```yml
+parallelExecution: 4
+timeout:  30000
+apiExecutor:
+  - reportTitle: "Lakeside Mutual - Customer Self-Service - API alone"
+    env: test
+    outputDir: target/LakesideMutual/Customer-Self-Service/1
+    inputExcel: css/customer-self-service.xlsx
+    cucumblanProperties:
+      service.api.css: http://microservices.virtualandemo.com:8080
+      service.api.quote: http://microservices.virtualandemo.com:8090
 ```
-//Initiate the contract testing
-//Generate feature file from EXCEL/VIRTUALAN Collection
-//Execute and Generate the HTML Cucumber report
-int testPlanIndex = 1;
-//pass the spreadsheet that you want to pass to the user
-ExcelToCollectionGenerator.createCollection(list, "virtualan_collection_testcase_4.xlsx", System.getProperty("user.dir") +"/target/"+testPlanIndex);
-//Generate feature and summary page html report for the selected testcase from the excel
-int status = IdaithalamExecutor
-    .validateContract("API EXCEL based api testing", System.getProperty("user.dir") +"/target/"+testPlanIndex);
- if(status != 0) {
-    Assert.assertTrue(false); //to make CI CD pipeline fail during the Execution
- }
- Assert.assertTrue(true); //to confirm the successful Execution of testplan
+
+3. Sample code to invoke the api:
+
+```java
+public void workflowExecution_1() {
+    try {
+        boolean isSuccess = VirtualanTestPlanExecutor
+                .invoke("lakeside-Mutual-Customer-Self-Service.yml");
+        Assert.assertTrue(isSuccess);
+    } catch (InterruptedException e) {
+        Assert.assertTrue(false);
+    }
+}
 ```
 
 ## Used for API testing.
