@@ -49,7 +49,7 @@ apiExecutor:
 ```
 
 2. Code to Invoke Automation testcase Execution for Excel:
-> Example Project: [idaithalam-excel-apitesting](https://github.com/virtualansoftware/idaithalam/tree/master/samples/idaithalam-excel-apitesting)
+> Example Project: [idaithalam-excel-apitesting](https://github.com/virtualansoftware/microservices-lowcode-testautomation)
 
 ```yml
 parallelExecution: 4
