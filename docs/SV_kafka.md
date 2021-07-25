@@ -11,7 +11,7 @@ Virtualization has RESTAPI and user-friendly interface (UI) to set up the test d
 
  |Project|  
  |----------:|
-  |[Kafka Service Virtualization Project](https://github.com/virtualansoftware/virtualan/tree/master/samples/virtualan-kafka)  |
+  |[AsyncAPI Kafka Service Virtualization Project](https://github.com/virtualansoftware/AsyncAPI-Kafka-Virtualization)  |
 
 ## Maven dependency
 ```mvn 
