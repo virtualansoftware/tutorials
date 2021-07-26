@@ -74,7 +74,7 @@ Virtualization has RESTAPI and user-friendly interface (UI) to set up the test d
 
 ### Adding Message Mock data via UI
 
-![Add Mock](_images/sv/amq/amq_add_mock.png)
+![Add Mock](_images/sv/amq/add_mock.png)
 
 
 ## How to view Mock data
