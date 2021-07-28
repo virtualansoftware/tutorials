@@ -3,7 +3,7 @@
 Virtualan Software is a Product development company that helps to solve customer problem in a cost effictive way with unique approach.   
 
 ## Products
-### Sevice virtualaization:
+### Sevice virtualization:
 - **Simple Use case scenarios - Why do we need Service Virtualization:**
 | Actor      | Usecase       |   |
 | -----------|:--------------|:---------|
