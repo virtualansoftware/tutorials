@@ -4,11 +4,11 @@
 
 
 
-## 1. How Virtualan works? 
-Virtualan would be built with spring boot  framework that would convert API service as Virtualized service in matter of adding couple of annotations. **_Simply as Virtualized service_** which currently supports spring-boot based Rest service(API) with **Spring-RestController** or **CXF-Jaxrs** as Virtualized service with **@VirtualService** and **@ApiVirtual** annotations.
+## 1. How does Virtualan work? 
+Virtualan is built with the Spring boot framework, and quickly converts an API service to a Virtualized service simply by adding a couple of annotations. **_Simply as Virtualized service_** currently supports Spring-boot based Rest service(API) with **Spring-RestController** or **CXF-Jaxrs** as Virtualized service with **@VirtualService** and **@ApiVirtual** annotations.
 
 ### Add the "virtualan-plugin" dependency
-	• Add "virtualan-plugin" dependency in the  pom.xml  
+	• Add "virtualan-plugin" dependency in the pom.xml  
 		<dependency>
 			<groupId>io.virtualan</groupId>
 			<artifactId>virtualan-plugin</artifactId>
@@ -29,7 +29,7 @@ Virtualan would be built with spring boot  framework that would convert API serv
 		virtualan.datasource.password=<>
     
 ## 2. Api First
-The API first (or design first) approach focuses on the API’s design before starting to write the code. The resulting code will be the output of our design, which means that the first thing we need to do is to write the API specification (OpenApi). That is, we will design how our API will look like and how it should work before starting to write any line of the code. 
+The API first (or design first) approach focuses on the API’s design before starting to write the code. The resulting code will be the output of our design, which means that the first thing we need to do is to write the API specification (OpenApi). That is, we will design our API contract and how the service should work before starting to write any line of code. 
 
 > https://github.com/virtualansoftware/virtualan-api-first-openapi/ 
 
@@ -68,7 +68,7 @@ The API first (or design first) approach focuses on the API’s design before st
 ```
 
 ### Add Depandency to virtualize
-> Add the following depandency for service virtulization
+> Add the following dependency for service virtulization
 
 ```mvn
 <!-- START Virtual Service API support -->
@@ -126,6 +126,6 @@ Add **\<virtualService>true\</virtualService>** under configOptions and this wil
 ```
 
 ## **How it could be useful**
-In the Agile world, We need to develop (Micro)services & Test the services in parallel. How can tester or development team can develop or test parallel to all the APIs before the real Microservices would be developed? Here Virtualized service comes into the picture.
+In the Agile world, we need to develop & Test (Micro)services in parallel. How can a QA or Development team work in parallel on any APIs before the real Microservices are developed? Virtualized service comes into the picture to help both teams.
 
 ------

@@ -1,58 +1,58 @@
 # Virtualan
 
-Virtualan Software is a Product development company that helps to solve customer problem in a cost effictive way with unique approach.   
+Virtualan Software is a Product development company that helps to solve customer problems in a cost-effective manner using a unique approach.   
 
 ## Products
-### Sevice virtualization:
-- **Simple Use case scenarios - Why do we need Service Virtualization:**
-| Actor      | Usecase       |   |
-| -----------|:--------------|:---------|
-| As a Integration Developer | Developer building unit test change in Test Driven Development  ( i.e. prior to code and checkin)| [More](Developer-usecase.md)|
-| As a Test Engineer  |QA tester building full regression test capability w/ extensible suite for incremental changes to service functionality | [More] |
-| As a API Partner/ProductOwner | Product Owner evaluating contract prior to publishing on Dev Portal - potentially generating sample payloads before service is complete | [More] |
-- Why do we need Virtualan:
-    - [Service virtualization as code](https://www.linkedin.com/groups/13908063/) 
-    - cloud ready solution for the application needed
-    - Light weight and easy setup and configuration for your company. 
-    - deployed as centralized virtulization service for to simulate any software component.      
-    - It performs contract validation upfront without any coding or configuration
-    - It’s not just mocking and more then a mocking 
-    - Deployed independently in any environment with minimal time with ci/cd 
-    - Can be integrated with test automation and manual testing
-    - Swagger based UI and REST API avaliable to create the data for the testing needs
-- [Virtualan-plugin](https://github.com/virtualansoftware/virtualan/tree/master/modules/virtualan-plugin)
-    - virtualan-plugin is an open source-based Open API Interface driven Service virtualization tool. Simply as Virtualized service which currently support Open API Interface.
-- [Virtualization](https://github.com/virtualansoftware/virtualan/tree/master/modules/virtualization)
-    - Service virtualization is the simulation of the behavior of software components that are unavailable or otherwise restricted during the preproduction stage of the software development lifecycle. Supports Open API(Rest), Kafka, AMQ, Soap and IBM MQ.
-    - [API first strategy with spring boot application development](Api-first.md) 
-    - Generate your code as Mock service and can start development on top of the generated service for spring boot services
-    - Build application as mock and then you can developm your solutions on top of the generated code. 
-    - You can partially virtualize the service in your contract
 
-### [Idaithalam - Lowcode automation](https://github.com/virtualansoftware/idaithalam)
-- In Idaithalam, Idai means "Interface" and Thalam means "Platform".
-- Low code Test automation framework using cucumber and supports Behavior Driven Development (BDD). Can build test cases using Excel and Postman collection. It allows to build and test api workflow in minutes.
+- Service virtualization:
+    - **Simple Use case scenarios - Why use Service Virtualization:**
+    | Actor      | Usecase       |   |
+    | -----------|:--------------|:---------|
+    | As a Integration Developer | Build/Modify unit tests for Test Driven Development  ( i.e. prior to integrated code and checkin)| [More](Developer-usecase.md)|
+    | As a Test Engineer  | Build and execute a full test suite, or incrementally add to a test suite, prior to service changes being deployed  | [More] |
+    | As a API Partner/ProductOwner | Evaluate service contracts prior to publishing on your Developer Portal.  Generate sample payloads before service development is complete | [More] |
 
-### [Cucumblan](https://github.com/virtualansoftware/cucumblan)
-- Cucumblan is a test automation framework that supports Behavior Driven Development (BDD), allowing users to create feature using predefined step definition with low code. I t works based on the Gherkin Domain Specific Language (DSL). This simple but powerful api framework while keeping it comprehensible to even non-technical(product owner, business analyst and domain experts) users.
-
-### [Idaithalam-server](https://github.com/virtualansoftware/idaithalam-server)
-- Idaiserver is a reference implementation of Idaithalam.It implements the API services to execute contract tests based on Postman collections.
-    Idaiserver provides APIs for 
-    - uploading a new contract
-    - run the test
-    - update the configuration
-    - re-run existing test configurations
-    - get the report
-    - get the feature file
-    - get the configuration properties file
-    - get a test summary.
-
-### [Mapson & Csvson](https://github.com/virtualansoftware/mapson)
-- **Mapson**
-    - MAPson library represents JSON as MAP with key as Json-Path. MAPson provides options to work json as MAP. It removes technical dependency between gherkin and Json. This would help lot more for Product Owner/Business analysts(Non technical team members) can create a features without knowing the details and simply using JSON hierarchy
-- **Csvson**
-    -  Mapson library represents JSON as comma separted values(CSV). CSVson provides options to work json as CSV. It removes technical dependency between gherkin and Json. This would help lot more for Product Owner/Business analysts(Non technical team members) can create a features without knowing the details and simply using JSON hierarchy
+    Virtualan employs [Service virtualization as code](https://www.linkedin.com/groups/13908063/) to maximize benefits and reduce your efforts. 
+    - Virtualan features:
+        - a cloud-ready solution
+        - Light-weight, simple setup and configuration
+        - test data creation using a Swagger based UI or a REST API 
+        - It’s not just mocking, there's more than mocking 
+        - simulate any software component by deploying a virtualized service
+        - perform service contract validation without any coding or configuration required
+        - deploy in any environment via CI/CD tooling in minimal time
+        - integrate with test automation tools
+    - [Virtualan-plugin](https://github.com/virtualansoftware/virtualan/tree/master/modules/virtualan-plugin)
+        - Virtualan-plugin is a Service virtualization tool, driven by  open-source software, specifically the Open API Interface spec.
+    - [Virtualization](https://github.com/virtualansoftware/virtualan/tree/master/modules/virtualization)
+        - Service virtualization is the simulation of the behavior of software components that are unavailable or otherwise restricted during the preproduction stage of the software development lifecycle. Supports Open API(Rest), Kafka, AMQ, Soap and IBM MQ.
+     - [API first strategy with spring boot application development](Api-first.md) 
+        - Build your contract 
+        - Generate your code as a Mock service
+        - Develop your service using the generated Mock service as your base (for Spring boot services)
+        - Build your application to use the Mock
+        - Virtualize the service in your contract (partially or entirely)
+- [Idaithalam - Lowcode automation](https://github.com/virtualansoftware/idaithalam)
+    - In Idaithalam, Idai means "Interface" and Thalam means "Platform".
+    - Low code Test automation framework using cucumber and supports Behavior Driven Development (BDD). Can build test cases using Excel and Postman collection. It allows to build and test api workflow in minutes.
+- [Cucumblan](https://github.com/virtualansoftware/cucumblan)
+    - Cucumblan is a test automation framework that supports Behavior Driven Development (BDD), allowing users to create feature using predefined step definition with low code. I t works based on the Gherkin Domain Specific Language (DSL). This simple but powerful api framework while keeping it comprehensible to even non-technical(product owner, business analyst and domain experts) users.
+- [Idaithalam-server](https://github.com/virtualansoftware/idaithalam-server)
+    - Idaiserver is a reference implementation of Idaithalam.It implements the API services to execute contract tests based on Postman collections.
+        Idaiserver provides APIs for 
+        - uploading a new contract
+        - run the test
+        - update the configuration
+        - re-run existing test configurations
+        - get the report
+        - get the feature file
+        - get the configuration properties file
+        - get a test summary.
+- [Mapson & Csvson](https://github.com/virtualansoftware/mapson)
+    - **Mapson**
+        - MAPson library represents JSON as MAP with key as Json-Path. MAPson provides options to work json as MAP. It removes technical dependency between gherkin and Json. This would help lot more for Product Owner/Business analysts(Non technical team members) can create a features without knowing the details and simply using JSON hierarchy
+    - **Csvson**
+        -  Mapson library represents JSON as comma separted values(CSV). CSVson provides options to work json as CSV. It removes technical dependency between gherkin and Json. This would help lot more for Product Owner/Business analysts(Non technical team members) can create a features without knowing the details and simply using JSON hierarchy
 
 ## Examples
 - [OpenAPI Service Virtualization](https://github.com/virtualansoftware/service-virtualization-openapi)
