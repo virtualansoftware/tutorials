@@ -18,6 +18,7 @@
 
 - Service Virtualization 
   - Getting started
+  - [Set Up](Virtualan-setup.md)
   - [Kafka](SV_kafka.md)
   - [AMQ](SV_amq.md) 
   - [SOAP-WSDL](SV_soap.md)
