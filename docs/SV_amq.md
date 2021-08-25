@@ -54,16 +54,6 @@ Virtualization has RESTAPI and user-friendly interface (UI) to set up the test d
 }
 ```
 
-# Mocking and Testing {#mocking}
-
-Tools that take specification documents as input, then publish fake messages to broker destinations for simulation purposes. May also check that publisher messages are compliant with schemas.
-
-| Link           | Description    | Language/Kind |
-| :------------- | :------------- | :------------- |
-| [Microcks](https://microcks.io) | Mocking and testing platform for API and microservices. Turn your AsyncAPI, OpenAPI contract examples, or Postman collections into ready-to-use mocks. Use examples to simulate and validate received messages according to schema elements. | Kubernetes-native, Self-hosted / SaaS, Open Source |
-| [Virtualan](https://virtualan.io) | Mocking and testing platform for API and microservices. Turn your OpenAPI contract. AsyncAPI examples into ready-to-use mocks. Use examples to simulate and validate received messages according to schema elements. [GitHub Reference](https://github.com/virtualansoftware/AsyncAPI-Virtualization)  | Kubernetes-native, Self-hosted / SaaS, Open Source |
-| [Cucumbalan-message](https://virtualan.io) | Cucumblan-message library contains predefined Gherkin step defination for Kafka message event testing. Cucumblan-message provides options to Test engineer, Manual Testers and Subject Matter Exports write feature files without having development excelency. [GitHub Reference](https://tutorials.virtualan.io/#/Cucumblan-message) | BDD, Open Source |
-
 
 ## How to add Mock data
 ### Adding Message Mock data via REST API
