@@ -1,4 +1,4 @@
-# WSDL SOAP - Virtulization
+# WSDL SOAP - Virtualization
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.virtualan/virtualization.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.virtualan%22%20AND%20a:%22virtualization%22)
 
