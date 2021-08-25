@@ -17,8 +17,7 @@
   - [Cloud Deployment](Virtualan-container.md)
 
 - Service Virtualization 
-  - Getting started
-  - [Set Up](Virtualan-setup.md)
+  - [Getting started](Virtualan-setup.md)
   - [Kafka](SV_kafka.md)
   - [AMQ](SV_amq.md) 
   - [SOAP-WSDL](SV_soap.md)
