@@ -11,11 +11,12 @@ Simplified way to setup Service virtualization using Docker Image. It supports #
 ### 2. Initial setup  
  a. Setup application profile as "live" 
  
- b. Navigate to the installation directory in the Linux server.
+ b. Navigate to the installation directory in the Linux server. 
+  >  mkdir virtualization
  
- c. Create conf directory 
+ c. Create conf directory under virtualization directory 
  
- d. Create application-**live**.properties with appropriate profile with below information
+ d. Create application-**live**.properties with appropriate profile with below information inside conf folder
 	
 	server.port=8800  
 	virtualan.application.name=Service Virtualization Demo
@@ -24,7 +25,7 @@ Simplified way to setup Service virtualization using Docker Image. It supports #
 	virtualan.datasource.username=sa
 	virtualan.datasource.password=
 ### 3. Docker-compose config
-  Create docker-compose.yml with appropriate profile with following instruction
+  Create docker-compose.yml with appropriate profile with following instruction in the setup virtualization directory
   
 	version: "3.7"
 	services:
