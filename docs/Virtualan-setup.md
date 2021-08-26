@@ -42,21 +42,21 @@ Simplified way to setup Service virtualization using Docker Image. It supports #
 ### 5. Logs
  > sudo docker-compose logs
 	
-## Home Page:
+## Home Page
 	URL: http://<hostname>:8800/virtualan-ui
 
 **Demo URL:** http://microservices.virtualandemo.com:8800/virtualan-ui
 
 ## OpenAPI
-### Add: 
+### Add
 	http://microservices.virtualandemo.com:8800/swagger-ui.html#/virtual-service-controller/createVirtualanApisUsingPOST 
 
-### Remove: 
+### Remove
 	http://microservices.virtualandemo.com:8800/swagger-ui.html#/virtual-service-controller/deleteVirtualanApisUsingDELETE
 
 ## AsyncAPI
-### Setup Kafka: 
+### Setup Kafka 
 	https://tutorials.virtualan.io/#/SV_kafka
 
-### Setup AMQ: 
+### Setup AMQ
 	https://tutorials.virtualan.io/#/SV_amq
