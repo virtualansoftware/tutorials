@@ -41,9 +41,8 @@ Simplified way setup Service virtualization using Docker Image. It supports #Ope
 
 ### 5. Logs
  > sudo docker-compose logs
-
 	
-## Access Home Page:
+## Home Page:
 	URL: http://<hostname>:8800/virtualan-ui
 
 **Demo URL:** http://microservices.virtualandemo.com:8800/virtualan-ui
