@@ -1,7 +1,7 @@
 
 
 # Virtualan - Service Virtualization  ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/virtualan/service-virtualization/1.0?style=social)
-Simplified way setup Service virtualization using Docker Image. It supports #OpenAPI, #AsyncAPI(Kafka and AMQ).
+Simplified way to setup Service virtualization using Docker Image. It supports #OpenAPI, #AsyncAPI(Kafka and AMQ).
 
 ## Installation
 ### 1. Prerequisite
