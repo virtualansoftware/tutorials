@@ -1,16 +1,24 @@
-# Idaiserver ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/virtualan/idaithalam/1.0?style=social)
-
-
+# Idaiserver  ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/virtualan/idaithalam/1.0?style=social)
 Idaiserver provides APIs to execute REST API contract tests, generate test reports and feature files.
 
-## Video Tutorial
+Idaiserver consists of two main parts:
+1. idaithalam to execute the tests and generate Cucumber reports.
+2. Idaiserver to provide the APIs for test execution and configuration.
+
+
+#### Docker 
+- docker pull virtualan/idaithalam  
+- https://hub.docker.com/r/virtualan/idaithalam
+
+
+#### Video Tutorial
 <details><summary>Toggle me!</summary>
 
 [![Idaithalam](https://img.youtube.com/vi/38FjHAoy5YM/0.jpg)](https://youtu.be/38FjHAoy5YM)
 
 </details>
 
-## Set up
+#### Set up
 <details><summary>Toggle me!</summary>
 
 ### 1. Prerequisite
@@ -63,11 +71,6 @@ Idaiserver provides APIs to execute REST API contract tests, generate test repor
 ### 5. Logs
  > sudo docker-compose logs
 </details>
-
-
-Idaiserver consists of two main parts:
-1. idaithalam to execute the tests and generate Cucumber reports.
-2. Idaiserver to provide the APIs for test execution and configuration.
 
 ## What you will get 
 1. Your API implementation will be tested against the contract you defined.
