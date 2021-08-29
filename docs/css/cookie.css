@@ -1,0 +1,100 @@
+
+/*Cookie Consent Begin*/
+#myCookieConsent {
+    z-index: 999;
+    min-height: 20px;
+    font-family: OpenSans, arial, "sans-serif";
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.6);
+    overflow: hidden;
+    position: fixed;
+    color: #FFF;
+    bottom: 0px;
+    right: 10px;
+    display: none;
+    left: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+#myCookieConsent div {
+    padding: 5px 0 0;
+}
+#myCookieConsent a {
+    color: hsl(36,75%, 57%);
+    display: inline-block;
+    padding: 0 10px;
+}
+#myCookieConsent a:hover {
+	color: hsl(50, 100%, 57%);
+}
+#myCookieConsent a#cookieButton {
+    display: inline-block;
+    color: #FFF;
+    font-size: 1.1em;
+	background: rgba(0,0,0,0.6);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 2px 20px;
+    float: right;
+    border-radius: 20px;
+}
+#myCookieConsent a#cookieButton:hover {
+    background: #FFF;
+	color: #000;
+}
+
+
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+  }
+  .overlay:target {
+	visibility: visible;
+	opacity: 1;
+  }
+  
+  .popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 60%;
+	height: 80%;
+	position: relative;
+	transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+	margin-top: 0;
+	color: #333;
+	font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+  }
+  .popup .close:hover {
+	color: #06D85F;
+  }
+  .popup .content {
+	height: 95%;
+	overflow: auto;
+  }
+  
+
+/*Cookie Consent End*/
