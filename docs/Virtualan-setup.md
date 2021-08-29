@@ -1,6 +1,6 @@
 
 
-# Virtualan - Service Virtualization  ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/virtualan/service-virtualization/1.0?style=social)
+# Virtualan - Service Virtualization  ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/virtualan/service-virtualization/2.0?style=social)
 Simplified way to setup Service virtualization using Docker Image. It supports #OpenAPI, #AsyncAPI(Kafka and AMQ).
 
 ## Video Tutorial
@@ -36,7 +36,7 @@ Simplified way to setup Service virtualization using Docker Image. It supports #
 	version: "3.7"
 	services:
 	  virtualization:
-		image: docker.io/virtualan/service-virtualization:1.0
+		image: docker.io/virtualan/service-virtualization:2.0
 		ports:
 		  - "8800:8800"
 		environment:
@@ -64,6 +64,9 @@ Simplified way to setup Service virtualization using Docker Image. It supports #
 ## AsyncAPI
 ### Setup Kafka 
 	https://tutorials.virtualan.io/#/SV_kafka
+
+### Setup MQTT
+	http://localhost:3000/#/SV_mqtt
 
 ### Setup AMQ
 	https://tutorials.virtualan.io/#/SV_amq

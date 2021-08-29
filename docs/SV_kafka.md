@@ -11,13 +11,13 @@ Virtualization has RESTAPI and user-friendly interface (UI) to set up the test d
 
  |Project|  
  |----------:|
-  |[AsyncAPI Kafka Service Virtualization Project](https://github.com/virtualansoftware/AsyncAPI-Kafka-Virtualization)  |
+  |[AsyncAPI Kafka Service Virtualization Project](https://github.com/virtualansoftware/asyncapi-virtualization)  |
 
 ## Maven dependency
 ```mvn 
 <dependency>
 	<groupId>io.virtualan</groupId>
-	<artifactId>virtualaization</artifactId>
+	<artifactId>virtualization</artifactId>
 	<version>${virtualan.version}</version>
 </dependency>
 ``` 

@@ -17,7 +17,7 @@ Virtualization has RESTAPI and user-friendly interface (UI) to set up the test d
 ```mvn 
 <dependency>
 	<groupId>io.virtualan</groupId>
-	<artifactId>virtualaization</artifactId>
+	<artifactId>virtualization</artifactId>
 	<version>${virtualan.version}</version>
 </dependency>
 ``` 
