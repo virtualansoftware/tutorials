@@ -1,6 +1,69 @@
-# Idaiserver
+# Idaiserver ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/virtualan/idaithalam/1.0?style=social)
+
 
 Idaiserver provides APIs to execute REST API contract tests, generate test reports and feature files.
+
+## Video Tutorial
+<details><summary>Toggle me!</summary>
+
+[![Idaithalam](https://img.youtube.com/vi/38FjHAoy5YM/0.jpg)](https://youtu.be/38FjHAoy5YM)
+
+</details>
+
+## Set up
+<details><summary>Toggle me!</summary>
+
+### 1. Prerequisite
+- Install docker
+  	https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10
+
+### 2. Initial setup  
+- Setup application profile as "live" 
+
+- Navigate to the installation directory in the Linux server. 
+  >  mkdir idaithalam-server
+ 
+- Create conf directory under idaithalam-server directory 
+
+- Create application-**live**.properties with appropriate profile with below information inside conf folder
+    
+    ```properties
+	server.port=<8900>
+    spring.jackson.date-format=ch.inss.virtualan.idaiserver.RFC3339DateFormat
+    spring.jackson.serialization.WRITE_DATES_AS_TIMESTAMPS=false
+
+    logging.level.root=INFO
+    logging.level.org.springframework.web=INFO
+    logging.level.ch.inss.idaiserver=INFO
+    spring.resources.static-locations=file:/conf
+
+    # The links will point to the results_uuid folder directly. Therefore this folder must be WWW root.
+    ch.inss.idaiserver.reports.folder=/conf
+    ch.inss.idaiserver.host=<http://microservices.virtualandemo.com:8900>
+    ```
+
+### 3. Docker-compose config
+- Create docker-compose.yml with appropriate profile with following instruction in the setup idaithalam-server directory  
+    ```yml
+    version: "3.7"
+    services:
+    idaithalam:
+        image: docker.io/virtualan/idaithalam:1.0
+        ports:
+        - "8900:8900"
+        environment:
+        - SPRING_PROFILES_ACTIVE=live
+        volumes:
+          - ./conf:/conf:rw
+    ```
+
+### 4. Start Service 
+ > sudo docker-compose up -d
+ 
+### 5. Logs
+ > sudo docker-compose logs
+</details>
+
 
 Idaiserver consists of two main parts:
 1. idaithalam to execute the tests and generate Cucumber reports.
@@ -69,12 +132,12 @@ You will get a test summary with links to a Cucumber report, a Gherkin feature f
 file (cucumblan.properties) and the link to the test summary itself.
 
 ## Usage steps
-1. - Create a Postman collection (e.g. import from OAS3 file).
-2. - Define your tests in the collection.
-3. - Export Postman collection.
-4. - Define parameter for /test POST.
-5. - Create your test with /test POST.
-6. - Check the test results.
+ - Create a Postman collection (e.g. import from OAS3 file).
+ - Define your tests in the collection.
+ - Export Postman collection.
+ - Define parameter for /test POST.
+ - Create your test with /test POST.
+ - Check the test results.
 
 ### 1. Create Postman collection
 Base of the contract test is your Postman collection.
