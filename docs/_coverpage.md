@@ -9,7 +9,7 @@
 
 > Clients
 
-![CNA](_clients/cna.svg ':size=10%') &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![walgreens](_clients/walgreens.png ':size=10%') &nbsp;&nbsp;&nbsp;&nbsp; ![LBBW](_clients/lbbw.svg ':size=10%') &nbsp;&nbsp;&nbsp;&nbsp; ![AXA](_clients/axa.svg ':size=5%')
+![CNA](_clients/cna.png ':size=10%') &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![walgreens](_clients/walgreens.png ':size=10%') &nbsp;&nbsp;&nbsp;&nbsp; ![LBBW](_clients/lbbw.svg ':size=10%') &nbsp;&nbsp;&nbsp;&nbsp; ![AXA](_clients/axa.svg ':size=5%')
 
 
 [GitHub](https://github.com/virtualansoftware)
