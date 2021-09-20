@@ -4,7 +4,7 @@
 
 > [View - Idaithalam Demo](https://github.com/virtualansoftware/microservices-lowcode-testautomation)
 
-## 1. Jenkins
+##  Jenkins
 > FileName:  Jenkinsfile
 
 ```groovy
@@ -42,9 +42,8 @@ pipeline {
         }   
 }
 
-````
-
-## 2. Azure Devops
+```
+##  Azure Devops
 
 >  FileName:  azure-pipelines.yml
 
@@ -72,5 +71,15 @@ steps:
     inputs:
     jsonDir: .target/idaithalam
     outputPath: .target/idaithalam
-
 ```
+##  GCP Cloud build
+
+>  FileName:  cloudbuild.yaml
+
+```yml
+steps:
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['clean','test', 'install']
+```
+
+----
