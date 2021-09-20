@@ -6,6 +6,7 @@
   - [API Reports](/api/cucumber-html-reports/overview-features.html)
   - [API DB Kafka Reports](/kafka/cucumber-html-reports/overview-features.html)
   - CI/CD
+  - [Idaithalam FAQ](Idaithalam-faq.md)
 
 - Service Virtualization (Open API only)
   - [Getting started](Virtualan.md)
