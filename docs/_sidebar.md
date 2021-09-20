@@ -5,7 +5,7 @@
   - [Excel](Excel.md)
   - [API Reports](/api/cucumber-html-reports/overview-features.html)
   - [API DB Kafka Reports](/kafka/cucumber-html-reports/overview-features.html)
-  - [Pipeline - CI/CD](Idaithalam-cicd.md)
+  - [Pipeline - CI/CD](Idaithalam-pipeline.md)
   - [Idaithalam FAQ](Idaithalam-faq.md)
 
 - Service Virtualization (Open API only)
