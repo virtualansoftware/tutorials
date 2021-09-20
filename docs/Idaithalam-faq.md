@@ -1,4 +1,4 @@
-<h1 align="center"> Frequenty asked questions(FAQ) for  Idaithalam:</h1>
+<h1 align="center"> Frequently asked questions(FAQ) for Idaithalam:</h1>
 
 1. **<span style="color:#800040"> What is VIRTUALAN COLLECTION?</span>**
 
