@@ -39,9 +39,10 @@
     - Each Excel sheet transformed as **Virtualan Collection**(JSON Array) before it generated as Gherkin Feature. and Each JSON Object referred to as row in the excel which is Gherkin Scenario.
 
     - Execute VIRTUALAN COLLECTION During test case execution via CI/CD pipeline.
-
-        - Example: Accept quote User case 1: [Sheet: 1]
-    
+        - Example: Accept quote User case 1: [Sheet: 1] 
+            > 1. [Accept quote User case - Excel - Download](https://github.com/virtualansoftware/microservices-lowcode-testautomation/blob/a7ac3d50c7a820392a569f093aa8302969c50605/src/test/resources/css/customer-self-service.xlsx)
+            > 2. [Accept quote User case - Virtualan Collection - Download](https://github.com/virtualansoftware/microservices-lowcode-testautomation/blob/a7ac3d50c7a820392a569f093aa8302969c50605/virtualan-collection/Customer-Self-Service-Accept.json)   
+            
             - Excel Row 1: Login to Customer care api
                     - Login to Insurance customer care API.
                     - Pass username and password from Secret store.
@@ -68,7 +69,8 @@
                     - Pass the previous quoteId in the Quote Accept Update API.
                     - Update Quote Accepted.
         -  Example: Reject quote User case 2: [Sheet: 2]
-    
+            > 1. [Reject quote User case - Excel - Download](https://github.com/virtualansoftware/microservices-lowcode-testautomation/blob/a7ac3d50c7a820392a569f093aa8302969c50605/src/test/resources/css/customer-self-service.xlsx)
+            > 2. [Reject quote User case - Virtualan Collection - Download](https://github.com/virtualansoftware/microservices-lowcode-testautomation/blob/a7ac3d50c7a820392a569f093aa8302969c50605/virtualan-collection/Customer-Self-Service-Reject.json)   
             - Excel Row 1: Login to Customer care api
                     - Login to Insurance customer care API.
                     - Pass username and password from Secret store.
