@@ -120,6 +120,13 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
     Validate specific fields in the repsonse using key value pairs. Key is your JsonPath and values is Expected value.
     > id=[petId];name=[petName]; \<json-path>=\<value>
 
+   > Find JSON Array handling in response by field validation.  
+         1. Read Customer infos - Find last element
+            customers[-1].customerId=[customerId]  #parametirzed way of validating the customerId
+         2. customers.find { it.firstname == 'Ado' }.postalCode=6500 # Search element by Name "Ado" in the JSON Array and validate the Postal Code
+            customers.find { it.customerId == 'bunlo9vk5f' }.firstname=Ado  # Search element by Name "bunlo9vk5f" in the JSON Array and validate the firstname
+            customers.find { it.customerId == 'f2m0v9b73c' }.email=blangman14@example.com # Search element by Name "f2m0v9b73c" in the JSON Array and validate the firstname   
+
    ```gerhkin
        Scenario: Read petId and Not Found - GET api call
       Given a user perform a api action
@@ -164,9 +171,9 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
     Compare the API response with given CSV. CSV would be converted as JSON and compared with the Actula Response.  
   
    Example:
-      |ppu,name,toppings,id,type | 
-      |d~0.55,Cake,i~5001\|i~2001\|,0001,donut |
-  
+         |ppu,name,toppings,id,type | 
+         |d~0.55,Cake,i~5001\|i~2001\|,0001,donut |
+   
    ```gerhkin
     Scenario: Read petId by Tag - GET api call
       Given a user perform a api action
@@ -189,6 +196,16 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
  
     Can create variable with values from the response using JsonPath, Http request header or Cookie in the request and The stored variable and the value utlized for further api execution steps. 
    > And Store the **category.name** value of the key as **category_name**
+
+   > Find JSON Array handling in response by field validation.  
+         1. Read Customer id form  last element of JSONArray and sore the CustomerId
+            id=customers[-1].customerId
+         2. Read any element from JSONArray
+            postalCode=customers.find { it.firstname == 'Ado' }.postalCode # Search element by Name "Ado" in the JSON Array and validate the Postal Code
+            firstname=customers.find { it.customerId == 'bunlo9vk5f' }.firstname  # Search element by Name "bunlo9vk5f" in the JSON Array and validate the firstname
+            userEmail=customers.find { it.customerId == 'f2m0v9b73c' }.email # Search element by Name "f2m0v9b73c" in the JSON Array and validate the firstname   
+
+
    ```JSON
       {
       "category": {
