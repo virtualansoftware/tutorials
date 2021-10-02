@@ -122,7 +122,7 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
 
    > Find JSON Array handling in response by field validation.  
          1. Read Customer infos - Find last element
-            customers[-1].customerId=[customerId]  #parametirzed way of validating the customerId
+            customers[-1].customerId=[customerId]  #parametirzed way of validating the dynamic customerId
          2. customers.find { it.firstname == 'Ado' }.postalCode=6500 # Search element by Name "Ado" in the JSON Array and validate the Postal Code
             customers.find { it.customerId == 'bunlo9vk5f' }.firstname=Ado  # Search element by Name "bunlo9vk5f" in the JSON Array and validate the firstname
             customers.find { it.customerId == 'f2m0v9b73c' }.email=blangman14@example.com # Search element by Name "f2m0v9b73c" in the JSON Array and validate the firstname   
@@ -201,9 +201,9 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
          1. Read Customer id form  last element of JSONArray and sore the CustomerId
             id=customers[-1].customerId
          2. Read any element from JSONArray
-            postalCode=customers.find { it.firstname == 'Ado' }.postalCode # Search element by Name "Ado" in the JSON Array and validate the Postal Code
-            firstname=customers.find { it.customerId == 'bunlo9vk5f' }.firstname  # Search element by Name "bunlo9vk5f" in the JSON Array and validate the firstname
-            userEmail=customers.find { it.customerId == 'f2m0v9b73c' }.email # Search element by Name "f2m0v9b73c" in the JSON Array and validate the firstname   
+            postalCode=customers.find { it.firstname == 'Ado' }.postalCode # Search element by Name "Ado" in the JSON Array and store the Postal Code
+            firstname=customers.find { it.customerId == 'bunlo9vk5f' }.firstname  # Search element by Name "bunlo9vk5f" in the JSON Array and store the firstname
+            userEmail=customers.find { it.customerId == 'f2m0v9b73c' }.email # Search element by Name "f2m0v9b73c" in the JSON Array and store the firstname   
 
 
    ```JSON
@@ -254,7 +254,7 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
          
          6. isMatch=b~LEN("[firstname]")=3  # will create boolean variable with value
          
-         7. lenghtInDecimals=d~LEN("[firstname]")=3  # will create decimal variable with value
+         7. lenghtInDecimals=d~LEN("[lenght]")=3  # will create decimal variable with value
 
     
  - **Security:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_8.xlsx)
