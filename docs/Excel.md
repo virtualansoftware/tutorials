@@ -259,7 +259,7 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
     
  - **Security:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_8.xlsx)
  
-    API login authentication steps for "basicAuth" or okta=htttp://xxx.okat.com 
+    API login authentication steps for "basicAuth" 
    
    > A. BASIC AUTH:
       1. setup  Example: https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_8.xlsx 
@@ -272,6 +272,7 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
       b. basic_auth_password.api=testing2 \
       c. *api denotes as resources of the api 
    
+      **if you create variables suffix with .password and will not printed values in the logs**
    
     > B.  OKTA has the API Interface
         
