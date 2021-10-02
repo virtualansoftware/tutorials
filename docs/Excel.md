@@ -7,6 +7,18 @@ Can create Excel with all the required Field to execute the API test workflow.
 2. Excel spreadsheet used as Run Manager for API Tetsting.
 3. **Electronic Data Interchange (EDI)** is the electronic interchange of business information using a standardized format support added available with Low code implementation.
 
+
+
+## Create the Excel in the following format
+
+|TestCaseName|TestCaseNameDesc|URL|ContentType|RequestFile|RequestHeaders|ResponseFile|ResponseProcessingType|Action|ExcludeFields|StatusCode|
+| -----------|:--------------:|-----:| -----:| -----:| -----:| -----:| -----:| -----:| -----:| -----:|
+|PetGet|get API testing|https://live.virtualandemo.com/api/pets/findByTags?tags=grey|application/json|||get_response.json||GET||200|
+|PetPost|pet post api test|http://live.virtualandemo.com/api/pets|application/xml|input.xml||output.xml|VirtualanStdType=EDI-271|POST|Date|200|
+
+![](_images/idaithalam/Sample-XL.png ':size=100%')
+
+
 ## What it does
 Idaithalam read the excel and generate the Virtualan Collection and would be coverted into a Gherkin language(*Feature* file) and then run the feature file and will Produce cucumber based HTML report for the executed testcases. It allow to define Each API flow as separate Sheet in Excel. You can define Multiple sheet and it also allows to executed selected testcases.
 
@@ -289,12 +301,6 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
     Cucumber tags and can be used to categorize the apis.
 
 
-## Create the Excel in the following format
-
-|TestCaseName|TestCaseNameDesc|URL|ContentType|RequestFile|RequestHeaders|ResponseFile|ResponseProcessingType|Action|ExcludeFields|StatusCode|
-| -----------|:--------------:|-----:| -----:| -----:| -----:| -----:| -----:| -----:| -----:| -----:|
-|PetGet|get API testing|https://live.virtualandemo.com/api/pets/findByTags?tags=grey|application/json|||get_response.json||GET||200|
-|PetPost|pet post api test|http://live.virtualandemo.com/api/pets|application/xml|input.xml||output.xml|VirtualanStdType=EDI-271|POST|Date|200|
 
 
 ## Example excel is attached.

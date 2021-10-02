@@ -13,7 +13,17 @@ As a user: You need to export the POSTMAN Collection or create Excel and pass to
 Currently It supports generate Feature files for **Excel**/**Virtualan Collection** and **POSTMAN Collection**  format. 
 This will covert REST APIs based on POST, GET, PUT, DELETE and PATCH action as respective domain specific language which helps you to describe API/business behavior without the need to go into detail of implementation. 
 
-Virtualan Collection is a JSON based TestScripts
+**Virtualan Collection is a JSON based TestScripts generated from Excel**
+
+## Architecture
+
+![](_images/idaithalam/Architecture.png ':size=65%')
+
+
+## How it works
+
+![](_images/idaithalam/Workflow.png ':size=65%')
+
 
 ## Video Tutorials
 | Name   |      Link      |  level |
