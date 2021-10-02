@@ -219,8 +219,26 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
 
  - **EvaluateFunctionVariables:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_bdd_testcase_run_manager.xlsx)
  
-   Evaluate the variable created during workflow execution. 
- 
+   Evaluate the variable created during workflow execution. This will help generate the dynamic variable and values. This execute command using pure EXCEL functions. I have added couple of Date funcationality to define values dynamically. This will create variables with evaluated funcation. Any excel funcations can be evaluated **during runtime(which script execution)** with BDD script. 
+   
+   > Offcourse this will support/evaluate dynamic variables and value needs in IDAITHALAM 
+
+      Example:
+   
+         1. startDate=TEXT(TODAY(),"yyyy-mm-dd")  #today date  - String type
+         
+         2. expiryDate=SUBSTITUTE(TEXT(NOW()+365, "yyyy-mm-dd HH:\mm:ss"), " ", "T") #future date with yyyy-mm-ddTHH:\mm:ss format
+         
+         3. success=c~LEN("[firstname]")=3  # will verify if the firstname only 3 character then will succeed
+         
+         4. fail=c~LEN("[firstname]")=3  # will verify if the firstname only 3 character then will fail
+         
+         5. length=i~LEN("[firstname]")  # will create Interger variable with value
+         
+         6. isMatch=b~LEN("[firstname]")=3  # will create boolean variable with value
+         
+         7. lenghtInDecimals=d~LEN("[firstname]")=3  # will create decimal variable with value
+
     
  - **Security:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_8.xlsx)
  
