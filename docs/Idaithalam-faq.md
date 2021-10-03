@@ -37,6 +37,8 @@
     - Each sheet in the excel creates a separate Gherkin feature(Feature file).
 
     - Each Excel sheet transformed as **Virtualan Collection**(JSON Array) before it generated as Gherkin Feature. and Each JSON Object referred to as row in the excel which is Gherkin Scenario.
+    
+    ![](_images/idaithalam/Demo-work-flow.png ':size=65%')
 
     - Execute VIRTUALAN COLLECTION During test case execution via CI/CD pipeline.
         - Example: Accept quote User case 1: [Sheet: 1] 
