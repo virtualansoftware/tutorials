@@ -34,11 +34,11 @@ Virtualan Software is a Product development company that helps to solve customer
         - Virtualize the service in your contract (partially or entirely)
 - [Idaithalam - Lowcode automation](https://github.com/virtualansoftware/idaithalam)
     - In Idaithalam, Idai means "Interface" and Thalam means "Platform".
-    - Low code Test automation framework using cucumber and supports Behavior Driven Development (BDD). Can build test cases using Excel and Postman collection. It allows to build and test api workflow in minutes.
+    - Low code Test automation framework using cucumber and supports Behavior Driven Development (BDD). Can build test cases using Excel and Virtualan collection. It allows to build and test api workflow in minutes.
 - [Cucumblan](https://github.com/virtualansoftware/cucumblan)
     - Cucumblan is a test automation framework that supports Behavior Driven Development (BDD), allowing users to create feature using predefined step definition with low code. I t works based on the Gherkin Domain Specific Language (DSL). This simple but powerful api framework while keeping it comprehensible to even non-technical(product owner, business analyst and domain experts) users.
 - [Idaithalam-server](https://github.com/virtualansoftware/idaithalam-server)
-    - Idaiserver is a reference implementation of Idaithalam.It implements the API services to execute contract tests based on Postman collections.
+    - Idaiserver is a reference implementation of Idaithalam.It implements the API services to execute contract tests based on Excel.
         Idaiserver provides APIs for 
         - uploading a new contract
         - run the test

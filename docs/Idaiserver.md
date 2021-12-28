@@ -78,18 +78,18 @@ Idaiserver consists of two main parts:
 3. You will get a Gherkin feature file with all scenarios, steps and testdata for your API.
 
 ## What it does
-Idaiserver executes REST API contract tests based on a Postman collection.
+Idaiserver executes REST API contract tests based on a Virtualan Collection/Postman collection.
 
-You upload the Postman collection with APIs and their testdata (the contract).
+You upload the Virtualan Collection/Postman collection with APIs and their testdata (the contract).
 You define the URL which shall be tested (the API implementation). 
 You will get a full Cucumber test report along with a Gherkin feature file of that test execution.
 
 ### Contract test
-That Postman collection is essential and basis for the entire test.
+That Virtualan Collection/Postman collection is essential and basis for the entire test.
 It is your definition of the API contract. 
-If you have an OAS3 specification, it is recommended to import that into Postman and
+If you have an OAS3 specification, it is recommended to import that into Virtualan Collection/Postman and
 use that collection for the test.
-Idaithalam will execute API requests as defined in the Postman collection.
+Idaithalam will execute API requests as defined in the Virtualan Collection/Postman collection.
 You define the server url against which the test will be executed.
 
 ### Collection example data
@@ -104,12 +104,12 @@ It will be automatically created for the tests, and can be updated or downloaded
 
 ## Idaithalam
 Idaithalam is a library that can be used for REST API contract testing.
-It will use Postman collections as basis for the contract.
+It will use Virtualan Collection/Postman collections as basis for the contract.
 And will generate Cucumber reports and a Gherkin feature file from that test.
 
 ## Idaiserver
 Idaiserver is a reference implementation of Idaithalam.
-It implements the API services to execute contract tests based on Postman collections
+It implements the API services to execute contract tests based on Virtualan Collection/Postman collections
 Idaiserver provides APIs for 
 - uploading a new contract
 - run the test
@@ -121,12 +121,12 @@ Idaiserver provides APIs for
 - get a test summary.
 
 ## Quick demo sample
-User the file ./samples/idaithalan.postman_collection.json as a sample collection.
+User the file ./samples/idaithalan.Virtualan Collection/Postman_collection.json as a sample collection.
 You can contract test it agains https://live.virtualandemo.com.
-To do that, start Postman. Import src/main/resources/idaithalamserver.yaml as a Postman collection.
-Select the API /test POST (Create and run the test with the uploaded Postman collection.).
+To do that, start Virtualan Collection/Postman. Import src/main/resources/idaithalamserver.yaml as a Virtualan Collection/Postman collection.
+Select the API /test POST (Create and run the test with the uploaded Virtualan Collection/Postman collection.).
 Go to body of that request. 
-Change "filestream" to "file". In Value choose the file ./samples/idaithalan.postman_collection.json.
+Change "filestream" to "file". In Value choose the file ./samples/idaithalan.Virtualan Collection/Postman_collection.json.
 Choose value "https://live.virtualandemo.com" for "serverurl".
 Parameter "execute" shall be true. 
 Parameter skipResponseValidation shall be false.
@@ -135,23 +135,23 @@ You will get a test summary with links to a Cucumber report, a Gherkin feature f
 file (cucumblan.properties) and the link to the test summary itself.
 
 ## Usage steps
- - Create a Postman collection (e.g. import from OAS3 file).
+ - Create a Virtualan Collection/Postman collection (e.g. import from OAS3 file).
  - Define your tests in the collection.
- - Export Postman collection.
+ - Export Virtualan Collection/Postman collection.
  - Define parameter for /test POST.
  - Create your test with /test POST.
  - Check the test results.
 
-### 1. Create Postman collection
-Base of the contract test is your Postman collection.
-It is recommended to import an OAS3 file into Postman.
+### 1. Create Virtualan Collection/Postman collection
+Base of the contract test is your Virtualan Collection/Postman collection.
+It is recommended to import an OAS3 file into Virtualan Collection/Postman.
 That will ensure that the collection is exactly the contract you defined.
 You can of course use also an existing or manually generated collection.
 
 ### 2. Define your tests in the collection
 Simply execute the requests from your collection against a mockup server 
 of your API or whatever you like.
-That executions in Postman will define your test data.
+That executions in Virtualan Collection/Postman will define your test data.
 You can e.g. generate a mockup server with an OAS3 code generator.
 Define parameter values which you want to execute later in the test.
 
@@ -159,7 +159,7 @@ Store the responses as example data.
 The saved responses can be used to validate the data.
 The validation of the response data can be skipped in the test if not wanted.
 
-### 3. Export Postman collection.
+### 3. Export Virtualan Collection/Postman collection.
 After the request and response data are stored in the collection, export the 
 collection for the upload to the Idaiserver.
 
@@ -167,12 +167,12 @@ collection for the upload to the Idaiserver.
 The API /test is the main endpoint of the Idaiserver.
 It will create your first test, and immediately executes it if you want.
 You can define these parameters in the POST request body as form-data:
-- filestream: the Postman collection of your API with defined test data from step 2. Mandatory.
+- filestream: the Virtualan Collection/Postman collection of your API with defined test data from step 2. Mandatory.
 - serverurl: The API url to be tested, like e.g. http://localhost:8080. Mandatory.
 - execute: You can immediately exeucte the test. Default is true. Optional.
 - skipResponseValidation: You can skip the validation of the test response data. Default is false. Optional.
-- datatype: Value is "POSTMAN". Datatype defines the format of the contract. 
-    Currently it is only "POSTMAN". Later further formats will follow (like Excel). Optional.
+- datatype: Value is "Virtualan Collection/Postman". Datatype defines the format of the contract. 
+    Currently it is only "Virtualan Collection/Postman". Later further formats will follow (like Excel). Optional.
 
 ### 5. - Create your test with /test POST
 Now calling the /test POST method will create your test configuration.
@@ -213,7 +213,7 @@ Here the APIs provided by Idaiserver.
 ## Technology stack
 * [Idaithalam] - Contract test for REST API.
 * [Java Spring Boot] - The server.
-* [Postman collections] - The API contract.
+* [Virtualan Collection/Postman collections] - The API contract.
 * [OAS3] - API first with Openapi generator and Maven plugin (openapi-generator.tech/).
 * [Docker] - for the containerization
 * [Kubernetes] - for running
