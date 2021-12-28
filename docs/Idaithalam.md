@@ -166,23 +166,14 @@ Create following yml file under resources with rest-get.yml
     
 
 
-
-## Used for API testing.
-* Most of the common use case, You can execute as Regression test suite for the test case executed manually via POSTMAN.
-* Run the testcase via POSTMAN and store the response as Example with response data in the POSTMAN for all the test cases that you had executed. 
-* Export all the API request and Response as POSTMAN collection.
-* POSTMAN Collection can be passed as Input as Idaithalam.
+## Used for API testing/Db Validation and Kafka message validation.
+* Most of the common use case, You can execute as Regression test suite for the test case executed manually.
 * Idaithalam can be integrated along Continuous Integration and Continuous Delivery(CI/CD) with Pipeline.
-* Idaithalam take the POSTMAN Collection as Input and Covert as Cucumber Feature file. 
+* Idaithalam take the Excel as Input and Covert as Cucumber Feature file. 
 * Cucumblan-API another product will execute the feature file and Produce the Cucumber Report with BDD style.
-
-## Used for Contract testing.
-* Support for Contract testing. 
-
-## Used for Production Checkout.
+* Used for Agile sprint-end Regression testing.
+* Used for Contract testing.
 * Utilized to run against selected use case that needs to validated against Production Checkout(Validation during the production release).   
 
-## Used for Agile sprint-end Regression testing.
-* During the sprint, You can run all the test cases Manually and then save the response via POSTMAN. Using Idaithalam, Export the POSTMAN Collection and Pass Collection to Idaithalam and will execute and produce the Excellent cucumber HTML Report with all the charts.
 
 ----
