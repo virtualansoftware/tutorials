@@ -9,14 +9,6 @@ Can create Excel with all the required Field to execute the API test workflow.
 
 
 
-## Create the Excel in the following format
-
-|TestCaseName|TestCaseNameDesc|URL|ContentType|RequestFile|RequestHeaders|ResponseFile|ResponseProcessingType|Action|ExcludeFields|StatusCode|
-| -----------|:--------------:|-----:| -----:| -----:| -----:| -----:| -----:| -----:| -----:| -----:|
-|PetGet|get API testing|https://live.virtualandemo.com/api/pets/findByTags?tags=grey|application/json|||get_response.json||GET||200|
-|PetPost|pet post api test|http://live.virtualandemo.com/api/pets|application/xml|input.xml||output.xml|VirtualanStdType=EDI-271|POST|Date|200|
-
-![](_images/idaithalam/Sample-XL.png ':size=100%')
 
 
 ## What it does

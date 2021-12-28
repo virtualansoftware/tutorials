@@ -58,6 +58,5 @@ Virtualan Software is a Product development company that helps to solve customer
 - [OpenAPI Service Virtualization](https://github.com/virtualansoftware/service-virtualization-openapi)
 - [AsyncAPI Service Virtualization](https://github.com/virtualansoftware/AsyncAPI-Virtualization) 
 - [Microservices-lowcode-testautomation Project](https://github.com/virtualansoftware/microservices-lowcode-testautomation) 
-- [POSTMAN Collection Project](https://github.com/virtualansoftware/idaithalam-postman-collection-lowcode-automation) 
 
 ----

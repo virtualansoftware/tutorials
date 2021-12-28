@@ -18,7 +18,6 @@ MAPson library represents JSON as MAP with key as Json-Path. MAPson provides opt
   
 ```json 
  {
-  {
     "id": "0001",
     "type": "donut",
     "name": "Cake",
