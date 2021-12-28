@@ -99,9 +99,11 @@ Download Example Project Explained: [REST GET API](https://github.com/virtualans
 
 3. Create API Executor Plan:
 Create following yml file under resources with rest-get.yml
->  In the Resource column, which contains "ep". It represents the service Endpoint in the yml file where service executed.
->  Json test scripts and Feature file created in the "outputDir" directory that is "target/rest-get"
->  After execution, cucumber report created in the "outputJsonDir" directory that is "target/idaithalam"
+> In the Resource column, which contains "ep". It represents the service Endpoint in the yml file where service executed.
+  
+> Json test scripts and Feature file created in the "outputDir" directory that is "target/rest-get"
+
+> After execution, cucumber report created in the "outputJsonDir" directory that is "target/idaithalam"
 
   ```yml
   parallelExecution: 1
