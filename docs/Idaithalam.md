@@ -99,24 +99,24 @@ Download Example Project Explained: [REST GET API](https://github.com/virtualans
 
 3. Create API Executor Plan:
 Create following yml file under resources with rest-get.yml
-> In the Resource column, which contains "ep". It represents the service Endpoint in the yml file where service executed.
-  
-> Json test scripts and Feature file created in the "outputDir" directory that is "target/rest-get"
+  > In the Resource column, which contains "ep". It represents the service Endpoint in the yml file where service executed.
+    
+  > Json test scripts and Feature file created in the "outputDir" directory that is "target/rest-get"
 
-> After execution, cucumber report created in the "outputJsonDir" directory that is "target/idaithalam"
+  > After execution, cucumber report created in the "outputJsonDir" directory that is "target/idaithalam"
 
-  ```yml
-  parallelExecution: 1
-  timeout:  1 
-  apiExecutor:
-    - reportTitle: "REST GET Example"
-      env: test
-      outputDir: target/rest-get
-      inputExcel: rest/rest-get.xlsx
-      outputJsonDir: target/idaithalam
-      cucumblanProperties:
-        service.api.ep: https://live.virtualandemo.com/api
-  ```
+    ```yml
+    parallelExecution: 1
+    timeout:  1 
+    apiExecutor:
+      - reportTitle: "REST GET Example"
+        env: test
+        outputDir: target/rest-get
+        inputExcel: rest/rest-get.xlsx
+        outputJsonDir: target/idaithalam
+        cucumblanProperties:
+          service.api.ep: https://live.virtualandemo.com/api
+    ```
 
 4. Create RestTestPlanExecutor to run the test:
 
