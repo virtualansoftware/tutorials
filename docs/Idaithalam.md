@@ -166,14 +166,14 @@ Create following yml file under resources with rest-get.yml
     
 
 
-## Used for API testing/Db Validation and Kafka message validation.
-* Most of the common use case, You can execute as Regression test suite for the test case executed manually.
-* Idaithalam can be integrated along Continuous Integration and Continuous Delivery(CI/CD) with Pipeline.
-* Idaithalam take the Excel as Input and Covert as Cucumber Feature file. 
-* Cucumblan-API another product will execute the feature file and Produce the Cucumber Report with BDD style.
-* Used for Agile sprint-end Regression testing.
-* Used for Contract testing.
-* Utilized to run against selected use case that needs to validated against Production Checkout(Validation during the production release).   
-
+## Used for API testing, DB Testing and Kafka message Testing.
+- Achieve true CI/CD/CT integration and in-sprint API automation​
+- Bring down the API testing time from days to minutes​
+- Ability to run API tests in multiple environment parallel​y
+- Eliminate coding requirement for API testing​
+- Quick testing before moving to production & post-production checkout​
+- Minimal maintenance and troubleshooting efforts
+- Significant time saving on learning curve for new team members (learn framework, understand existing scripts, write new scripts) ​
+- Team members without any technical background can also execute the API test through Automation.
 
 ----
