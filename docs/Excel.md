@@ -1,10 +1,10 @@
 # Excel as TestPlan Executor 
 
-Can create Excel with all the required Field to execute the API test workflow. 
+Can create Excel with all the required fields to execute the API test workflow. 
 
 ## What you will get 
 1. Excel utilized to feed data to scriptless automation Framework. 
-2. Excel spreadsheet used as Run Manager for API Tetsting.
+2. Excel spreadsheet used as Run Manager for API Testing.
 3. **Electronic Data Interchange (EDI)** is the electronic interchange of business information using a standardized format support added available with Low code implementation.
 
 
@@ -12,16 +12,16 @@ Can create Excel with all the required Field to execute the API test workflow.
 
 
 ## What it does
-Idaithalam read the excel and generate the Virtualan Collection and would be coverted into a Gherkin language(*Feature* file) and then run the feature file and will Produce cucumber based HTML report for the executed testcases. It allow to define Each API flow as separate Sheet in Excel. You can define Multiple sheet and it also allows to executed selected testcases.
+Idaithalam reads the excel and generates the Virtualan Collection and would be converted into a Gherkin language(*Feature* file) and then run the feature file and will Produce cucumber based HTML report for the executed test cases. It allows defining Each API flow as a separate Sheet in Excel. You can define Multiple sheets and it also allows you to executed selected test cases.
 
 ## API Configuration
  - **TestCaseName:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_01.xlsx)
  
-    Unique indentifier for the testcase. Name the testcase such a way it can be distinguished. 
+    Unique identifier for the test case. Name the test case such a way it can be distinguished. 
  
  - **Type:**  [Example download](file:///D:/Elan/virtualan-software-ws/idaithalam/apr-27/idaithalam/samples/idaithalam-db-kafka-apitesting/src/test/resources/virtualan_collection_kafka_db_testcase_0.xlsx)
  
-    For API testing would be called as "REST".
+    API testing would be called as "REST".
  
 - **Resource:**  [Example download](file:///D:/Elan/virtualan-software-ws/idaithalam/apr-27/idaithalam/samples/idaithalam-db-kafka-apitesting/src/test/resources/virtualan_collection_kafka_db_testcase_0.xlsx)
  
@@ -49,7 +49,7 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
  
  - **TestCaseNameDesc:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_01.xlsx)
  
-    Add description about the test case. Not a big summary. 4 word description would be suffice. 
+    Add description about the test case. Not a big summary. a 4 word description would suffice. 
  
  - **URL:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_01.xlsx)
  
@@ -65,24 +65,24 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
  
  - **StatusCode:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_01.xlsx)
  
-    What would be expected HTTP status Code to be valdiated.
+    What would be expected of the HTTP status Code to be validated.
  
  - **FormParams:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_6.xlsx)
  
-    Used for form based API request and also Multipart support.
+    Used for form based API requests and also Multipart support.
 
  - **RequestContent:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_02.xlsx)
    > Takes precedence
 
-    Actual request can be included in this column.
+    Actual requests can be included in this column.
  
  - **RequestFile:**   [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_01.xlsx)
  
-    Request file that required for the given request. 
+    Request file that is required for the given request. 
  
  - **RequestHeaders:**
  
-    Header should be included in the request.
+    Headers should be included in the request.
  
  - **CookieVariables:**
  
@@ -113,23 +113,23 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
 
  - **ResponseFile:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_0.xlsx)
  
-    Actual response valdiated agaist the expected response.
+    Actual response validated against the expected response.
  
  - **ResponseProcessingType:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_2.xlsx)
  
-    The process to redefine the unstandard responses as JSON and compared with Actula response. Little coding needed for unstandard response. Like EDI response. EDI is not a standard reponse but can be compared like JSON to valdiate the data with Actual response. Example value: VirtualanStdType=EDI-271  [EDI270And271Parser](https://raw.githubusercontent.com/virtualansoftware/idaithalam/master/samples/idaithalam-excel-apitesting/src/test/java/io/virtualan/cucumblan/standard/EDI270And271Parser.java)   
+    The process to redefine the unstandard responses as JSON and compared with Actual response. Little coding needed for non standard response. Like EDI response. EDI is not a standard response but can be compared like JSON to validate the data with Actual response. Example value: VirtualanStdType=EDI-271  [EDI270And271Parser](https://raw.githubusercontent.com/virtualansoftware/idaithalam/master/samples/idaithalam-excel-apitesting/src/test/java/io/virtualan/cucumblan/standard/EDI270And271Parser.java)   
  
  - **ResponseByFields:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_01.xlsx)
  
-    Validate specific fields in the repsonse using key value pairs. Key is your JsonPath and values is Expected value.
+    Validate specific fields in the response using key value pairs. Key is your JsonPath and values is Expected value.
     > id=[petId];name=[petName]; \<json-path>=\<value>
 
    > Find JSON Array handling in response by field validation.  
          1. Read Customer infos - Find last element
             customers[-1].customerId=[customerId]  #parametirzed way of validating the dynamic customerId
          2. customers.find { it.firstname == 'Ado' }.postalCode=6500 # Search element by Name "Ado" in the JSON Array and validate the Postal Code
-            customers.find { it.customerId == 'bunlo9vk5f' }.firstname=Ado  # Search element by Name "bunlo9vk5f" in the JSON Array and validate the firstname
-            customers.find { it.customerId == 'f2m0v9b73c' }.email=blangman14@example.com # Search element by Name "f2m0v9b73c" in the JSON Array and validate the firstname   
+            customers.find { it.customerId == 'bunlo9vk5f' }.firstname=Ado  # Search element by Name "bunlo9vk5f" in the JSON Array and validate the first name
+            customers.find { it.customerId == 'f2m0v9b73c' }.email=blangman14@example.com # Search element by Name "f2m0v9b73c" in the JSON Array and validate the first name   
 
    ```gerhkin
        Scenario: Read petId and Not Found - GET api call
@@ -172,7 +172,7 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
    ```
   - **Csvson:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_01.xlsx)
   
-    Compare the API response with given CSV. CSV would be converted as JSON and compared with the Actula Response.  
+    Compare the API response with given CSV. CSV would be converted as JSON and compared with the Actual Response.  
   
    Example:
          |ppu,name,toppings,id,type | 
@@ -194,11 +194,11 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
   
   - **ExcludeFields:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_2.xlsx)
     
-    If complete "ResponseFile" response to be validated and would like to skip any elements in the API Response without comparing then add that element and would take care skipping the elements without comparing the values. 
+    If a complete "ResponseFile" response is to be validated and would like to skip any elements in the API Response without comparing then add that element and would take care skipping the elements without comparing the values. 
  
  - **StoreResponseVariables:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_2.xlsx)
  
-    Can create variable with values from the response using JsonPath, Http request header or Cookie in the request and The stored variable and the value utlized for further api execution steps. 
+    Can create variables with values from the response using JsonPath, Http request header or Cookie in the request and The stored variable and the value utilized for further api execution steps. 
    > And Store the **category.name** value of the key as **category_name**
 
    > Find JSON Array handling in response by field validation.  
@@ -233,16 +233,16 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
 
  - **AddifyVariables:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_01.xlsx)
  
-    Can create new variables with values for and store the value utlized for further api execution steps. 
+    Can create new variables with values for and store the value utilized for further api execution steps. 
  
     >  And Add the [petId] value of the key as Id # variable based  \
     > And Add the doggie value of the key as petName # direct value
 
  - **EvaluateFunctionVariables:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_bdd_testcase_run_manager.xlsx)
  
-   Evaluate the variable created during workflow execution. This will help generate the dynamic variable and values. This execute command using pure EXCEL functions. I have added couple of Date funcationality to define values dynamically. This will create variables with evaluated funcation. Any excel funcations can be evaluated **during runtime(which script execution)** with BDD script. 
+   Evaluate the variable created during workflow execution. This will help generate the dynamic variable and values. This executes the command using pure EXCEL functions. I have added a couple of Date functionality to define values dynamically. This will create variables with evaluated function. Any excel functions can be evaluated **during runtime(which script execution)** with BDD script. 
    
-   > Offcourse this will support/evaluate dynamic variables and value needs in IDAITHALAM 
+   > Of Course this will support/evaluate dynamic variables and value needs in IDAITHALAM 
 
       Example:
    
@@ -250,15 +250,15 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
          
          2. expiryDate=SUBSTITUTE(TEXT(NOW()+365, "yyyy-mm-dd HH:\mm:ss"), " ", "T") #future date with yyyy-mm-ddTHH:\mm:ss format
          
-         3. success=c~LEN("[firstname]")=3  # will verify if the firstname only 3 character then will succeed
+         3. success=c~LEN("[firstname]")=3  # will verify if the first name only 3 character then will succeed
          
-         4. fail=c~LEN("[firstname]")=3  # will verify if the firstname only 3 character then will fail
+         4. fail=c~LEN("[firstname]")=3  # will verify if the first name only 3 character then will fail
          
-         5. length=i~LEN("[firstname]")  # will create Interger variable with value
+         5. length=i~LEN("[firstname]")  # will create Integer variable with value
          
          6. isMatch=b~LEN("[firstname]")=3  # will create boolean variable with value
          
-         7. lenghtInDecimals=d~LEN("[lenght]")=3  # will create decimal variable with value
+         7. lenghtInDecimals=d~LEN("[length]")=3  # will create decimal variable with value
 
     
  - **Security:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_8.xlsx)
@@ -281,7 +281,7 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
     > B.  OKTA has the API Interface
         
       1) Access the OKAT API using the API Way and use "basicAuth" to login to the api. 
-      2) Store the access token with JSON path using "StoreResponseVariables" 
+      2) Store the access token with a JSON path using "StoreResponseVariables" 
          a. add it in the spreadsheet column "pet_accessToken=access_token".
          b. And Store the **access_token** value of the key as **pet_accessToken**   
       3) Build the Header using  in RequestHeaders 
@@ -308,3 +308,4 @@ Idaithalam read the excel and generate the Virtualan Collection and would be cov
    3. [cucumblan.properties](/api/cucumblan.properties)
 
 ----
+

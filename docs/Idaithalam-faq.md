@@ -17,12 +17,12 @@
        - Test engineers    
     b. Excel can be used only for creating test scripts during test script development.     
     
-    c. As we dont have UI, So we are providing users to use Excel to create **Virtualan Collection**( a.k.a. Test Scripts).
+    c. Use Excel to create **Virtualan Collection**( a.k.a. Test Scripts).
     
     d. You can execute **Virtualan Collection** directly in CI/CD PIPELINE in the PROD mode.
     </span>
 
-3. **<span style="color:#800040">Feature file utilization – Is the feature file will be created every time with each execution? </span>**
+3. **<span style="color:#800040">Feature file utilization – Is the feature file created every time with each execution? </span>**
 
     <span style="color:#004080 ">
         Yes. Feature file created every time before each execution.
@@ -36,7 +36,7 @@
 
     - Each sheet in the excel creates a separate Gherkin feature(Feature file).
 
-    - Each Excel sheet transformed as **Virtualan Collection**(JSON Array) before it generated as Gherkin Feature. and Each JSON Object referred to as row in the excel which is Gherkin Scenario.
+    - Each Excel sheet transformed as **Virtualan Collection**(JSON Array) before it generated as Gherkin a Feature. and Each JSON Object referred to as row in the excel which is Gherkin Scenario.
     
     ![](_images/idaithalam/Demo-work-flow.png ':size=65%')
 
