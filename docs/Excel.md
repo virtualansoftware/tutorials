@@ -299,8 +299,19 @@ Idaithalam reads the excel and generates the Virtualan Collection and would be c
 [Example Excel attached](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_0.xlsx)
 
 
-## Example Project.
-   [idaithalam-excel-apitesting](https://github.com/virtualansoftware/idaithalam/tree/master/samples/idaithalam-excel-apitesting)
+## Simplified Demo Projects 
+  -  [Rest-Get](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/rest-get)
+  -  [Rest-Post](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/rest-post)
+  -  [Rest-with-DB](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/rest-with-db)
+  -  [Workflow-Rest](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/workflow-rest)
+  -  [DB](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/db)
+  -  [Examples](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/examples)
+  -  [Generate-Feature-File](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/generate-feature-file)
+  -  [Execute-Feature-File](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/execute-feature-file)
+  -  [Workflow-virtualan-collection-Rest](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/workflow-virtualan-collection-rest)
+  -  [Graphql](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/graphql)
+  -  [Microservices-lowcode-testautomation Projects](https://github.com/virtualansoftware/microservices-lowcode-testautomation) 
+
 
 ## Example Generated file and reports:
    1. [cucumber-html-reports](/api/cucumber-html-reports/overview-features.html)
