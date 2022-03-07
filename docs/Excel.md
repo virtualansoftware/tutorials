@@ -281,6 +281,14 @@ Idaithalam reads the excel and generates the Virtualan Collection and would be c
     > B.  OKTA has the API Interface
         
       1) Access the OKAT API using the API Way and use "basicAuth" to login to the api. 
+
+         Create excel with given format to get OKTA access token 
+         
+|TestCaseName|Type| Resource|TestCaseNameDesc|URL|ContentType|Action|StatusCode|RequestHeaders|FormParams|StoreResponseVariables|Security|
+| -----------|:--------------:|:--------------:|:--------------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-------:|:------:|
+| OKAT_TOKEN_ACCESS | REST | oktaapi | Get OKTA Token |https://localhost/oauth2/default/v1/token|application/x-www-form-urlencoded|POST|200|Accept=application/json|grant_type=client_credentials;scope=Virtualan|pet_accessToken=access_token| basicAuth |
+ | PetGet | REST | ep | get API testing|https://localhost/pets/findByTags?tags=red|application/json|GET|200| Authorization=Bearer [pet_accessToken]|| ||
+
       2) Store the access token with a JSON path using "StoreResponseVariables" 
          a. add it in the spreadsheet column "pet_accessToken=access_token".
          b. And Store the **access_token** value of the key as **pet_accessToken**   
