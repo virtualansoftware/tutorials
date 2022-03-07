@@ -1,0 +1,3470 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 676b8b35-c7c3-4fad-8760-e153edbc1169) - Feature: CSS-Reject-DB - Workflow</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Lakeside Mutual - Customer Self-Service - API and Database(test)</td>
+        <td>676b8b35-c7c3-4fad-8760-e153edbc1169</td>
+      <td>06 Mar 2022, 20:40</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">CSS-Reject-DB - Workflow</td>
+          <td      class="passed"    >49</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">49</td>
+
+          <td  class="passed"    >8</td>
+          <td >0</td>
+          <td class="total">8</td>
+
+          <td class="duration" data-value="1088462800">1.088</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">CSS-Reject-DB - Workflow</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Load initial set of data</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">provided all the feature level parameters from file</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-4" class="collapsable-control">
+      <a>ContextId:18</a>
+      <a href="embeddings/embedding_-1499597862.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-4" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;firstname&quot;: &quot;Max&quot;,
+    &quot;city&quot;: &quot;Rapperswil&quot;,
+    &quot;postalCode&quot;: &quot;8640&quot;,
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;quoteId&quot;: &quot;466&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MjEwMjAsImV4cCI6MTY0NzIyNTYyMX0.20mHq_jgaV9r2BXmHzPzwHmfmabpmi-4XC0-rKowG2EThYWOTA9fwWA_ZUwVucaTDO-j8V9mrL93krNxN3tioA&quot;,
+    &quot;lastname&quot;: &quot;Mustermann&quot;,
+    &quot;expiryDate&quot;: &quot;2023-03-06T20:40:22&quot;,
+    &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+    &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+    &quot;policy_limit_amount&quot;: &quot;50000.00&quot;,
+    &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+    &quot;email&quot;: &quot;admin@example.com&quot;,
+    &quot;startDate&quot;: &quot;2022-03-06&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4090290616.html">@token</a>
+       <a href="report-tag_2210002312.html">@okta</a>
+       <a href="report-tag_2171706348.html">@store-response</a>
+       <a href="report-tag_1184928443.html">@variable</a>
+       <a href="report-tag_3651500762.html">@password</a>
+       <a href="report-tag_2205079723.html">@sceret</a>
+       <a href="report-tag_2469894142.html">@workflow</a>
+       <a href="report-tag_1762190710.html">@cssapi</a>
+</div>
+
+
+  <span class="lead-duration duration">0.261</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Customer Self-Service Auth - api call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-6" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">as a insurance user</span> perform <span class="argument">login</span> api action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">content type</span> with given header params</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>contentType</td>
+                  <td>application/json</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">create <span class="argument">login information</span> with given input</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>password</td>
+                  <td>[password]</td>
+              </tr>
+              <tr>
+                  <td>email</td>
+                  <td>[email]</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-8" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_-1656189931.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-8" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;password&quot;: &quot;1password&quot;,
+    &quot;email&quot;: &quot;admin@example.com&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name"><span class="argument">logging in using</span> post <span class="argument">application/json</span> in <span class="argument">/auth</span> resource on <span class="argument">cssapi</span></span>
+
+  <span class="lead-duration duration">0.231</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-9" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_1331465637.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-9" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;AcceptContentType&quot;: &quot;application/json&quot;,
+    &quot;resource&quot;: &quot;http://microservices.virtualandemo.com:8080/auth&quot;,
+    &quot;context&quot;: {
+        &quot;firstname&quot;: &quot;Max&quot;,
+        &quot;city&quot;: &quot;Rapperswil&quot;,
+        &quot;postalCode&quot;: &quot;8640&quot;,
+        &quot;STATUS_CODE&quot;: &quot;200&quot;,
+        &quot;quoteId&quot;: &quot;466&quot;,
+        &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MjEwMjAsImV4cCI6MTY0NzIyNTYyMX0.20mHq_jgaV9r2BXmHzPzwHmfmabpmi-4XC0-rKowG2EThYWOTA9fwWA_ZUwVucaTDO-j8V9mrL93krNxN3tioA&quot;,
+        &quot;lastname&quot;: &quot;Mustermann&quot;,
+        &quot;expiryDate&quot;: &quot;2023-03-06T20:40:22&quot;,
+        &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+        &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+        &quot;policy_limit_amount&quot;: &quot;50000.00&quot;,
+        &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+        &quot;email&quot;: &quot;admin@example.com&quot;,
+        &quot;startDate&quot;: &quot;2022-03-06&quot;
+    },
+    &quot;url&quot;: &quot;http://microservices.virtualandemo.com:8080&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-10" class="collapsable-control">
+      <a>Contextual-Dataset:</a>
+      <a href="embeddings/embedding_-1499597862.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-10" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;firstname&quot;: &quot;Max&quot;,
+    &quot;city&quot;: &quot;Rapperswil&quot;,
+    &quot;postalCode&quot;: &quot;8640&quot;,
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;quoteId&quot;: &quot;466&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MjEwMjAsImV4cCI6MTY0NzIyNTYyMX0.20mHq_jgaV9r2BXmHzPzwHmfmabpmi-4XC0-rKowG2EThYWOTA9fwWA_ZUwVucaTDO-j8V9mrL93krNxN3tioA&quot;,
+    &quot;lastname&quot;: &quot;Mustermann&quot;,
+    &quot;expiryDate&quot;: &quot;2023-03-06T20:40:22&quot;,
+    &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+    &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+    &quot;policy_limit_amount&quot;: &quot;50000.00&quot;,
+    &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+    &quot;email&quot;: &quot;admin@example.com&quot;,
+    &quot;startDate&quot;: &quot;2022-03-06&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify <span class="argument">user email information</span> includes following in the response</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>email</td>
+                  <td>[email]</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-11" class="collapsable-control">
+      <a>Actual-Response</a>
+      <a href="embeddings/embedding_583142513.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-11" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+  &quot;email&quot; : &quot;admin@example.com&quot;,
+  &quot;token&quot; : &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MjQxNjIsImV4cCI6MTY0NzIyNTYyNH0.Z-_c7spJ7roXf_YA46KPnnTZZELicU58uFJHgj7IadWZT-xWRle0S5nHvRfDZahxOvWxgqPJwypOwP6_1quNJA&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">store <span class="argument">token</span> as key and api's <span class="argument">token</span> as value</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1084399803.html">@dynamic-date</a>
+       <a href="report-tag_3568239138.html">@dynamic-value</a>
+       <a href="report-tag_1762190710.html">@cssapi</a>
+</div>
+
+
+  <span class="lead-duration duration">0.120</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">GetCustomerByLogin - api call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-12" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-13" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">a user</span> perform <span class="argument">a</span> api action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">request</span> with given header params</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>contentType</td>
+                  <td>application/json</td>
+              </tr>
+              <tr>
+                  <td>X-Auth-Token</td>
+                  <td>[token]</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name"><span class="argument">a user</span> get <span class="argument">application/json</span> in <span class="argument">/user</span> resource on <span class="argument">cssapi</span></span>
+
+  <span class="lead-duration duration">0.083</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-15" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_798688307.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-15" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;AcceptContentType&quot;: &quot;application/json&quot;,
+    &quot;resource&quot;: &quot;http://microservices.virtualandemo.com:8080/user&quot;,
+    &quot;context&quot;: {
+        &quot;firstname&quot;: &quot;Max&quot;,
+        &quot;city&quot;: &quot;Rapperswil&quot;,
+        &quot;postalCode&quot;: &quot;8640&quot;,
+        &quot;STATUS_CODE&quot;: &quot;200&quot;,
+        &quot;quoteId&quot;: &quot;466&quot;,
+        &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MjQxNjIsImV4cCI6MTY0NzIyNTYyNH0.Z-_c7spJ7roXf_YA46KPnnTZZELicU58uFJHgj7IadWZT-xWRle0S5nHvRfDZahxOvWxgqPJwypOwP6_1quNJA&quot;,
+        &quot;lastname&quot;: &quot;Mustermann&quot;,
+        &quot;expiryDate&quot;: &quot;2023-03-06T20:40:22&quot;,
+        &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+        &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+        &quot;policy_limit_amount&quot;: &quot;50000.00&quot;,
+        &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+        &quot;email&quot;: &quot;admin@example.com&quot;,
+        &quot;startDate&quot;: &quot;2022-03-06&quot;
+    },
+    &quot;url&quot;: &quot;http://microservices.virtualandemo.com:8080&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-16" class="collapsable-control">
+      <a>Contextual-Dataset:</a>
+      <a href="embeddings/embedding_-1074499737.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-16" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;firstname&quot;: &quot;Max&quot;,
+    &quot;city&quot;: &quot;Rapperswil&quot;,
+    &quot;postalCode&quot;: &quot;8640&quot;,
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;quoteId&quot;: &quot;466&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MjQxNjIsImV4cCI6MTY0NzIyNTYyNH0.Z-_c7spJ7roXf_YA46KPnnTZZELicU58uFJHgj7IadWZT-xWRle0S5nHvRfDZahxOvWxgqPJwypOwP6_1quNJA&quot;,
+    &quot;lastname&quot;: &quot;Mustermann&quot;,
+    &quot;expiryDate&quot;: &quot;2023-03-06T20:40:22&quot;,
+    &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+    &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+    &quot;policy_limit_amount&quot;: &quot;50000.00&quot;,
+    &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+    &quot;email&quot;: &quot;admin@example.com&quot;,
+    &quot;startDate&quot;: &quot;2022-03-06&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify <span class="argument">across response</span> includes following in the response</span>
+
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>email</td>
+                  <td>[email]</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-17" class="collapsable-control">
+      <a>Actual-Response</a>
+      <a href="embeddings/embedding_-455975001.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-17" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+  &quot;email&quot; : &quot;admin@example.com&quot;,
+  &quot;customerId&quot; : &quot;rgpp0wkpec&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">store <span class="argument">customerId</span> as key and api's <span class="argument">customerId</span> as value</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">evaluate key as <span class="argument">expiryDate</span> and <span class="argument">SUBSTITUTE(TEXT(NOW()+365, &quot;yyyy-mm-dd HH:mm:ss&quot;), &quot; &quot;, &quot;T&quot;)</span> as function value</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">evaluate key as <span class="argument">startDate</span> and <span class="argument">TEXT(TODAY(),&quot;yyyy-mm-dd&quot;)</span> as function value</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1993296414.html">@store_response</a>
+       <a href="report-tag_2469894142.html">@workflow</a>
+       <a href="report-tag_3216714870.html">@create_response_variable</a>
+       <a href="report-tag_1762190710.html">@cssapi</a>
+</div>
+
+
+  <span class="lead-duration duration">0.196</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">GetCustomerInfoByCustomerId - api call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-18" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-19" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">a user</span> perform <span class="argument">a</span> api action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">request</span> with given header params</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>contentType</td>
+                  <td>application/json</td>
+              </tr>
+              <tr>
+                  <td>X-Auth-Token</td>
+                  <td>[token]</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name"><span class="argument">a user</span> get <span class="argument">application/json</span> in <span class="argument">/customers/[customerId]</span> resource on <span class="argument">cssapi</span></span>
+
+  <span class="lead-duration duration">0.091</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-21" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_1367212117.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-21" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;AcceptContentType&quot;: &quot;application/json&quot;,
+    &quot;resource&quot;: &quot;http://microservices.virtualandemo.com:8080/customers/rgpp0wkpec&quot;,
+    &quot;context&quot;: {
+        &quot;firstname&quot;: &quot;Max&quot;,
+        &quot;city&quot;: &quot;Rapperswil&quot;,
+        &quot;postalCode&quot;: &quot;8640&quot;,
+        &quot;STATUS_CODE&quot;: &quot;200&quot;,
+        &quot;quoteId&quot;: &quot;466&quot;,
+        &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MjQxNjIsImV4cCI6MTY0NzIyNTYyNH0.Z-_c7spJ7roXf_YA46KPnnTZZELicU58uFJHgj7IadWZT-xWRle0S5nHvRfDZahxOvWxgqPJwypOwP6_1quNJA&quot;,
+        &quot;lastname&quot;: &quot;Mustermann&quot;,
+        &quot;expiryDate&quot;: &quot;2023-03-06T20:40:24&quot;,
+        &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+        &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+        &quot;policy_limit_amount&quot;: &quot;50000.00&quot;,
+        &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+        &quot;email&quot;: &quot;admin@example.com&quot;,
+        &quot;startDate&quot;: &quot;2022-03-06&quot;
+    },
+    &quot;url&quot;: &quot;http://microservices.virtualandemo.com:8080&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-22" class="collapsable-control">
+      <a>Contextual-Dataset:</a>
+      <a href="embeddings/embedding_-1681208225.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-22" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;firstname&quot;: &quot;Max&quot;,
+    &quot;city&quot;: &quot;Rapperswil&quot;,
+    &quot;postalCode&quot;: &quot;8640&quot;,
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;quoteId&quot;: &quot;466&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MjQxNjIsImV4cCI6MTY0NzIyNTYyNH0.Z-_c7spJ7roXf_YA46KPnnTZZELicU58uFJHgj7IadWZT-xWRle0S5nHvRfDZahxOvWxgqPJwypOwP6_1quNJA&quot;,
+    &quot;lastname&quot;: &quot;Mustermann&quot;,
+    &quot;expiryDate&quot;: &quot;2023-03-06T20:40:24&quot;,
+    &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+    &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+    &quot;policy_limit_amount&quot;: &quot;50000.00&quot;,
+    &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+    &quot;email&quot;: &quot;admin@example.com&quot;,
+    &quot;startDate&quot;: &quot;2022-03-06&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify <span class="argument">across response</span> includes following in the response</span>
+
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>firstname</td>
+                  <td>Max</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-23" class="collapsable-control">
+      <a>Actual-Response</a>
+      <a href="embeddings/embedding_145590508.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-23" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+  &quot;customerId&quot; : &quot;rgpp0wkpec&quot;,
+  &quot;firstname&quot; : &quot;Max&quot;,
+  &quot;lastname&quot; : &quot;Mustermann&quot;,
+  &quot;birthday&quot; : &quot;1990-01-01T00:00:00.000+00:00&quot;,
+  &quot;streetAddress&quot; : &quot;Oberseestrasse 10&quot;,
+  &quot;postalCode&quot; : &quot;8640&quot;,
+  &quot;city&quot; : &quot;Rapperswil&quot;,
+  &quot;email&quot; : &quot;admin@example.com&quot;,
+  &quot;phoneNumber&quot; : &quot;055 222 4111&quot;,
+  &quot;moveHistory&quot; : [ ],
+  &quot;_links&quot; : {
+    &quot;self&quot; : {
+      &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8080/customers/rgpp0wkpec&quot;
+    },
+    &quot;address.change&quot; : {
+      &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8080/customers/rgpp0wkpec/address&quot;
+    }
+  }
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">store <span class="argument">customerId</span> as key and api's <span class="argument">customerId</span> as value</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">store <span class="argument">firstname</span> as key and api's <span class="argument">firstname</span> as value</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">store <span class="argument">lastname</span> as key and api's <span class="argument">lastname</span> as value</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">store <span class="argument">streetAddress</span> as key and api's <span class="argument">streetAddress</span> as value</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">store <span class="argument">postalCode</span> as key and api's <span class="argument">postalCode</span> as value</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">store <span class="argument">city</span> as key and api's <span class="argument">city</span> as value</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1313403144.html">@pass_dynamic_variables</a>
+       <a href="report-tag_2469894142.html">@workflow</a>
+       <a href="report-tag_1762190710.html">@cssapi</a>
+</div>
+
+
+  <span class="lead-duration duration">0.157</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-24">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">CreateInsuranceQuoteForReject - api call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-24" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-25">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-25" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-26" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">a user</span> perform <span class="argument">a</span> api action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">request</span> with given header params</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>contentType</td>
+                  <td>application/json</td>
+              </tr>
+              <tr>
+                  <td>X-Auth-Token</td>
+                  <td>[token]</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">create <span class="argument">api</span> with given input</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>customerInfo.firstname</td>
+                  <td>[firstname]</td>
+              </tr>
+              <tr>
+                  <td>customerInfo.customerId</td>
+                  <td>[customerId]</td>
+              </tr>
+              <tr>
+                  <td>customerInfo.contactAddress.streetAddress</td>
+                  <td>[streetAddress]</td>
+              </tr>
+              <tr>
+                  <td>customerInfo.contactAddress.city</td>
+                  <td>[city]</td>
+              </tr>
+              <tr>
+                  <td>customerInfo.contactAddress.postalCode</td>
+                  <td>[postalCode]</td>
+              </tr>
+              <tr>
+                  <td>customerInfo.billingAddress.streetAddress</td>
+                  <td>[streetAddress]</td>
+              </tr>
+              <tr>
+                  <td>customerInfo.billingAddress.city</td>
+                  <td>[city]</td>
+              </tr>
+              <tr>
+                  <td>customerInfo.billingAddress.postalCode</td>
+                  <td>[postalCode]</td>
+              </tr>
+              <tr>
+                  <td>customerInfo.lastname</td>
+                  <td>[lastname]</td>
+              </tr>
+              <tr>
+                  <td>insuranceOptions.deductible.amount</td>
+                  <td>i~500</td>
+              </tr>
+              <tr>
+                  <td>insuranceOptions.deductible.currency</td>
+                  <td>CHF</td>
+              </tr>
+              <tr>
+                  <td>insuranceOptions.insuranceType</td>
+                  <td>Life Insurance</td>
+              </tr>
+              <tr>
+                  <td>insuranceOptions.startDate</td>
+                  <td>2021-09-20</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-27" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_1640842910.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-27" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;customerInfo&quot;: {
+        &quot;firstname&quot;: &quot;Max&quot;,
+        &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+        &quot;contactAddress&quot;: {
+            &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+            &quot;city&quot;: &quot;Rapperswil&quot;,
+            &quot;postalCode&quot;: &quot;8640&quot;
+        },
+        &quot;billingAddress&quot;: {
+            &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+            &quot;city&quot;: &quot;Rapperswil&quot;,
+            &quot;postalCode&quot;: &quot;8640&quot;
+        },
+        &quot;lastname&quot;: &quot;Mustermann&quot;
+    },
+    &quot;insuranceOptions&quot;: {
+        &quot;deductible&quot;: {
+            &quot;amount&quot;: 500,
+            &quot;currency&quot;: &quot;CHF&quot;
+        },
+        &quot;insuranceType&quot;: &quot;Life Insurance&quot;,
+        &quot;startDate&quot;: &quot;2021-09-20&quot;
+    }
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name"><span class="argument">a user</span> post <span class="argument">application/json</span> in <span class="argument">/insurance-quote-requests</span> resource on <span class="argument">cssapi</span></span>
+
+  <span class="lead-duration duration">0.135</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-28" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_-1018526517.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-28" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;AcceptContentType&quot;: &quot;application/json&quot;,
+    &quot;resource&quot;: &quot;http://microservices.virtualandemo.com:8080/insurance-quote-requests&quot;,
+    &quot;context&quot;: {
+        &quot;firstname&quot;: &quot;Max&quot;,
+        &quot;city&quot;: &quot;Rapperswil&quot;,
+        &quot;postalCode&quot;: &quot;8640&quot;,
+        &quot;STATUS_CODE&quot;: &quot;200&quot;,
+        &quot;quoteId&quot;: &quot;466&quot;,
+        &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MjQxNjIsImV4cCI6MTY0NzIyNTYyNH0.Z-_c7spJ7roXf_YA46KPnnTZZELicU58uFJHgj7IadWZT-xWRle0S5nHvRfDZahxOvWxgqPJwypOwP6_1quNJA&quot;,
+        &quot;lastname&quot;: &quot;Mustermann&quot;,
+        &quot;expiryDate&quot;: &quot;2023-03-06T20:40:24&quot;,
+        &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+        &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+        &quot;policy_limit_amount&quot;: &quot;50000.00&quot;,
+        &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+        &quot;email&quot;: &quot;admin@example.com&quot;,
+        &quot;startDate&quot;: &quot;2022-03-06&quot;
+    },
+    &quot;url&quot;: &quot;http://microservices.virtualandemo.com:8080&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-29" class="collapsable-control">
+      <a>Contextual-Dataset:</a>
+      <a href="embeddings/embedding_-1681208225.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-29" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;firstname&quot;: &quot;Max&quot;,
+    &quot;city&quot;: &quot;Rapperswil&quot;,
+    &quot;postalCode&quot;: &quot;8640&quot;,
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;quoteId&quot;: &quot;466&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MjQxNjIsImV4cCI6MTY0NzIyNTYyNH0.Z-_c7spJ7roXf_YA46KPnnTZZELicU58uFJHgj7IadWZT-xWRle0S5nHvRfDZahxOvWxgqPJwypOwP6_1quNJA&quot;,
+    &quot;lastname&quot;: &quot;Mustermann&quot;,
+    &quot;expiryDate&quot;: &quot;2023-03-06T20:40:24&quot;,
+    &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+    &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+    &quot;policy_limit_amount&quot;: &quot;50000.00&quot;,
+    &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+    &quot;email&quot;: &quot;admin@example.com&quot;,
+    &quot;startDate&quot;: &quot;2022-03-06&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">store <span class="argument">rejectQuoteId</span> as key and api's <span class="argument">id</span> as value</span>
+
+  <span class="lead-duration duration">0.018</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2469894142.html">@workflow</a>
+       <a href="report-tag_1130575853.html">@dynamic_date</a>
+       <a href="report-tag_1555405405.html">@quoteapi</a>
+</div>
+
+
+  <span class="lead-duration duration">0.128</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-30">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">ReceiveInsuranceQuoteToReject - api call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-30" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-31">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-31" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-32">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-32" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">a user</span> perform <span class="argument">a</span> api action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">request</span> with given header params</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>contentType</td>
+                  <td>application/json</td>
+              </tr>
+              <tr>
+                  <td>X-Auth-Token</td>
+                  <td>[token]</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">update <span class="argument">api</span> with given input</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>insurancePremium.amount</td>
+                  <td>i~500</td>
+              </tr>
+              <tr>
+                  <td>insurancePremium.currency</td>
+                  <td>CHF</td>
+              </tr>
+              <tr>
+                  <td>policyLimit.amount</td>
+                  <td>i~50000</td>
+              </tr>
+              <tr>
+                  <td>policyLimit.currency</td>
+                  <td>CHF</td>
+              </tr>
+              <tr>
+                  <td>status</td>
+                  <td>QUOTE_RECEIVED</td>
+              </tr>
+              <tr>
+                  <td>expirationDate</td>
+                  <td>[expiryDate].000Z</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-33" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_1072931470.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-33" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+  &quot;insurancePremium&quot;: {
+    &quot;amount&quot;: 500,
+    &quot;currency&quot;: &quot;CHF&quot;
+  },
+  &quot;policyLimit&quot;: {
+    &quot;amount&quot;: 50000,
+    &quot;currency&quot;: &quot;CHF&quot;
+  },
+  &quot;status&quot;: &quot;QUOTE_RECEIVED&quot;,
+  &quot;expirationDate&quot;: &quot;2023-03-06T20:40:24.000Z&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name"><span class="argument">a user</span> patch <span class="argument">application/json</span> in <span class="argument">/insurance-quote-requests/[rejectQuoteId]</span> resource on <span class="argument">quoteapi</span></span>
+
+  <span class="lead-duration duration">0.111</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-34" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_-475460756.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-34" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;AcceptContentType&quot;: &quot;application/json&quot;,
+    &quot;resource&quot;: &quot;http://microservices.virtualandemo.com:8090/insurance-quote-requests/475&quot;,
+    &quot;context&quot;: {
+        &quot;firstname&quot;: &quot;Max&quot;,
+        &quot;city&quot;: &quot;Rapperswil&quot;,
+        &quot;postalCode&quot;: &quot;8640&quot;,
+        &quot;STATUS_CODE&quot;: &quot;200&quot;,
+        &quot;quoteId&quot;: &quot;466&quot;,
+        &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MjQxNjIsImV4cCI6MTY0NzIyNTYyNH0.Z-_c7spJ7roXf_YA46KPnnTZZELicU58uFJHgj7IadWZT-xWRle0S5nHvRfDZahxOvWxgqPJwypOwP6_1quNJA&quot;,
+        &quot;lastname&quot;: &quot;Mustermann&quot;,
+        &quot;expiryDate&quot;: &quot;2023-03-06T20:40:24&quot;,
+        &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+        &quot;rejectQuoteId&quot;: &quot;475&quot;,
+        &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+        &quot;policy_limit_amount&quot;: &quot;50000.00&quot;,
+        &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+        &quot;email&quot;: &quot;admin@example.com&quot;,
+        &quot;startDate&quot;: &quot;2022-03-06&quot;
+    },
+    &quot;url&quot;: &quot;http://microservices.virtualandemo.com:8090&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-35" class="collapsable-control">
+      <a>Contextual-Dataset:</a>
+      <a href="embeddings/embedding_-436575191.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-35" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;firstname&quot;: &quot;Max&quot;,
+    &quot;city&quot;: &quot;Rapperswil&quot;,
+    &quot;postalCode&quot;: &quot;8640&quot;,
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;quoteId&quot;: &quot;466&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MjQxNjIsImV4cCI6MTY0NzIyNTYyNH0.Z-_c7spJ7roXf_YA46KPnnTZZELicU58uFJHgj7IadWZT-xWRle0S5nHvRfDZahxOvWxgqPJwypOwP6_1quNJA&quot;,
+    &quot;lastname&quot;: &quot;Mustermann&quot;,
+    &quot;expiryDate&quot;: &quot;2023-03-06T20:40:24&quot;,
+    &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+    &quot;rejectQuoteId&quot;: &quot;475&quot;,
+    &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+    &quot;policy_limit_amount&quot;: &quot;50000.00&quot;,
+    &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+    &quot;email&quot;: &quot;admin@example.com&quot;,
+    &quot;startDate&quot;: &quot;2022-03-06&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify <span class="argument">across response</span> includes following in the response</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>id</td>
+                  <td>[rejectQuoteId]</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-36" class="collapsable-control">
+      <a>Actual-Response</a>
+      <a href="embeddings/embedding_1704058102.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-36" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+  &quot;id&quot; : 475,
+  &quot;date&quot; : &quot;2022-03-07T02:40:24.606+00:00&quot;,
+  &quot;statusHistory&quot; : [ {
+    &quot;date&quot; : &quot;2022-03-07T02:40:24.606+00:00&quot;,
+    &quot;status&quot; : &quot;REQUEST_SUBMITTED&quot;
+  }, {
+    &quot;date&quot; : &quot;2022-03-07T02:40:24.767+00:00&quot;,
+    &quot;status&quot; : &quot;QUOTE_RECEIVED&quot;
+  } ],
+  &quot;customerInfo&quot; : {
+    &quot;customerId&quot; : &quot;rgpp0wkpec&quot;,
+    &quot;firstname&quot; : &quot;Max&quot;,
+    &quot;lastname&quot; : &quot;Mustermann&quot;,
+    &quot;contactAddress&quot; : {
+      &quot;streetAddress&quot; : &quot;Oberseestrasse 10&quot;,
+      &quot;postalCode&quot; : &quot;8640&quot;,
+      &quot;city&quot; : &quot;Rapperswil&quot;
+    },
+    &quot;billingAddress&quot; : {
+      &quot;streetAddress&quot; : &quot;Oberseestrasse 10&quot;,
+      &quot;postalCode&quot; : &quot;8640&quot;,
+      &quot;city&quot; : &quot;Rapperswil&quot;
+    }
+  },
+  &quot;insuranceOptions&quot; : {
+    &quot;startDate&quot; : &quot;2021-09-20T00:00:00.000+00:00&quot;,
+    &quot;insuranceType&quot; : &quot;Life Insurance&quot;,
+    &quot;deductible&quot; : {
+      &quot;amount&quot; : 500.00,
+      &quot;currency&quot; : &quot;CHF&quot;
+    }
+  },
+  &quot;insuranceQuote&quot; : {
+    &quot;expirationDate&quot; : &quot;2023-03-06T20:40:24.000+00:00&quot;,
+    &quot;insurancePremium&quot; : {
+      &quot;amount&quot; : 500,
+      &quot;currency&quot; : &quot;CHF&quot;
+    },
+    &quot;policyLimit&quot; : {
+      &quot;amount&quot; : 50000,
+      &quot;currency&quot; : &quot;CHF&quot;
+    }
+  }
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3855168609.html">@json_Array</a>
+       <a href="report-tag_1372670171.html">@json_path</a>
+       <a href="report-tag_1762190710.html">@cssapi</a>
+</div>
+
+
+  <span class="lead-duration duration">0.171</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">RejectInsuranceQuote - api call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-37" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-38">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-38" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-39">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-39" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">a user</span> perform <span class="argument">a</span> api action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">request</span> with given header params</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>contentType</td>
+                  <td>application/json</td>
+              </tr>
+              <tr>
+                  <td>X-Auth-Token</td>
+                  <td>[token]</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">update <span class="argument">api</span> with given input</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>status</td>
+                  <td>QUOTE_REJECTED</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-40" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_2063617080.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-40" class="collapse collapsable-details ">
+      <pre class="embedding-content">{&quot;status&quot;: &quot;QUOTE_REJECTED&quot;}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name"><span class="argument">a user</span> patch <span class="argument">application/json</span> in <span class="argument">/insurance-quote-requests/[rejectQuoteId]</span> resource on <span class="argument">cssapi</span></span>
+
+  <span class="lead-duration duration">0.124</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-41" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_1894427468.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-41" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;AcceptContentType&quot;: &quot;application/json&quot;,
+    &quot;resource&quot;: &quot;http://microservices.virtualandemo.com:8080/insurance-quote-requests/475&quot;,
+    &quot;context&quot;: {
+        &quot;firstname&quot;: &quot;Max&quot;,
+        &quot;city&quot;: &quot;Rapperswil&quot;,
+        &quot;postalCode&quot;: &quot;8640&quot;,
+        &quot;STATUS_CODE&quot;: &quot;200&quot;,
+        &quot;quoteId&quot;: &quot;466&quot;,
+        &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MjQxNjIsImV4cCI6MTY0NzIyNTYyNH0.Z-_c7spJ7roXf_YA46KPnnTZZELicU58uFJHgj7IadWZT-xWRle0S5nHvRfDZahxOvWxgqPJwypOwP6_1quNJA&quot;,
+        &quot;lastname&quot;: &quot;Mustermann&quot;,
+        &quot;expiryDate&quot;: &quot;2023-03-06T20:40:24&quot;,
+        &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+        &quot;rejectQuoteId&quot;: &quot;475&quot;,
+        &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+        &quot;policy_limit_amount&quot;: &quot;50000.00&quot;,
+        &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+        &quot;email&quot;: &quot;admin@example.com&quot;,
+        &quot;startDate&quot;: &quot;2022-03-06&quot;
+    },
+    &quot;url&quot;: &quot;http://microservices.virtualandemo.com:8080&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-42" class="collapsable-control">
+      <a>Contextual-Dataset:</a>
+      <a href="embeddings/embedding_-436575191.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-42" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;firstname&quot;: &quot;Max&quot;,
+    &quot;city&quot;: &quot;Rapperswil&quot;,
+    &quot;postalCode&quot;: &quot;8640&quot;,
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;quoteId&quot;: &quot;466&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MjQxNjIsImV4cCI6MTY0NzIyNTYyNH0.Z-_c7spJ7roXf_YA46KPnnTZZELicU58uFJHgj7IadWZT-xWRle0S5nHvRfDZahxOvWxgqPJwypOwP6_1quNJA&quot;,
+    &quot;lastname&quot;: &quot;Mustermann&quot;,
+    &quot;expiryDate&quot;: &quot;2023-03-06T20:40:24&quot;,
+    &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+    &quot;rejectQuoteId&quot;: &quot;475&quot;,
+    &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+    &quot;policy_limit_amount&quot;: &quot;50000.00&quot;,
+    &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+    &quot;email&quot;: &quot;admin@example.com&quot;,
+    &quot;startDate&quot;: &quot;2022-03-06&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify <span class="argument">statusHistory</span> response csvson includes in the response</span>
+
+  <span class="lead-duration duration">0.031</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>status</td>
+              </tr>
+              <tr>
+                  <td>REQUEST_SUBMITTED</td>
+              </tr>
+              <tr>
+                  <td>QUOTE_RECEIVED</td>
+              </tr>
+              <tr>
+                  <td>QUOTE_REJECTED</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-43" class="collapsable-control">
+      <a>Expected json</a>
+      <a href="embeddings/embedding_-106381017.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-43" class="collapse collapsable-details ">
+      <pre class="embedding-content">[{&quot;status&quot;:&quot;REQUEST_SUBMITTED&quot;},{&quot;status&quot;:&quot;QUOTE_RECEIVED&quot;},{&quot;status&quot;:&quot;QUOTE_REJECTED&quot;}]</pre>
+    </div>
+  </div>
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-44" class="collapsable-control">
+      <a>Actual json</a>
+      <a href="embeddings/embedding_2091270553.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-44" class="collapse collapsable-details ">
+      <pre class="embedding-content">{&quot;date&quot;:&quot;2022-03-07T02:40:24.606+00:00&quot;,&quot;statusHistory&quot;:[{&quot;date&quot;:&quot;2022-03-07T02:40:24.606+00:00&quot;,&quot;status&quot;:&quot;REQUEST_SUBMITTED&quot;},{&quot;date&quot;:&quot;2022-03-07T02:40:24.767+00:00&quot;,&quot;status&quot;:&quot;QUOTE_RECEIVED&quot;},{&quot;date&quot;:&quot;2022-03-07T02:40:24.910+00:00&quot;,&quot;status&quot;:&quot;QUOTE_REJECTED&quot;}],&quot;customerInfo&quot;:{&quot;firstname&quot;:&quot;Max&quot;,&quot;customerId&quot;:&quot;rgpp0wkpec&quot;,&quot;contactAddress&quot;:{&quot;streetAddress&quot;:&quot;Oberseestrasse 10&quot;,&quot;city&quot;:&quot;Rapperswil&quot;,&quot;postalCode&quot;:&quot;8640&quot;},&quot;billingAddress&quot;:{&quot;streetAddress&quot;:&quot;Oberseestrasse 10&quot;,&quot;city&quot;:&quot;Rapperswil&quot;,&quot;postalCode&quot;:&quot;8640&quot;},&quot;lastname&quot;:&quot;Mustermann&quot;},&quot;insuranceOptions&quot;:{&quot;deductible&quot;:{&quot;amount&quot;:500,&quot;currency&quot;:&quot;CHF&quot;},&quot;insuranceType&quot;:&quot;Life Insurance&quot;,&quot;startDate&quot;:&quot;2021-09-20&quot;},&quot;id&quot;:475,&quot;insuranceQuote&quot;:{&quot;insurancePremium&quot;:{&quot;amount&quot;:500,&quot;currency&quot;:&quot;CHF&quot;},&quot;policyLimit&quot;:{&quot;amount&quot;:50000,&quot;currency&quot;:&quot;CHF&quot;},&quot;expirationDate&quot;:&quot;2023-03-06T20:40:24.000+00:00&quot;}}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify <span class="argument">across response</span> includes following in the response</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>id</td>
+                  <td>[rejectQuoteId]</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-45" class="collapsable-control">
+      <a>Actual-Response</a>
+      <a href="embeddings/embedding_-1588261068.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-45" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+  &quot;id&quot; : 475,
+  &quot;date&quot; : &quot;2022-03-07T02:40:24.606+00:00&quot;,
+  &quot;statusHistory&quot; : [ {
+    &quot;date&quot; : &quot;2022-03-07T02:40:24.606+00:00&quot;,
+    &quot;status&quot; : &quot;REQUEST_SUBMITTED&quot;
+  }, {
+    &quot;date&quot; : &quot;2022-03-07T02:40:24.767+00:00&quot;,
+    &quot;status&quot; : &quot;QUOTE_RECEIVED&quot;
+  }, {
+    &quot;date&quot; : &quot;2022-03-07T02:40:24.910+00:00&quot;,
+    &quot;status&quot; : &quot;QUOTE_REJECTED&quot;
+  } ],
+  &quot;customerInfo&quot; : {
+    &quot;customerId&quot; : &quot;rgpp0wkpec&quot;,
+    &quot;firstname&quot; : &quot;Max&quot;,
+    &quot;lastname&quot; : &quot;Mustermann&quot;,
+    &quot;contactAddress&quot; : {
+      &quot;streetAddress&quot; : &quot;Oberseestrasse 10&quot;,
+      &quot;postalCode&quot; : &quot;8640&quot;,
+      &quot;city&quot; : &quot;Rapperswil&quot;
+    },
+    &quot;billingAddress&quot; : {
+      &quot;streetAddress&quot; : &quot;Oberseestrasse 10&quot;,
+      &quot;postalCode&quot; : &quot;8640&quot;,
+      &quot;city&quot; : &quot;Rapperswil&quot;
+    }
+  },
+  &quot;insuranceOptions&quot; : {
+    &quot;startDate&quot; : &quot;2021-09-20&quot;,
+    &quot;insuranceType&quot; : &quot;Life Insurance&quot;,
+    &quot;deductible&quot; : {
+      &quot;amount&quot; : 500.00,
+      &quot;currency&quot; : &quot;CHF&quot;
+    }
+  },
+  &quot;insuranceQuote&quot; : {
+    &quot;expirationDate&quot; : &quot;2023-03-06T20:40:24.000+00:00&quot;,
+    &quot;insurancePremium&quot; : {
+      &quot;amount&quot; : 500.00,
+      &quot;currency&quot; : &quot;CHF&quot;
+    },
+    &quot;policyLimit&quot; : {
+      &quot;amount&quot; : 50000.00,
+      &quot;currency&quot; : &quot;CHF&quot;
+    }
+  }
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_651010252.html">@sql_select</a>
+       <a href="report-tag_237753510.html">@sql_validate</a>
+       <a href="report-tag_1678132847.html">@store_sql_response</a>
+       <a href="report-tag_4074717568.html">@cssdb</a>
+</div>
+
+
+  <span class="lead-duration duration">0.050</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-46">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">InsuranceQuoteByDBReject - database action</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-46" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-47">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-47" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-48">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-48" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">as a user perform sql <span class="argument">query</span> action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">read <span class="argument">details on the</span> given <span class="argument">query</span> on <span class="argument">cssdb</span></span>
+
+  <span class="lead-duration duration">0.050</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>select iqr.id, iq.insurance_premium_amount, iq.insurance_premium_currency, iq.policy_limit_amount from insurancequotes iq INNER JOIN insurancequoterequests iqr on iq.id = iqr.insurance_quote_id and iqr.id  =  [rejectQuoteId]</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-49" class="collapsable-control">
+      <a>SelectSql:</a>
+      <a href="embeddings/embedding_-1025781512.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-49" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;resource&quot;: &quot;cssdb&quot;,
+    &quot;sql&quot;: &quot;select iqr.id, iq.insurance_premium_amount, iq.insurance_premium_currency, iq.policy_limit_amount from insurancequotes iq INNER JOIN insurancequoterequests iqr on iq.id = iqr.insurance_quote_id and iqr.id  =  475&quot;
+}</pre>
+    </div>
+  </div>
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-50" class="collapsable-control">
+      <a>SqlResponse:</a>
+      <a href="embeddings/embedding_-1426260527.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-50" class="collapse collapsable-details ">
+      <pre class="embedding-content">[{&quot;id&quot;:475,&quot;insurance_premium_amount&quot;:500.00,&quot;insurance_premium_currency&quot;:&quot;CHF&quot;,&quot;policy_limit_amount&quot;:50000.00}]</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">store <span class="argument">policy_limit_amount</span> as key and query's <span class="argument">[0].policy_limit_amount</span> as value</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

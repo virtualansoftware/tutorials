@@ -1,0 +1,2939 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 54d3f565-07f4-4b81-88bf-361cc0f18bd4) - Feature: Examples</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Lakeside Mutual - Customer Self-Service - API alone - VIRTUALAN(test-virtualan-collection)</td>
+        <td>54d3f565-07f4-4b81-88bf-361cc0f18bd4</td>
+      <td>06 Mar 2022, 20:40</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Examples</td>
+          <td      class="passed"    >35</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">35</td>
+
+          <td  class="passed"    >7</td>
+          <td >0</td>
+          <td class="total">7</td>
+
+          <td class="duration" data-value="1148946600">1.148</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Examples</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Load initial set of data</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">provided all the feature level parameters from file</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-4" class="collapsable-control">
+      <a>ContextId:17</a>
+      <a href="embeddings/embedding_-1954067552.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-4" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;firstname&quot;: &quot;Max&quot;,
+    &quot;city&quot;: &quot;Rapperswil&quot;,
+    &quot;postalCode&quot;: &quot;8640&quot;,
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;insuranceType&quot;: &quot;Life Insurance&quot;,
+    &quot;quoteId&quot;: &quot;448&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MTI1NTksImV4cCI6MTY0NzIyNTYxMn0.wupRC8uZ56wm2cf6hQqJ7MBUrwAcAPTAimRngLcuZ6azN3OpuzJtqE_nwQMAJvuSm2PutSjVe92o1aWvP951aw&quot;,
+    &quot;lastname&quot;: &quot;Mustermann&quot;,
+    &quot;expiryDate&quot;: &quot;2023-03-06T20:40:13&quot;,
+    &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+    &quot;rejectQuoteId&quot;: &quot;457&quot;,
+    &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+    &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+    &quot;email&quot;: &quot;admin@example.com&quot;,
+    &quot;startDate&quot;: &quot;2022-03-06&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_77126792.html">@examples</a>
+       <a href="report-tag_2149487065.html">@api</a>
+</div>
+
+
+  <span class="lead-duration duration">0.241</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Read Customer infos - Example-case1 - api call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-6" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">a user</span> perform <span class="argument">a</span> api action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">request</span> with given header params</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>contentType</td>
+                  <td>application/json</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name"><span class="argument">a user</span> get <span class="argument">application/json</span> in <span class="argument">/api/persons/bgates</span> resource on <span class="argument">api</span></span>
+
+  <span class="lead-duration duration">0.239</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-8" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_509338273.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-8" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;AcceptContentType&quot;: &quot;application/json&quot;,
+    &quot;resource&quot;: &quot;https://live.virtualandemo.com/api/persons/bgates&quot;,
+    &quot;context&quot;: {
+        &quot;firstname&quot;: &quot;Max&quot;,
+        &quot;city&quot;: &quot;Rapperswil&quot;,
+        &quot;postalCode&quot;: &quot;8640&quot;,
+        &quot;STATUS_CODE&quot;: &quot;200&quot;,
+        &quot;insuranceType&quot;: &quot;Life Insurance&quot;,
+        &quot;quoteId&quot;: &quot;448&quot;,
+        &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MTI1NTksImV4cCI6MTY0NzIyNTYxMn0.wupRC8uZ56wm2cf6hQqJ7MBUrwAcAPTAimRngLcuZ6azN3OpuzJtqE_nwQMAJvuSm2PutSjVe92o1aWvP951aw&quot;,
+        &quot;lastname&quot;: &quot;Mustermann&quot;,
+        &quot;expiryDate&quot;: &quot;2023-03-06T20:40:13&quot;,
+        &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+        &quot;rejectQuoteId&quot;: &quot;457&quot;,
+        &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+        &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+        &quot;email&quot;: &quot;admin@example.com&quot;,
+        &quot;startDate&quot;: &quot;2022-03-06&quot;
+    },
+    &quot;url&quot;: &quot;https://live.virtualandemo.com&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-9" class="collapsable-control">
+      <a>Contextual-Dataset:</a>
+      <a href="embeddings/embedding_-1954067552.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-9" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;firstname&quot;: &quot;Max&quot;,
+    &quot;city&quot;: &quot;Rapperswil&quot;,
+    &quot;postalCode&quot;: &quot;8640&quot;,
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;insuranceType&quot;: &quot;Life Insurance&quot;,
+    &quot;quoteId&quot;: &quot;448&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MTI1NTksImV4cCI6MTY0NzIyNTYxMn0.wupRC8uZ56wm2cf6hQqJ7MBUrwAcAPTAimRngLcuZ6azN3OpuzJtqE_nwQMAJvuSm2PutSjVe92o1aWvP951aw&quot;,
+    &quot;lastname&quot;: &quot;Mustermann&quot;,
+    &quot;expiryDate&quot;: &quot;2023-03-06T20:40:13&quot;,
+    &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+    &quot;rejectQuoteId&quot;: &quot;457&quot;,
+    &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+    &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+    &quot;email&quot;: &quot;admin@example.com&quot;,
+    &quot;startDate&quot;: &quot;2022-03-06&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify <span class="argument">api</span> response csvson includes exact-match in the response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>dateOfBirth,firstName,lastName,lastTimeOnline,spokenLanguages/additionalProp1:additionalProp3:additionalProp2,username</td>
+              </tr>
+              <tr>
+                  <td>1955-10-28,Bill,Gates,2020-08-30T20:28:36.267Z,Tamil:Spanish:English,bgates</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-10" class="collapsable-control">
+      <a>Expected json</a>
+      <a href="embeddings/embedding_713313768.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-10" class="collapse collapsable-details ">
+      <pre class="embedding-content">[{&quot;dateOfBirth&quot;:&quot;1955-10-28&quot;,&quot;firstName&quot;:&quot;Bill&quot;,&quot;lastName&quot;:&quot;Gates&quot;,&quot;lastTimeOnline&quot;:&quot;2020-08-30T20:28:36.267Z&quot;,&quot;spokenLanguages&quot;:{&quot;additionalProp1&quot;:&quot;Tamil&quot;,&quot;additionalProp3&quot;:&quot;Spanish&quot;,&quot;additionalProp2&quot;:&quot;English&quot;},&quot;username&quot;:&quot;bgates&quot;}]</pre>
+    </div>
+  </div>
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-11" class="collapsable-control">
+      <a>Actual json</a>
+      <a href="embeddings/embedding_862228861.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-11" class="collapse collapsable-details ">
+      <pre class="embedding-content">{&quot;firstName&quot;:&quot;Bill&quot;,&quot;lastName&quot;:&quot;Gates&quot;,&quot;lastTimeOnline&quot;:&quot;2020-08-30T20:28:36.267Z&quot;,&quot;dateOfBirth&quot;:&quot;1955-10-28&quot;,&quot;spokenLanguages&quot;:{&quot;additionalProp1&quot;:&quot;Tamil&quot;,&quot;additionalProp3&quot;:&quot;Spanish&quot;,&quot;additionalProp2&quot;:&quot;English&quot;},&quot;username&quot;:&quot;bgates&quot;}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_77126792.html">@examples</a>
+       <a href="report-tag_2149487065.html">@api</a>
+</div>
+
+
+  <span class="lead-duration duration">0.136</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Read Customer infos - Example-case2 - api call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-12" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-13" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">a user</span> perform <span class="argument">a</span> api action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">request</span> with given header params</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>contentType</td>
+                  <td>application/json</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name"><span class="argument">a user</span> get <span class="argument">application/json</span> in <span class="argument">/api/persons/bgates</span> resource on <span class="argument">api</span></span>
+
+  <span class="lead-duration duration">0.134</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-15" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_509338273.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-15" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;AcceptContentType&quot;: &quot;application/json&quot;,
+    &quot;resource&quot;: &quot;https://live.virtualandemo.com/api/persons/bgates&quot;,
+    &quot;context&quot;: {
+        &quot;firstname&quot;: &quot;Max&quot;,
+        &quot;city&quot;: &quot;Rapperswil&quot;,
+        &quot;postalCode&quot;: &quot;8640&quot;,
+        &quot;STATUS_CODE&quot;: &quot;200&quot;,
+        &quot;insuranceType&quot;: &quot;Life Insurance&quot;,
+        &quot;quoteId&quot;: &quot;448&quot;,
+        &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MTI1NTksImV4cCI6MTY0NzIyNTYxMn0.wupRC8uZ56wm2cf6hQqJ7MBUrwAcAPTAimRngLcuZ6azN3OpuzJtqE_nwQMAJvuSm2PutSjVe92o1aWvP951aw&quot;,
+        &quot;lastname&quot;: &quot;Mustermann&quot;,
+        &quot;expiryDate&quot;: &quot;2023-03-06T20:40:13&quot;,
+        &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+        &quot;rejectQuoteId&quot;: &quot;457&quot;,
+        &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+        &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+        &quot;email&quot;: &quot;admin@example.com&quot;,
+        &quot;startDate&quot;: &quot;2022-03-06&quot;
+    },
+    &quot;url&quot;: &quot;https://live.virtualandemo.com&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-16" class="collapsable-control">
+      <a>Contextual-Dataset:</a>
+      <a href="embeddings/embedding_-1954067552.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-16" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;firstname&quot;: &quot;Max&quot;,
+    &quot;city&quot;: &quot;Rapperswil&quot;,
+    &quot;postalCode&quot;: &quot;8640&quot;,
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;insuranceType&quot;: &quot;Life Insurance&quot;,
+    &quot;quoteId&quot;: &quot;448&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MTI1NTksImV4cCI6MTY0NzIyNTYxMn0.wupRC8uZ56wm2cf6hQqJ7MBUrwAcAPTAimRngLcuZ6azN3OpuzJtqE_nwQMAJvuSm2PutSjVe92o1aWvP951aw&quot;,
+    &quot;lastname&quot;: &quot;Mustermann&quot;,
+    &quot;expiryDate&quot;: &quot;2023-03-06T20:40:13&quot;,
+    &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+    &quot;rejectQuoteId&quot;: &quot;457&quot;,
+    &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+    &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+    &quot;email&quot;: &quot;admin@example.com&quot;,
+    &quot;startDate&quot;: &quot;2022-03-06&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify <span class="argument">api</span> response csvson includes exact-order-match in the response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>dateOfBirth,lastName,firstName,lastTimeOnline,spokenLanguages/additionalProp1:additionalProp3:additionalProp2</td>
+              </tr>
+              <tr>
+                  <td>1955-10-28,Gates,Bill,2020-08-30T20:28:36.267Z,Tamil:Spanish:English</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-17" class="collapsable-control">
+      <a>Expected json</a>
+      <a href="embeddings/embedding_133818459.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-17" class="collapse collapsable-details ">
+      <pre class="embedding-content">[{&quot;dateOfBirth&quot;:&quot;1955-10-28&quot;,&quot;lastName&quot;:&quot;Gates&quot;,&quot;firstName&quot;:&quot;Bill&quot;,&quot;lastTimeOnline&quot;:&quot;2020-08-30T20:28:36.267Z&quot;,&quot;spokenLanguages&quot;:{&quot;additionalProp1&quot;:&quot;Tamil&quot;,&quot;additionalProp3&quot;:&quot;Spanish&quot;,&quot;additionalProp2&quot;:&quot;English&quot;}}]</pre>
+    </div>
+  </div>
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-18" class="collapsable-control">
+      <a>Actual json</a>
+      <a href="embeddings/embedding_862228861.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-18" class="collapse collapsable-details ">
+      <pre class="embedding-content">{&quot;firstName&quot;:&quot;Bill&quot;,&quot;lastName&quot;:&quot;Gates&quot;,&quot;lastTimeOnline&quot;:&quot;2020-08-30T20:28:36.267Z&quot;,&quot;dateOfBirth&quot;:&quot;1955-10-28&quot;,&quot;spokenLanguages&quot;:{&quot;additionalProp1&quot;:&quot;Tamil&quot;,&quot;additionalProp3&quot;:&quot;Spanish&quot;,&quot;additionalProp2&quot;:&quot;English&quot;},&quot;username&quot;:&quot;bgates&quot;}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_77126792.html">@examples</a>
+       <a href="report-tag_2149487065.html">@api</a>
+</div>
+
+
+  <span class="lead-duration duration">0.137</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Read Customer infos - Example-case3 - api call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-20" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">a user</span> perform <span class="argument">a</span> api action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">request</span> with given header params</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>contentType</td>
+                  <td>application/json</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name"><span class="argument">a user</span> get <span class="argument">application/json</span> in <span class="argument">/api/persons/bgates</span> resource on <span class="argument">api</span></span>
+
+  <span class="lead-duration duration">0.135</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-22" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_509338273.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-22" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;AcceptContentType&quot;: &quot;application/json&quot;,
+    &quot;resource&quot;: &quot;https://live.virtualandemo.com/api/persons/bgates&quot;,
+    &quot;context&quot;: {
+        &quot;firstname&quot;: &quot;Max&quot;,
+        &quot;city&quot;: &quot;Rapperswil&quot;,
+        &quot;postalCode&quot;: &quot;8640&quot;,
+        &quot;STATUS_CODE&quot;: &quot;200&quot;,
+        &quot;insuranceType&quot;: &quot;Life Insurance&quot;,
+        &quot;quoteId&quot;: &quot;448&quot;,
+        &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MTI1NTksImV4cCI6MTY0NzIyNTYxMn0.wupRC8uZ56wm2cf6hQqJ7MBUrwAcAPTAimRngLcuZ6azN3OpuzJtqE_nwQMAJvuSm2PutSjVe92o1aWvP951aw&quot;,
+        &quot;lastname&quot;: &quot;Mustermann&quot;,
+        &quot;expiryDate&quot;: &quot;2023-03-06T20:40:13&quot;,
+        &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+        &quot;rejectQuoteId&quot;: &quot;457&quot;,
+        &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+        &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+        &quot;email&quot;: &quot;admin@example.com&quot;,
+        &quot;startDate&quot;: &quot;2022-03-06&quot;
+    },
+    &quot;url&quot;: &quot;https://live.virtualandemo.com&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-23" class="collapsable-control">
+      <a>Contextual-Dataset:</a>
+      <a href="embeddings/embedding_-1954067552.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-23" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;firstname&quot;: &quot;Max&quot;,
+    &quot;city&quot;: &quot;Rapperswil&quot;,
+    &quot;postalCode&quot;: &quot;8640&quot;,
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;insuranceType&quot;: &quot;Life Insurance&quot;,
+    &quot;quoteId&quot;: &quot;448&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MTI1NTksImV4cCI6MTY0NzIyNTYxMn0.wupRC8uZ56wm2cf6hQqJ7MBUrwAcAPTAimRngLcuZ6azN3OpuzJtqE_nwQMAJvuSm2PutSjVe92o1aWvP951aw&quot;,
+    &quot;lastname&quot;: &quot;Mustermann&quot;,
+    &quot;expiryDate&quot;: &quot;2023-03-06T20:40:13&quot;,
+    &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+    &quot;rejectQuoteId&quot;: &quot;457&quot;,
+    &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+    &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+    &quot;email&quot;: &quot;admin@example.com&quot;,
+    &quot;startDate&quot;: &quot;2022-03-06&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify <span class="argument">api</span> response csvson includes in the response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>dateOfBirth,firstName,lastName,lastTimeOnline,spokenLanguages/additionalProp1:additionalProp2:additionalProp3,username</td>
+              </tr>
+              <tr>
+                  <td>1955-10-28,Bill,Gates,2020-08-30T20:28:36.267Z,Tamil:English:Spanish,bgates</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-24" class="collapsable-control">
+      <a>Expected json</a>
+      <a href="embeddings/embedding_-20796345.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-24" class="collapse collapsable-details ">
+      <pre class="embedding-content">[{&quot;dateOfBirth&quot;:&quot;1955-10-28&quot;,&quot;firstName&quot;:&quot;Bill&quot;,&quot;lastName&quot;:&quot;Gates&quot;,&quot;lastTimeOnline&quot;:&quot;2020-08-30T20:28:36.267Z&quot;,&quot;spokenLanguages&quot;:{&quot;additionalProp1&quot;:&quot;Tamil&quot;,&quot;additionalProp2&quot;:&quot;English&quot;,&quot;additionalProp3&quot;:&quot;Spanish&quot;},&quot;username&quot;:&quot;bgates&quot;}]</pre>
+    </div>
+  </div>
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-25" class="collapsable-control">
+      <a>Actual json</a>
+      <a href="embeddings/embedding_862228861.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-25" class="collapse collapsable-details ">
+      <pre class="embedding-content">{&quot;firstName&quot;:&quot;Bill&quot;,&quot;lastName&quot;:&quot;Gates&quot;,&quot;lastTimeOnline&quot;:&quot;2020-08-30T20:28:36.267Z&quot;,&quot;dateOfBirth&quot;:&quot;1955-10-28&quot;,&quot;spokenLanguages&quot;:{&quot;additionalProp1&quot;:&quot;Tamil&quot;,&quot;additionalProp3&quot;:&quot;Spanish&quot;,&quot;additionalProp2&quot;:&quot;English&quot;},&quot;username&quot;:&quot;bgates&quot;}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_77126792.html">@examples</a>
+       <a href="report-tag_4087703099.html">@quote</a>
+</div>
+
+
+  <span class="lead-duration duration">0.264</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Read Customer infos - Exact-Order-Match - api call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-26" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-27">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-27" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-28" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">a user</span> perform <span class="argument">a</span> api action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">request</span> with given header params</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>contentType</td>
+                  <td>application/json</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name"><span class="argument">a user</span> get <span class="argument">application/json</span> in <span class="argument">/customers</span> resource on <span class="argument">quote</span></span>
+
+  <span class="lead-duration duration">0.122</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-29" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_-524809862.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-29" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;AcceptContentType&quot;: &quot;application/json&quot;,
+    &quot;resource&quot;: &quot;http://microservices.virtualandemo.com:8090/customers&quot;,
+    &quot;context&quot;: {
+        &quot;firstname&quot;: &quot;Max&quot;,
+        &quot;city&quot;: &quot;Rapperswil&quot;,
+        &quot;postalCode&quot;: &quot;8640&quot;,
+        &quot;STATUS_CODE&quot;: &quot;200&quot;,
+        &quot;insuranceType&quot;: &quot;Life Insurance&quot;,
+        &quot;quoteId&quot;: &quot;448&quot;,
+        &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MTI1NTksImV4cCI6MTY0NzIyNTYxMn0.wupRC8uZ56wm2cf6hQqJ7MBUrwAcAPTAimRngLcuZ6azN3OpuzJtqE_nwQMAJvuSm2PutSjVe92o1aWvP951aw&quot;,
+        &quot;lastname&quot;: &quot;Mustermann&quot;,
+        &quot;expiryDate&quot;: &quot;2023-03-06T20:40:13&quot;,
+        &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+        &quot;rejectQuoteId&quot;: &quot;457&quot;,
+        &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+        &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+        &quot;email&quot;: &quot;admin@example.com&quot;,
+        &quot;startDate&quot;: &quot;2022-03-06&quot;
+    },
+    &quot;url&quot;: &quot;http://microservices.virtualandemo.com:8090&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-30" class="collapsable-control">
+      <a>Contextual-Dataset:</a>
+      <a href="embeddings/embedding_-1954067552.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-30" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;firstname&quot;: &quot;Max&quot;,
+    &quot;city&quot;: &quot;Rapperswil&quot;,
+    &quot;postalCode&quot;: &quot;8640&quot;,
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;insuranceType&quot;: &quot;Life Insurance&quot;,
+    &quot;quoteId&quot;: &quot;448&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MTI1NTksImV4cCI6MTY0NzIyNTYxMn0.wupRC8uZ56wm2cf6hQqJ7MBUrwAcAPTAimRngLcuZ6azN3OpuzJtqE_nwQMAJvuSm2PutSjVe92o1aWvP951aw&quot;,
+    &quot;lastname&quot;: &quot;Mustermann&quot;,
+    &quot;expiryDate&quot;: &quot;2023-03-06T20:40:13&quot;,
+    &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+    &quot;rejectQuoteId&quot;: &quot;457&quot;,
+    &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+    &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+    &quot;email&quot;: &quot;admin@example.com&quot;,
+    &quot;startDate&quot;: &quot;2022-03-06&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify <span class="argument">customers</span> response csvson includes exact-order-match in the response</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>customerId,firstname,lastname,postalCode,streetAddress</td>
+              </tr>
+              <tr>
+                  <td>bunlo9vk5f,Ado,Kinnett,6500,2 Autumn Leaf Lane</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-31" class="collapsable-control">
+      <a>Expected json</a>
+      <a href="embeddings/embedding_421644666.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-31" class="collapse collapsable-details ">
+      <pre class="embedding-content">[{&quot;customerId&quot;:&quot;bunlo9vk5f&quot;,&quot;firstname&quot;:&quot;Ado&quot;,&quot;lastname&quot;:&quot;Kinnett&quot;,&quot;postalCode&quot;:&quot;6500&quot;,&quot;streetAddress&quot;:&quot;2 Autumn Leaf Lane&quot;}]</pre>
+    </div>
+  </div>
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-32" class="collapsable-control">
+      <a>Actual json</a>
+      <a href="embeddings/embedding_1581888138.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-32" class="collapse collapsable-details ">
+      <pre class="embedding-content">{&quot;filter&quot;:&quot;&quot;,&quot;offset&quot;:0,&quot;size&quot;:50,&quot;_links&quot;:{&quot;next&quot;:{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers?filter=&amp;limit=10&amp;offset=10&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers?filter=&amp;limit=10&amp;offset=0&quot;}},&quot;limit&quot;:10,&quot;customers&quot;:[{&quot;birthday&quot;:&quot;1975-06-14T00:00:00.000+00:00&quot;,&quot;moveHistory&quot;:[],&quot;firstname&quot;:&quot;Ado&quot;,&quot;phoneNumber&quot;:&quot;055 222 4111&quot;,&quot;streetAddress&quot;:&quot;2 Autumn Leaf Lane&quot;,&quot;city&quot;:&quot;Bellinzona&quot;,&quot;_links&quot;:{&quot;address.change&quot;:{&quot;href&quot;:&quot;http://localhost:8110/customers/bunlo9vk5f/address&quot;},&quot;policies&quot;:{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/bunlo9vk5f/policies?expand=&quot;},&quot;self&quot;:[{&quot;href&quot;:&quot;http://localhost:8110/customers/bunlo9vk5f?fields=&quot;},{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/bunlo9vk5f&quot;}]},&quot;postalCode&quot;:&quot;6500&quot;,&quot;customerId&quot;:&quot;bunlo9vk5f&quot;,&quot;email&quot;:&quot;akinnetta@example.com&quot;,&quot;lastname&quot;:&quot;Kinnett&quot;},{&quot;birthday&quot;:&quot;1964-02-02T00:00:00.000+00:00&quot;,&quot;moveHistory&quot;:[],&quot;firstname&quot;:&quot;Bel&quot;,&quot;phoneNumber&quot;:&quot;055 222 4111&quot;,&quot;streetAddress&quot;:&quot;4 Sherman Parkway&quot;,&quot;city&quot;:&quot;Genf&quot;,&quot;_links&quot;:{&quot;address.change&quot;:{&quot;href&quot;:&quot;http://localhost:8110/customers/bd91pwfepl/address&quot;},&quot;policies&quot;:{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/bd91pwfepl/policies?expand=&quot;},&quot;self&quot;:[{&quot;href&quot;:&quot;http://localhost:8110/customers/bd91pwfepl?fields=&quot;},{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/bd91pwfepl&quot;}]},&quot;postalCode&quot;:&quot;1201&quot;,&quot;customerId&quot;:&quot;bd91pwfepl&quot;,&quot;email&quot;:&quot;bpiffordb@example.com&quot;,&quot;lastname&quot;:&quot;Pifford&quot;},{&quot;birthday&quot;:&quot;1969-03-12T00:00:00.000+00:00&quot;,&quot;moveHistory&quot;:[],&quot;firstname&quot;:&quot;Blondy&quot;,&quot;phoneNumber&quot;:&quot;055 222 4111&quot;,&quot;streetAddress&quot;:&quot;5763 Delladonna Trail&quot;,&quot;city&quot;:&quot;Grenchen&quot;,&quot;_links&quot;:{&quot;address.change&quot;:{&quot;href&quot;:&quot;http://localhost:8110/customers/f2m0v9b73c/address&quot;},&quot;policies&quot;:{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/f2m0v9b73c/policies?expand=&quot;},&quot;self&quot;:[{&quot;href&quot;:&quot;http://localhost:8110/customers/f2m0v9b73c?fields=&quot;},{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/f2m0v9b73c&quot;}]},&quot;postalCode&quot;:&quot;2540&quot;,&quot;customerId&quot;:&quot;f2m0v9b73c&quot;,&quot;email&quot;:&quot;blangman14@example.com&quot;,&quot;lastname&quot;:&quot;Langman&quot;},{&quot;birthday&quot;:&quot;1958-03-19T00:00:00.000+00:00&quot;,&quot;moveHistory&quot;:[],&quot;firstname&quot;:&quot;Carmen&quot;,&quot;phoneNumber&quot;:&quot;055 222 4111&quot;,&quot;streetAddress&quot;:&quot;67 Corry Junction&quot;,&quot;city&quot;:&quot;Bern&quot;,&quot;_links&quot;:{&quot;address.change&quot;:{&quot;href&quot;:&quot;http://localhost:8110/customers/btpchn7eg8/address&quot;},&quot;policies&quot;:{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/btpchn7eg8/policies?expand=&quot;},&quot;self&quot;:[{&quot;href&quot;:&quot;http://localhost:8110/customers/btpchn7eg8?fields=&quot;},{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/btpchn7eg8&quot;}]},&quot;postalCode&quot;:&quot;3001&quot;,&quot;customerId&quot;:&quot;btpchn7eg8&quot;,&quot;email&quot;:&quot;ccashmore3@example.com&quot;,&quot;lastname&quot;:&quot;Cashmore&quot;},{&quot;birthday&quot;:&quot;1980-12-23T00:00:00.000+00:00&quot;,&quot;moveHistory&quot;:[],&quot;firstname&quot;:&quot;Carny&quot;,&quot;phoneNumber&quot;:&quot;055 222 4111&quot;,&quot;streetAddress&quot;:&quot;1 Warrior Circle&quot;,&quot;city&quot;:&quot;St. Gallen&quot;,&quot;_links&quot;:{&quot;address.change&quot;:{&quot;href&quot;:&quot;http://localhost:8110/customers/vxhq4zzcqo/address&quot;},&quot;policies&quot;:{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/vxhq4zzcqo/policies?expand=&quot;},&quot;self&quot;:[{&quot;href&quot;:&quot;http://localhost:8110/customers/vxhq4zzcqo?fields=&quot;},{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/vxhq4zzcqo&quot;}]},&quot;postalCode&quot;:&quot;9000&quot;,&quot;customerId&quot;:&quot;vxhq4zzcqo&quot;,&quot;email&quot;:&quot;cvezey11@example.com&quot;,&quot;lastname&quot;:&quot;Vezey&quot;},{&quot;birthday&quot;:&quot;1970-10-14T00:00:00.000+00:00&quot;,&quot;moveHistory&quot;:[],&quot;firstname&quot;:&quot;Carry&quot;,&quot;phoneNumber&quot;:&quot;055 222 4111&quot;,&quot;streetAddress&quot;:&quot;3 Waywood Place&quot;,&quot;city&quot;:&quot;Basel&quot;,&quot;_links&quot;:{&quot;address.change&quot;:{&quot;href&quot;:&quot;http://localhost:8110/customers/s9lfohy8dc/address&quot;},&quot;policies&quot;:{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/s9lfohy8dc/policies?expand=&quot;},&quot;self&quot;:[{&quot;href&quot;:&quot;http://localhost:8110/customers/s9lfohy8dc?fields=&quot;},{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/s9lfohy8dc&quot;}]},&quot;postalCode&quot;:&quot;4001&quot;,&quot;customerId&quot;:&quot;s9lfohy8dc&quot;,&quot;email&quot;:&quot;cphillcock18@example.com&quot;,&quot;lastname&quot;:&quot;Phillcock&quot;},{&quot;birthday&quot;:&quot;1972-08-11T00:00:00.000+00:00&quot;,&quot;moveHistory&quot;:[],&quot;firstname&quot;:&quot;Cly&quot;,&quot;phoneNumber&quot;:&quot;055 222 4111&quot;,&quot;streetAddress&quot;:&quot;334 Vidon Trail&quot;,&quot;city&quot;:&quot;Sion&quot;,&quot;_links&quot;:{&quot;address.change&quot;:{&quot;href&quot;:&quot;http://localhost:8110/customers/2dumngurs1/address&quot;},&quot;policies&quot;:{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/2dumngurs1/policies?expand=&quot;},&quot;self&quot;:[{&quot;href&quot;:&quot;http://localhost:8110/customers/2dumngurs1?fields=&quot;},{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/2dumngurs1&quot;}]},&quot;postalCode&quot;:&quot;1950&quot;,&quot;customerId&quot;:&quot;2dumngurs1&quot;,&quot;email&quot;:&quot;cmuinoj@example.com&quot;,&quot;lastname&quot;:&quot;Muino&quot;},{&quot;birthday&quot;:&quot;1980-09-15T00:00:00.000+00:00&quot;,&quot;moveHistory&quot;:[],&quot;firstname&quot;:&quot;Cullin&quot;,&quot;phoneNumber&quot;:&quot;055 222 4111&quot;,&quot;streetAddress&quot;:&quot;8 Drewry Trail&quot;,&quot;city&quot;:&quot;Zug&quot;,&quot;_links&quot;:{&quot;address.change&quot;:{&quot;href&quot;:&quot;http://localhost:8110/customers/5xvivyzxvc/address&quot;},&quot;policies&quot;:{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/5xvivyzxvc/policies?expand=&quot;},&quot;self&quot;:[{&quot;href&quot;:&quot;http://localhost:8110/customers/5xvivyzxvc?fields=&quot;},{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/5xvivyzxvc&quot;}]},&quot;postalCode&quot;:&quot;6300&quot;,&quot;customerId&quot;:&quot;5xvivyzxvc&quot;,&quot;email&quot;:&quot;cmanske2@example.com&quot;,&quot;lastname&quot;:&quot;Manske&quot;},{&quot;birthday&quot;:&quot;1963-01-19T00:00:00.000+00:00&quot;,&quot;moveHistory&quot;:[],&quot;firstname&quot;:&quot;Davita&quot;,&quot;phoneNumber&quot;:&quot;055 222 4111&quot;,&quot;streetAddress&quot;:&quot;444 Veith Pass&quot;,&quot;city&quot;:&quot;Rapperswil&quot;,&quot;_links&quot;:{&quot;address.change&quot;:{&quot;href&quot;:&quot;http://localhost:8110/customers/fmlpx3zwxh/address&quot;},&quot;policies&quot;:{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/fmlpx3zwxh/policies?expand=&quot;},&quot;self&quot;:[{&quot;href&quot;:&quot;http://localhost:8110/customers/fmlpx3zwxh?fields=&quot;},{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/fmlpx3zwxh&quot;}]},&quot;postalCode&quot;:&quot;8640&quot;,&quot;customerId&quot;:&quot;fmlpx3zwxh&quot;,&quot;email&quot;:&quot;dcompfortl@example.com&quot;,&quot;lastname&quot;:&quot;Compfort&quot;},{&quot;birthday&quot;:&quot;1971-01-03T00:00:00.000+00:00&quot;,&quot;moveHistory&quot;:[],&quot;firstname&quot;:&quot;Delora&quot;,&quot;phoneNumber&quot;:&quot;055 222 4111&quot;,&quot;streetAddress&quot;:&quot;80388 Bellgrove Alley&quot;,&quot;city&quot;:&quot;Rapperswil&quot;,&quot;_links&quot;:{&quot;address.change&quot;:{&quot;href&quot;:&quot;http://localhost:8110/customers/xzwbqgap18/address&quot;},&quot;policies&quot;:{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/xzwbqgap18/policies?expand=&quot;},&quot;self&quot;:[{&quot;href&quot;:&quot;http://localhost:8110/customers/xzwbqgap18?fields=&quot;},{&quot;href&quot;:&quot;http://microservices.virtualandemo.com:8090/customers/xzwbqgap18&quot;}]},&quot;postalCode&quot;:&quot;8640&quot;,&quot;customerId&quot;:&quot;xzwbqgap18&quot;,&quot;email&quot;:&quot;dbroadwellp@example.com&quot;,&quot;lastname&quot;:&quot;Broadwell&quot;}]}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify <span class="argument">across response</span> includes following in the response</span>
+
+  <span class="lead-duration duration">0.126</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>customers.find { it.firstname == 'Ado' }.postalCode</td>
+                  <td>6500</td>
+              </tr>
+              <tr>
+                  <td>customers.find { it.customerId == 'bunlo9vk5f' }.firstname</td>
+                  <td>Ado</td>
+              </tr>
+              <tr>
+                  <td>customers.find { it.customerId == 'f2m0v9b73c' }.email</td>
+                  <td>blangman14@example.com</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-33" class="collapsable-control">
+      <a>Actual-Response</a>
+      <a href="embeddings/embedding_434061564.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-33" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+  &quot;filter&quot; : &quot;&quot;,
+  &quot;limit&quot; : 10,
+  &quot;offset&quot; : 0,
+  &quot;size&quot; : 50,
+  &quot;customers&quot; : [ {
+    &quot;customerId&quot; : &quot;bunlo9vk5f&quot;,
+    &quot;firstname&quot; : &quot;Ado&quot;,
+    &quot;lastname&quot; : &quot;Kinnett&quot;,
+    &quot;birthday&quot; : &quot;1975-06-14T00:00:00.000+00:00&quot;,
+    &quot;streetAddress&quot; : &quot;2 Autumn Leaf Lane&quot;,
+    &quot;postalCode&quot; : &quot;6500&quot;,
+    &quot;city&quot; : &quot;Bellinzona&quot;,
+    &quot;email&quot; : &quot;akinnetta@example.com&quot;,
+    &quot;phoneNumber&quot; : &quot;055 222 4111&quot;,
+    &quot;moveHistory&quot; : [ ],
+    &quot;_links&quot; : {
+      &quot;self&quot; : [ {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/bunlo9vk5f?fields=&quot;
+      }, {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/bunlo9vk5f&quot;
+      } ],
+      &quot;address.change&quot; : {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/bunlo9vk5f/address&quot;
+      },
+      &quot;policies&quot; : {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/bunlo9vk5f/policies?expand=&quot;
+      }
+    }
+  }, {
+    &quot;customerId&quot; : &quot;bd91pwfepl&quot;,
+    &quot;firstname&quot; : &quot;Bel&quot;,
+    &quot;lastname&quot; : &quot;Pifford&quot;,
+    &quot;birthday&quot; : &quot;1964-02-02T00:00:00.000+00:00&quot;,
+    &quot;streetAddress&quot; : &quot;4 Sherman Parkway&quot;,
+    &quot;postalCode&quot; : &quot;1201&quot;,
+    &quot;city&quot; : &quot;Genf&quot;,
+    &quot;email&quot; : &quot;bpiffordb@example.com&quot;,
+    &quot;phoneNumber&quot; : &quot;055 222 4111&quot;,
+    &quot;moveHistory&quot; : [ ],
+    &quot;_links&quot; : {
+      &quot;self&quot; : [ {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/bd91pwfepl?fields=&quot;
+      }, {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/bd91pwfepl&quot;
+      } ],
+      &quot;address.change&quot; : {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/bd91pwfepl/address&quot;
+      },
+      &quot;policies&quot; : {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/bd91pwfepl/policies?expand=&quot;
+      }
+    }
+  }, {
+    &quot;customerId&quot; : &quot;f2m0v9b73c&quot;,
+    &quot;firstname&quot; : &quot;Blondy&quot;,
+    &quot;lastname&quot; : &quot;Langman&quot;,
+    &quot;birthday&quot; : &quot;1969-03-12T00:00:00.000+00:00&quot;,
+    &quot;streetAddress&quot; : &quot;5763 Delladonna Trail&quot;,
+    &quot;postalCode&quot; : &quot;2540&quot;,
+    &quot;city&quot; : &quot;Grenchen&quot;,
+    &quot;email&quot; : &quot;blangman14@example.com&quot;,
+    &quot;phoneNumber&quot; : &quot;055 222 4111&quot;,
+    &quot;moveHistory&quot; : [ ],
+    &quot;_links&quot; : {
+      &quot;self&quot; : [ {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/f2m0v9b73c?fields=&quot;
+      }, {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/f2m0v9b73c&quot;
+      } ],
+      &quot;address.change&quot; : {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/f2m0v9b73c/address&quot;
+      },
+      &quot;policies&quot; : {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/f2m0v9b73c/policies?expand=&quot;
+      }
+    }
+  }, {
+    &quot;customerId&quot; : &quot;btpchn7eg8&quot;,
+    &quot;firstname&quot; : &quot;Carmen&quot;,
+    &quot;lastname&quot; : &quot;Cashmore&quot;,
+    &quot;birthday&quot; : &quot;1958-03-19T00:00:00.000+00:00&quot;,
+    &quot;streetAddress&quot; : &quot;67 Corry Junction&quot;,
+    &quot;postalCode&quot; : &quot;3001&quot;,
+    &quot;city&quot; : &quot;Bern&quot;,
+    &quot;email&quot; : &quot;ccashmore3@example.com&quot;,
+    &quot;phoneNumber&quot; : &quot;055 222 4111&quot;,
+    &quot;moveHistory&quot; : [ ],
+    &quot;_links&quot; : {
+      &quot;self&quot; : [ {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/btpchn7eg8?fields=&quot;
+      }, {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/btpchn7eg8&quot;
+      } ],
+      &quot;address.change&quot; : {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/btpchn7eg8/address&quot;
+      },
+      &quot;policies&quot; : {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/btpchn7eg8/policies?expand=&quot;
+      }
+    }
+  }, {
+    &quot;customerId&quot; : &quot;vxhq4zzcqo&quot;,
+    &quot;firstname&quot; : &quot;Carny&quot;,
+    &quot;lastname&quot; : &quot;Vezey&quot;,
+    &quot;birthday&quot; : &quot;1980-12-23T00:00:00.000+00:00&quot;,
+    &quot;streetAddress&quot; : &quot;1 Warrior Circle&quot;,
+    &quot;postalCode&quot; : &quot;9000&quot;,
+    &quot;city&quot; : &quot;St. Gallen&quot;,
+    &quot;email&quot; : &quot;cvezey11@example.com&quot;,
+    &quot;phoneNumber&quot; : &quot;055 222 4111&quot;,
+    &quot;moveHistory&quot; : [ ],
+    &quot;_links&quot; : {
+      &quot;self&quot; : [ {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/vxhq4zzcqo?fields=&quot;
+      }, {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/vxhq4zzcqo&quot;
+      } ],
+      &quot;address.change&quot; : {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/vxhq4zzcqo/address&quot;
+      },
+      &quot;policies&quot; : {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/vxhq4zzcqo/policies?expand=&quot;
+      }
+    }
+  }, {
+    &quot;customerId&quot; : &quot;s9lfohy8dc&quot;,
+    &quot;firstname&quot; : &quot;Carry&quot;,
+    &quot;lastname&quot; : &quot;Phillcock&quot;,
+    &quot;birthday&quot; : &quot;1970-10-14T00:00:00.000+00:00&quot;,
+    &quot;streetAddress&quot; : &quot;3 Waywood Place&quot;,
+    &quot;postalCode&quot; : &quot;4001&quot;,
+    &quot;city&quot; : &quot;Basel&quot;,
+    &quot;email&quot; : &quot;cphillcock18@example.com&quot;,
+    &quot;phoneNumber&quot; : &quot;055 222 4111&quot;,
+    &quot;moveHistory&quot; : [ ],
+    &quot;_links&quot; : {
+      &quot;self&quot; : [ {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/s9lfohy8dc?fields=&quot;
+      }, {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/s9lfohy8dc&quot;
+      } ],
+      &quot;address.change&quot; : {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/s9lfohy8dc/address&quot;
+      },
+      &quot;policies&quot; : {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/s9lfohy8dc/policies?expand=&quot;
+      }
+    }
+  }, {
+    &quot;customerId&quot; : &quot;2dumngurs1&quot;,
+    &quot;firstname&quot; : &quot;Cly&quot;,
+    &quot;lastname&quot; : &quot;Muino&quot;,
+    &quot;birthday&quot; : &quot;1972-08-11T00:00:00.000+00:00&quot;,
+    &quot;streetAddress&quot; : &quot;334 Vidon Trail&quot;,
+    &quot;postalCode&quot; : &quot;1950&quot;,
+    &quot;city&quot; : &quot;Sion&quot;,
+    &quot;email&quot; : &quot;cmuinoj@example.com&quot;,
+    &quot;phoneNumber&quot; : &quot;055 222 4111&quot;,
+    &quot;moveHistory&quot; : [ ],
+    &quot;_links&quot; : {
+      &quot;self&quot; : [ {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/2dumngurs1?fields=&quot;
+      }, {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/2dumngurs1&quot;
+      } ],
+      &quot;address.change&quot; : {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/2dumngurs1/address&quot;
+      },
+      &quot;policies&quot; : {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/2dumngurs1/policies?expand=&quot;
+      }
+    }
+  }, {
+    &quot;customerId&quot; : &quot;5xvivyzxvc&quot;,
+    &quot;firstname&quot; : &quot;Cullin&quot;,
+    &quot;lastname&quot; : &quot;Manske&quot;,
+    &quot;birthday&quot; : &quot;1980-09-15T00:00:00.000+00:00&quot;,
+    &quot;streetAddress&quot; : &quot;8 Drewry Trail&quot;,
+    &quot;postalCode&quot; : &quot;6300&quot;,
+    &quot;city&quot; : &quot;Zug&quot;,
+    &quot;email&quot; : &quot;cmanske2@example.com&quot;,
+    &quot;phoneNumber&quot; : &quot;055 222 4111&quot;,
+    &quot;moveHistory&quot; : [ ],
+    &quot;_links&quot; : {
+      &quot;self&quot; : [ {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/5xvivyzxvc?fields=&quot;
+      }, {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/5xvivyzxvc&quot;
+      } ],
+      &quot;address.change&quot; : {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/5xvivyzxvc/address&quot;
+      },
+      &quot;policies&quot; : {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/5xvivyzxvc/policies?expand=&quot;
+      }
+    }
+  }, {
+    &quot;customerId&quot; : &quot;fmlpx3zwxh&quot;,
+    &quot;firstname&quot; : &quot;Davita&quot;,
+    &quot;lastname&quot; : &quot;Compfort&quot;,
+    &quot;birthday&quot; : &quot;1963-01-19T00:00:00.000+00:00&quot;,
+    &quot;streetAddress&quot; : &quot;444 Veith Pass&quot;,
+    &quot;postalCode&quot; : &quot;8640&quot;,
+    &quot;city&quot; : &quot;Rapperswil&quot;,
+    &quot;email&quot; : &quot;dcompfortl@example.com&quot;,
+    &quot;phoneNumber&quot; : &quot;055 222 4111&quot;,
+    &quot;moveHistory&quot; : [ ],
+    &quot;_links&quot; : {
+      &quot;self&quot; : [ {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/fmlpx3zwxh?fields=&quot;
+      }, {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/fmlpx3zwxh&quot;
+      } ],
+      &quot;address.change&quot; : {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/fmlpx3zwxh/address&quot;
+      },
+      &quot;policies&quot; : {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/fmlpx3zwxh/policies?expand=&quot;
+      }
+    }
+  }, {
+    &quot;customerId&quot; : &quot;xzwbqgap18&quot;,
+    &quot;firstname&quot; : &quot;Delora&quot;,
+    &quot;lastname&quot; : &quot;Broadwell&quot;,
+    &quot;birthday&quot; : &quot;1971-01-03T00:00:00.000+00:00&quot;,
+    &quot;streetAddress&quot; : &quot;80388 Bellgrove Alley&quot;,
+    &quot;postalCode&quot; : &quot;8640&quot;,
+    &quot;city&quot; : &quot;Rapperswil&quot;,
+    &quot;email&quot; : &quot;dbroadwellp@example.com&quot;,
+    &quot;phoneNumber&quot; : &quot;055 222 4111&quot;,
+    &quot;moveHistory&quot; : [ ],
+    &quot;_links&quot; : {
+      &quot;self&quot; : [ {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/xzwbqgap18?fields=&quot;
+      }, {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/xzwbqgap18&quot;
+      } ],
+      &quot;address.change&quot; : {
+        &quot;href&quot; : &quot;http://localhost:8110/customers/xzwbqgap18/address&quot;
+      },
+      &quot;policies&quot; : {
+        &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers/xzwbqgap18/policies?expand=&quot;
+      }
+    }
+  } ],
+  &quot;_links&quot; : {
+    &quot;self&quot; : {
+      &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers?filter=&amp;limit=10&amp;offset=0&quot;
+    },
+    &quot;next&quot; : {
+      &quot;href&quot; : &quot;http://microservices.virtualandemo.com:8090/customers?filter=&amp;limit=10&amp;offset=10&quot;
+    }
+  }
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_77126792.html">@examples</a>
+       <a href="report-tag_4087703099.html">@quote</a>
+</div>
+
+
+  <span class="lead-duration duration">0.190</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-34">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Read Customer infos - Find last element - api call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-34" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-35">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-35" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-36">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-36" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">a user</span> perform <span class="argument">a</span> api action</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">request</span> with given header params</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>contentType</td>
+                  <td>application/json</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name"><span class="argument">a user</span> get <span class="argument">application/json</span> in <span class="argument">/customers</span> resource on <span class="argument">quote</span></span>
+
+  <span class="lead-duration duration">0.127</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-37" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_-524809862.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-37" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;AcceptContentType&quot;: &quot;application/json&quot;,
+    &quot;resource&quot;: &quot;http://microservices.virtualandemo.com:8090/customers&quot;,
+    &quot;context&quot;: {
+        &quot;firstname&quot;: &quot;Max&quot;,
+        &quot;city&quot;: &quot;Rapperswil&quot;,
+        &quot;postalCode&quot;: &quot;8640&quot;,
+        &quot;STATUS_CODE&quot;: &quot;200&quot;,
+        &quot;insuranceType&quot;: &quot;Life Insurance&quot;,
+        &quot;quoteId&quot;: &quot;448&quot;,
+        &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MTI1NTksImV4cCI6MTY0NzIyNTYxMn0.wupRC8uZ56wm2cf6hQqJ7MBUrwAcAPTAimRngLcuZ6azN3OpuzJtqE_nwQMAJvuSm2PutSjVe92o1aWvP951aw&quot;,
+        &quot;lastname&quot;: &quot;Mustermann&quot;,
+        &quot;expiryDate&quot;: &quot;2023-03-06T20:40:13&quot;,
+        &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+        &quot;rejectQuoteId&quot;: &quot;457&quot;,
+        &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+        &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+        &quot;email&quot;: &quot;admin@example.com&quot;,
+        &quot;startDate&quot;: &quot;2022-03-06&quot;
+    },
+    &quot;url&quot;: &quot;http://microservices.virtualandemo.com:8090&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-38" class="collapsable-control">
+      <a>Contextual-Dataset:</a>
+      <a href="embeddings/embedding_-1954067552.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-38" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;firstname&quot;: &quot;Max&quot;,
+    &quot;city&quot;: &quot;Rapperswil&quot;,
+    &quot;postalCode&quot;: &quot;8640&quot;,
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;insuranceType&quot;: &quot;Life Insurance&quot;,
+    &quot;quoteId&quot;: &quot;448&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MTI1NTksImV4cCI6MTY0NzIyNTYxMn0.wupRC8uZ56wm2cf6hQqJ7MBUrwAcAPTAimRngLcuZ6azN3OpuzJtqE_nwQMAJvuSm2PutSjVe92o1aWvP951aw&quot;,
+    &quot;lastname&quot;: &quot;Mustermann&quot;,
+    &quot;expiryDate&quot;: &quot;2023-03-06T20:40:13&quot;,
+    &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+    &quot;rejectQuoteId&quot;: &quot;457&quot;,
+    &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+    &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+    &quot;email&quot;: &quot;admin@example.com&quot;,
+    &quot;startDate&quot;: &quot;2022-03-06&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">store the <span class="argument">customers[-1].customerId</span> value of the key as <span class="argument">id</span></span>
+
+  <span class="lead-duration duration">0.057</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_77126792.html">@examples</a>
+       <a href="report-tag_2149487065.html">@api</a>
+</div>
+
+
+  <span class="lead-duration duration">0.177</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-39">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">RiskFactor-DirtectResponse - api call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-39" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-40">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-40" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-41">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-41" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">a user</span> perform <span class="argument">a</span> api action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">request</span> with given header params</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>contentType</td>
+                  <td>application/json</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">create <span class="argument">api</span> with given input</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>birthday</td>
+                  <td>1918-10-24</td>
+              </tr>
+              <tr>
+                  <td>postalCode</td>
+                  <td>60563</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-42" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_1880430683.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-42" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;birthday&quot;: &quot;1918-10-24&quot;,
+    &quot;postalCode&quot;: &quot;60563&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name"><span class="argument">a user</span> post <span class="argument">application/json</span> in <span class="argument">/api/riskfactor/compute</span> resource on <span class="argument">api</span></span>
+
+  <span class="lead-duration duration">0.172</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-43" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_-1798922689.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-43" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;AcceptContentType&quot;: &quot;application/json&quot;,
+    &quot;resource&quot;: &quot;https://live.virtualandemo.com/api/riskfactor/compute&quot;,
+    &quot;context&quot;: {
+        &quot;firstname&quot;: &quot;Max&quot;,
+        &quot;city&quot;: &quot;Rapperswil&quot;,
+        &quot;postalCode&quot;: &quot;8640&quot;,
+        &quot;STATUS_CODE&quot;: &quot;200&quot;,
+        &quot;insuranceType&quot;: &quot;Life Insurance&quot;,
+        &quot;quoteId&quot;: &quot;448&quot;,
+        &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MTI1NTksImV4cCI6MTY0NzIyNTYxMn0.wupRC8uZ56wm2cf6hQqJ7MBUrwAcAPTAimRngLcuZ6azN3OpuzJtqE_nwQMAJvuSm2PutSjVe92o1aWvP951aw&quot;,
+        &quot;lastname&quot;: &quot;Mustermann&quot;,
+        &quot;expiryDate&quot;: &quot;2023-03-06T20:40:13&quot;,
+        &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+        &quot;rejectQuoteId&quot;: &quot;457&quot;,
+        &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+        &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+        &quot;id&quot;: &quot;xzwbqgap18&quot;,
+        &quot;email&quot;: &quot;admin@example.com&quot;,
+        &quot;startDate&quot;: &quot;2022-03-06&quot;
+    },
+    &quot;url&quot;: &quot;https://live.virtualandemo.com&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-44" class="collapsable-control">
+      <a>Contextual-Dataset:</a>
+      <a href="embeddings/embedding_-258688619.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-44" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;firstname&quot;: &quot;Max&quot;,
+    &quot;city&quot;: &quot;Rapperswil&quot;,
+    &quot;postalCode&quot;: &quot;8640&quot;,
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;insuranceType&quot;: &quot;Life Insurance&quot;,
+    &quot;quoteId&quot;: &quot;448&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImNyZWF0ZWQiOjE2NDY2MjA4MTI1NTksImV4cCI6MTY0NzIyNTYxMn0.wupRC8uZ56wm2cf6hQqJ7MBUrwAcAPTAimRngLcuZ6azN3OpuzJtqE_nwQMAJvuSm2PutSjVe92o1aWvP951aw&quot;,
+    &quot;lastname&quot;: &quot;Mustermann&quot;,
+    &quot;expiryDate&quot;: &quot;2023-03-06T20:40:13&quot;,
+    &quot;password&quot;: &quot;xxxxxxxxxxxx&quot;,
+    &quot;rejectQuoteId&quot;: &quot;457&quot;,
+    &quot;streetAddress&quot;: &quot;Oberseestrasse 10&quot;,
+    &quot;customerId&quot;: &quot;rgpp0wkpec&quot;,
+    &quot;id&quot;: &quot;xzwbqgap18&quot;,
+    &quot;email&quot;: &quot;admin@example.com&quot;,
+    &quot;startDate&quot;: &quot;2022-03-06&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify <span class="argument">api</span> response with <span class="argument">65</span> includes in the response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-45" class="collapsable-control">
+      <a>Actual-Response</a>
+      <a href="embeddings/embedding_2428260.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-45" class="collapse collapsable-details ">
+      <pre class="embedding-content">65</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">store the <span class="argument">.</span> value of the key as <span class="argument">riskFactor</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">evaluate the <span class="argument">[riskFactor]=65</span> condition success</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-46">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-46" class="collapse collapsable-details " >
+          
+          <pre><p>Success condition :[riskFactor]=65 &gt;&gt;&gt; status true</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

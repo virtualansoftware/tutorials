@@ -4,7 +4,6 @@
   - [Excel](Excel.md)
   <!-- - [Postman](Postman.md) -->
   - [API Reports](/api/cucumber-html-reports/overview-features.html)
-  - [API DB Kafka Reports](/kafka/cucumber-html-reports/overview-features.html)
   - [Pipeline - CI/CD](Idaithalam-pipeline.md)
   - [Idaithalam FAQ](Idaithalam-faq.md)
 

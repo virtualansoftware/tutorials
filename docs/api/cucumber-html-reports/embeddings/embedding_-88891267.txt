@@ -1,1 +1,0 @@
-{okta_user_id.bin=test, basic_auth_password.api=xxxxxxxxxxxx, basic_auth_user_id.api=test, okta_user_password.bin=xxxxxxxxxxxx, tag=grey}

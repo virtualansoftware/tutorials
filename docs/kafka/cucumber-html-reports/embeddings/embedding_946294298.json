@@ -1,0 +1,4 @@
+{
+    "resource": "employee",
+    "sql": "select emp_no, to_char(birth_date, 'YYYY-mm-DD') birth_date ,first_name,last_name, gender,to_char(hire_date , 'YYYY-mm-DD') hire_date from employees where emp_no = 1"
+}

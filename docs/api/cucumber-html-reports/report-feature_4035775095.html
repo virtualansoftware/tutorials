@@ -1,0 +1,2847 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no a0b6f62e-3107-4d69-a080-7c50b94ec999) - Feature: API-KAFKA-DB-Examples - Workflow</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Kafka DB API Testing live(dev)</td>
+        <td>a0b6f62e-3107-4d69-a080-7c50b94ec999</td>
+      <td>06 Mar 2022, 20:41</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">API-KAFKA-DB-Examples - Workflow</td>
+          <td      class="passed"    >35</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">35</td>
+
+          <td  class="passed"    >8</td>
+          <td >0</td>
+          <td class="total">8</td>
+
+          <td class="duration" data-value="7301478800">7.301</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">API-KAFKA-DB-Examples - Workflow</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Load initial set of data</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.270</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">provided all the feature level parameters from file</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149501150.html">@pet</a>
+</div>
+
+
+  <span class="lead-duration duration">5.325</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Validate pet Response -  kafka message</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-5" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">as a user perform message <span class="argument">Validate pet Response</span> action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">send inline message <span class="argument">details</span> for event <span class="argument">TEST</span> on <span class="argument">pet</span> with type <span class="argument">JSON</span></span>
+
+  <span class="lead-duration duration">0.175</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>{</td>
+              </tr>
+              <tr>
+                  <td>&quot;category&quot;: {</td>
+              </tr>
+              <tr>
+                  <td>&quot;id&quot;: 100,</td>
+              </tr>
+              <tr>
+                  <td>&quot;name&quot;: &quot;string&quot;</td>
+              </tr>
+              <tr>
+                  <td>},</td>
+              </tr>
+              <tr>
+                  <td>&quot;id&quot;: 100,</td>
+              </tr>
+              <tr>
+                  <td>&quot;name&quot;: &quot;doggie&quot;,</td>
+              </tr>
+              <tr>
+                  <td>&quot;photoUrls&quot;: [</td>
+              </tr>
+              <tr>
+                  <td>&quot;string&quot;</td>
+              </tr>
+              <tr>
+                  <td>],</td>
+              </tr>
+              <tr>
+                  <td>&quot;status&quot;: &quot;available&quot;,</td>
+              </tr>
+              <tr>
+                  <td>&quot;tags&quot;: [</td>
+              </tr>
+              <tr>
+                  <td>{</td>
+              </tr>
+              <tr>
+                  <td>&quot;id&quot;: 0,</td>
+              </tr>
+              <tr>
+                  <td>&quot;name&quot;: &quot;string&quot;</td>
+              </tr>
+              <tr>
+                  <td>}</td>
+              </tr>
+              <tr>
+                  <td>]</td>
+              </tr>
+              <tr>
+                  <td>}</td>
+              </tr>
+          </table>
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-7">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-7" class="collapse collapsable-details " >
+          
+          <pre><p>JSONMessage{type='JSON', id=100, body={&quot;category&quot;: {&quot;id&quot;: 100,&quot;name&quot;: &quot;string&quot;},&quot;id&quot;: 100,&quot;name&quot;: &quot;doggie&quot;,&quot;photoUrls&quot;: [&quot;string&quot;],&quot;status&quot;: &quot;available&quot;,&quot;tags&quot;: [{&quot;id&quot;: 0,&quot;name&quot;: &quot;string&quot;}]}}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify-by-elements <span class="argument">contains pet information</span> for event <span class="argument">TEST</span> contains <span class="argument">100</span> on <span class="argument">pet</span> with type <span class="argument">JSON</span></span>
+
+  <span class="lead-duration duration">5.130</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>name</td>
+                  <td>doggie</td>
+              </tr>
+              <tr>
+                  <td>id</td>
+                  <td>i~100</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-8" class="collapsable-control">
+      <a>ActualResponse</a>
+      <a href="embeddings/embedding_471119252.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-8" class="collapse collapsable-details ">
+      <pre class="embedding-content">{&quot;category&quot;: {&quot;id&quot;: 100,&quot;name&quot;: &quot;string&quot;},&quot;id&quot;: 100,&quot;name&quot;: &quot;doggie&quot;,&quot;photoUrls&quot;: [&quot;string&quot;],&quot;status&quot;: &quot;available&quot;,&quot;tags&quot;: [{&quot;id&quot;: 0,&quot;name&quot;: &quot;string&quot;}]}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify <span class="argument">details</span> for event <span class="argument">TEST</span> contains <span class="argument">100</span> on <span class="argument">pet</span> with type <span class="argument">JSON</span></span>
+
+  <span class="lead-duration duration">0.019</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>id,name, category/id:name,status</td>
+              </tr>
+              <tr>
+                  <td>i~100,doggie,i~100:string,available</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-9" class="collapsable-control">
+      <a>ExpectedResponse:</a>
+      <a href="embeddings/embedding_870616334.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-9" class="collapse collapsable-details ">
+      <pre class="embedding-content">[{
+    &quot;id&quot;: 100,
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;category&quot;: {
+        &quot;id&quot;: 100,
+        &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;status&quot;: &quot;available&quot;
+}]</pre>
+    </div>
+  </div>
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-10" class="collapsable-control">
+      <a>ActualResponse:</a>
+      <a href="embeddings/embedding_2017299031.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-10" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;photoUrls&quot;: [&quot;string&quot;],
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;id&quot;: 100,
+    &quot;category&quot;: {
+        &quot;name&quot;: &quot;string&quot;,
+        &quot;id&quot;: 100
+    },
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;tags&quot;: [{
+        &quot;name&quot;: &quot;string&quot;,
+        &quot;id&quot;: 0
+    }]
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149501150.html">@pet</a>
+</div>
+
+
+  <span class="lead-duration duration">1.617</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">get By Id - api call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-12" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-13" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">a user</span> perform <span class="argument">a</span> api action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add the <span class="argument">1000</span> value of the key as <span class="argument">petId</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">request</span> with given header params</span>
+
+  <span class="lead-duration duration">0.053</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>contentType</td>
+                  <td>application/json</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name"><span class="argument">a user</span> get <span class="argument">application/json</span> in <span class="argument">/api/pets/[petId]</span> resource on <span class="argument">pet</span></span>
+
+  <span class="lead-duration duration">0.965</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-14" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_906829476.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-14" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;AcceptContentType&quot;: &quot;application/json&quot;,
+    &quot;resource&quot;: &quot;https://live.virtualandemo.com/api/pets/1000&quot;,
+    &quot;context&quot;: {&quot;petId&quot;: &quot;1000&quot;},
+    &quot;url&quot;: &quot;https://live.virtualandemo.com&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.106</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-15" class="collapsable-control">
+      <a>Contextual-Dataset:</a>
+      <a href="embeddings/embedding_353972614.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-15" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;petId&quot;: &quot;1000&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify <span class="argument">api</span> response csvson includes in the response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>id,name, category/id:name,status</td>
+              </tr>
+              <tr>
+                  <td>i~1000,doggie,i~1000:Rocky,available</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-16" class="collapsable-control">
+      <a>Expected json</a>
+      <a href="embeddings/embedding_1369973666.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-16" class="collapse collapsable-details ">
+      <pre class="embedding-content">[{&quot;id&quot;:1000,&quot;name&quot;:&quot;doggie&quot;,&quot;category&quot;:{&quot;id&quot;:1000,&quot;name&quot;:&quot;Rocky&quot;},&quot;status&quot;:&quot;available&quot;}]</pre>
+    </div>
+  </div>
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-17" class="collapsable-control">
+      <a>Actual json</a>
+      <a href="embeddings/embedding_27880464.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-17" class="collapse collapsable-details ">
+      <pre class="embedding-content">{&quot;photoUrls&quot;:[&quot;null&quot;],&quot;name&quot;:&quot;doggie&quot;,&quot;id&quot;:1000,&quot;category&quot;:{&quot;name&quot;:&quot;Rocky&quot;,&quot;id&quot;:1000},&quot;type&quot;:&quot;DOGS&quot;,&quot;tags&quot;:[{&quot;name&quot;:&quot;Dogs&quot;,&quot;id&quot;:0}],&quot;status&quot;:&quot;available&quot;}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify <span class="argument">across response</span> includes following in the response</span>
+
+  <span class="lead-duration duration">0.487</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>name</td>
+                  <td>doggie</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-18" class="collapsable-control">
+      <a>Actual-Response</a>
+      <a href="embeddings/embedding_1761880372.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-18" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+  &quot;id&quot;: 1000,
+  &quot;category&quot;: {
+    &quot;id&quot;: 1000,
+    &quot;name&quot;: &quot;Rocky&quot;
+  },
+  &quot;name&quot;: &quot;doggie&quot;,
+  &quot;type&quot;: &quot;DOGS&quot;,
+  &quot;photoUrls&quot;: [
+    &quot;null&quot;
+  ],
+  &quot;tags&quot;: [
+    {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;Dogs&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;available&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149501150.html">@pet</a>
+</div>
+
+
+  <span class="lead-duration duration">0.151</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">get API testing - api call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-20" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">a user</span> perform <span class="argument">a</span> api action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add the <span class="argument">grey</span> value of the key as <span class="argument">tag</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">request</span> with given query params</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>tags</td>
+                  <td>[tag]</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">request</span> with given header params</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>contentType</td>
+                  <td>application/json</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name"><span class="argument">a user</span> get <span class="argument">application/json</span> in <span class="argument">/api/pets/findByTags</span> resource on <span class="argument">pet</span></span>
+
+  <span class="lead-duration duration">0.137</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-22" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_-1675640905.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-22" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;AcceptContentType&quot;: &quot;application/json&quot;,
+    &quot;resource&quot;: &quot;https://live.virtualandemo.com/api/pets/findByTags&quot;,
+    &quot;context&quot;: {
+        &quot;STATUS_CODE&quot;: &quot;200&quot;,
+        &quot;petId&quot;: &quot;1000&quot;,
+        &quot;tag&quot;: &quot;grey&quot;
+    },
+    &quot;url&quot;: &quot;https://live.virtualandemo.com&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-23" class="collapsable-control">
+      <a>Contextual-Dataset:</a>
+      <a href="embeddings/embedding_664491778.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-23" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;petId&quot;: &quot;1000&quot;,
+    &quot;tag&quot;: &quot;grey&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify-all <span class="argument">/api/pets/findByTags</span> api includes following in the response</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>photoUrls[0]</td>
+                  <td>string</td>
+              </tr>
+              <tr>
+                  <td>name</td>
+                  <td>Butch</td>
+              </tr>
+              <tr>
+                  <td>id</td>
+                  <td>i~201</td>
+              </tr>
+              <tr>
+                  <td>category.name</td>
+                  <td>Bulldog</td>
+              </tr>
+              <tr>
+                  <td>category.id</td>
+                  <td>i~200</td>
+              </tr>
+              <tr>
+                  <td>status</td>
+                  <td>available</td>
+              </tr>
+              <tr>
+                  <td>tags[0].name</td>
+                  <td>grey</td>
+              </tr>
+              <tr>
+                  <td>tags[0].id</td>
+                  <td>i~201</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-24" class="collapsable-control">
+      <a>Actual-Response</a>
+      <a href="embeddings/embedding_-898834623.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-24" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+  &quot;category&quot;: {
+    &quot;id&quot;: 200,
+    &quot;name&quot;: &quot;Bulldog&quot;
+  },
+  &quot;id&quot;: 201,
+  &quot;name&quot;: &quot;Butch&quot;,
+  &quot;photoUrls&quot;: [
+    &quot;string&quot;
+  ],
+  &quot;status&quot;: &quot;available&quot;,
+  &quot;tags&quot;: [
+    {
+      &quot;id&quot;: 201,
+      &quot;name&quot;: &quot;grey&quot;
+    }
+  ]
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149501150.html">@pet</a>
+</div>
+
+
+  <span class="lead-duration duration">0.176</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">post API Testing - api call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-26" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">a user</span> perform <span class="argument">a</span> api action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">add <span class="argument">request</span> with given header params</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>contentType</td>
+                  <td>application/json</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">create <span class="argument">api</span> with given input</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>photoUrls[0]</td>
+                  <td>string</td>
+              </tr>
+              <tr>
+                  <td>name</td>
+                  <td>doggie</td>
+              </tr>
+              <tr>
+                  <td>id</td>
+                  <td>i~100</td>
+              </tr>
+              <tr>
+                  <td>category.name</td>
+                  <td>string</td>
+              </tr>
+              <tr>
+                  <td>category.id</td>
+                  <td>i~100</td>
+              </tr>
+              <tr>
+                  <td>status</td>
+                  <td>available</td>
+              </tr>
+              <tr>
+                  <td>tags[0].name</td>
+                  <td>string</td>
+              </tr>
+              <tr>
+                  <td>tags[0].id</td>
+                  <td>i~0</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-28" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_2017299031.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-28" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;photoUrls&quot;: [&quot;string&quot;],
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;id&quot;: 100,
+    &quot;category&quot;: {
+        &quot;name&quot;: &quot;string&quot;,
+        &quot;id&quot;: 100
+    },
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;tags&quot;: [{
+        &quot;name&quot;: &quot;string&quot;,
+        &quot;id&quot;: 0
+    }]
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name"><span class="argument">a user</span> post <span class="argument">application/json</span> in <span class="argument">/api/pets</span> resource on <span class="argument">pet</span></span>
+
+  <span class="lead-duration duration">0.166</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-29" class="collapsable-control">
+      <a>RequestData:</a>
+      <a href="embeddings/embedding_-635303908.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-29" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;AcceptContentType&quot;: &quot;application/json&quot;,
+    &quot;resource&quot;: &quot;https://live.virtualandemo.com/api/pets&quot;,
+    &quot;context&quot;: {
+        &quot;STATUS_CODE&quot;: &quot;200&quot;,
+        &quot;petId&quot;: &quot;1000&quot;,
+        &quot;tag&quot;: &quot;grey&quot;
+    },
+    &quot;url&quot;: &quot;https://live.virtualandemo.com&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-30" class="collapsable-control">
+      <a>Contextual-Dataset:</a>
+      <a href="embeddings/embedding_664491778.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-30" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;STATUS_CODE&quot;: &quot;200&quot;,
+    &quot;petId&quot;: &quot;1000&quot;,
+    &quot;tag&quot;: &quot;grey&quot;
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify-all <span class="argument">/api/pets</span> api includes following in the response</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>photoUrls[0]</td>
+                  <td>string</td>
+              </tr>
+              <tr>
+                  <td>name</td>
+                  <td>doggie</td>
+              </tr>
+              <tr>
+                  <td>id</td>
+                  <td>i~100</td>
+              </tr>
+              <tr>
+                  <td>category.name</td>
+                  <td>string</td>
+              </tr>
+              <tr>
+                  <td>category.id</td>
+                  <td>i~100</td>
+              </tr>
+              <tr>
+                  <td>status</td>
+                  <td>available</td>
+              </tr>
+              <tr>
+                  <td>tags[0].name</td>
+                  <td>string</td>
+              </tr>
+              <tr>
+                  <td>tags[0].id</td>
+                  <td>i~0</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-31" class="collapsable-control">
+      <a>Actual-Response</a>
+      <a href="embeddings/embedding_-894848940.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-31" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+  &quot;category&quot;: {
+    &quot;id&quot;: 100,
+    &quot;name&quot;: &quot;string&quot;
+  },
+  &quot;id&quot;: 100,
+  &quot;name&quot;: &quot;doggie&quot;,
+  &quot;photoUrls&quot;: [
+    &quot;string&quot;
+  ],
+  &quot;status&quot;: &quot;available&quot;,
+  &quot;tags&quot;: [
+    {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    }
+  ]
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify-by-elements <span class="argument">contains pet information</span> for event <span class="argument">TEST</span> contains <span class="argument">100</span> on <span class="argument">pet</span> with type <span class="argument">JSON</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>name</td>
+                  <td>doggie</td>
+              </tr>
+              <tr>
+                  <td>id</td>
+                  <td>i~100</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-32" class="collapsable-control">
+      <a>ActualResponse</a>
+      <a href="embeddings/embedding_471119252.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-32" class="collapse collapsable-details ">
+      <pre class="embedding-content">{&quot;category&quot;: {&quot;id&quot;: 100,&quot;name&quot;: &quot;string&quot;},&quot;id&quot;: 100,&quot;name&quot;: &quot;doggie&quot;,&quot;photoUrls&quot;: [&quot;string&quot;],&quot;status&quot;: &quot;available&quot;,&quot;tags&quot;: [{&quot;id&quot;: 0,&quot;name&quot;: &quot;string&quot;}]}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify <span class="argument">details</span> for event <span class="argument">TEST</span> contains <span class="argument">100</span> on <span class="argument">pet</span> with type <span class="argument">JSON</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>id,name, category/id:name,status</td>
+              </tr>
+              <tr>
+                  <td>i~100,doggie,i~100:string,available</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-33" class="collapsable-control">
+      <a>ExpectedResponse:</a>
+      <a href="embeddings/embedding_870616334.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-33" class="collapse collapsable-details ">
+      <pre class="embedding-content">[{
+    &quot;id&quot;: 100,
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;category&quot;: {
+        &quot;id&quot;: 100,
+        &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;status&quot;: &quot;available&quot;
+}]</pre>
+    </div>
+  </div>
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-34" class="collapsable-control">
+      <a>ActualResponse:</a>
+      <a href="embeddings/embedding_2017299031.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-34" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;photoUrls&quot;: [&quot;string&quot;],
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;id&quot;: 100,
+    &quot;category&quot;: {
+        &quot;name&quot;: &quot;string&quot;,
+        &quot;id&quot;: 100
+    },
+    &quot;status&quot;: &quot;available&quot;,
+    &quot;tags&quot;: [{
+        &quot;name&quot;: &quot;string&quot;,
+        &quot;id&quot;: 0
+    }]
+}</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3627984621.html">@employee</a>
+</div>
+
+
+  <span class="lead-duration duration">0.019</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-35">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create employee Table - database action</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-35" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-36">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-36" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-37">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-37" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">as a user perform sql <span class="argument">query</span> action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">create variable <span class="argument">empId</span> as key and <span class="argument">1</span> as value</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">execute DDL for the given sql <span class="argument">details on the</span> on <span class="argument">employee</span></span>
+
+  <span class="lead-duration duration">0.019</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>create table employees (emp_no int, birth_date date,first_name VARCHAR(50),last_name VARCHAR(50), gender VARCHAR(50),hire_date date)</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3627984621.html">@employee</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-38">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Insert Employee info - database action</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-38" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-39">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-39" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-40">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-40" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">as a user perform sql <span class="argument">query</span> action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">execute INSERT for the given <span class="argument">sql details on the</span> on <span class="argument">employee</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>insert into employees (emp_no,birth_date,first_name,last_name, gender,hire_date) values  ([empId], DATE '1983-11-17','Danny', 'Ray', 'Male',DATE  '2012-03-24')</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3627984621.html">@employee</a>
+</div>
+
+
+  <span class="lead-duration duration">0.008</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-41">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">DB_VERIFY - database action</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-41" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-42">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-42" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.BaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.DBBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.virtualan.cucumblan.core.MsgBaseStepDefinition.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-43">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-43" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">as a user perform sql <span class="argument">query</span> action</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">read <span class="argument">details on the</span> given <span class="argument">query</span> on <span class="argument">employee</span></span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>select emp_no, to_char(birth_date, 'YYYY-mm-DD') birth_date ,first_name,last_name, gender,to_char(hire_date , 'YYYY-mm-DD') hire_date from employees where emp_no = [empId]</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-44" class="collapsable-control">
+      <a>SelectSql:</a>
+      <a href="embeddings/embedding_946294298.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-44" class="collapse collapsable-details ">
+      <pre class="embedding-content">{
+    &quot;resource&quot;: &quot;employee&quot;,
+    &quot;sql&quot;: &quot;select emp_no, to_char(birth_date, 'YYYY-mm-DD') birth_date ,first_name,last_name, gender,to_char(hire_date , 'YYYY-mm-DD') hire_date from employees where emp_no = 1&quot;
+}</pre>
+    </div>
+  </div>
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-45" class="collapsable-control">
+      <a>SqlResponse:</a>
+      <a href="embeddings/embedding_-1597677376.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-45" class="collapse collapsable-details ">
+      <pre class="embedding-content">[{&quot;EMP_NO&quot;:1,&quot;BIRTH_DATE&quot;:&quot;1983-11-17&quot;,&quot;FIRST_NAME&quot;:&quot;Danny&quot;,&quot;LAST_NAME&quot;:&quot;Ray&quot;,&quot;GENDER&quot;:&quot;Male&quot;,&quot;HIRE_DATE&quot;:&quot;2012-03-24&quot;}]</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">validate <span class="argument">information on the</span> given <span class="argument">details</span> on <span class="argument">employee</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>EMP_NO,BIRTH_DATE,FIRST_NAME,LAST_NAME,GENDER,HIRE_DATE</td>
+              </tr>
+              <tr>
+                  <td>i~[empId],1983-11-17,Danny,Ray,Male,2012-03-24</td>
+              </tr>
+          </table>
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-46" class="collapsable-control">
+      <a>ActualQueryResponse</a>
+      <a href="embeddings/embedding_-656878421.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-46" class="collapse collapsable-details ">
+      <pre class="embedding-content">[{
+    &quot;HIRE_DATE&quot;: &quot;2012-03-24&quot;,
+    &quot;BIRTH_DATE&quot;: &quot;1983-11-17&quot;,
+    &quot;EMP_NO&quot;: 1,
+    &quot;GENDER&quot;: &quot;Male&quot;,
+    &quot;LAST_NAME&quot;: &quot;Ray&quot;,
+    &quot;FIRST_NAME&quot;: &quot;Danny&quot;
+}]</pre>
+    </div>
+  </div>
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-47" class="collapsable-control">
+      <a>ExpectedResponse:</a>
+      <a href="embeddings/embedding_-709816998.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+
+    <div id="embedding-47" class="collapse collapsable-details ">
+      <pre class="embedding-content">[{
+    &quot;EMP_NO&quot;: 1,
+    &quot;BIRTH_DATE&quot;: &quot;1983-11-17&quot;,
+    &quot;FIRST_NAME&quot;: &quot;Danny&quot;,
+    &quot;LAST_NAME&quot;: &quot;Ray&quot;,
+    &quot;GENDER&quot;: &quot;Male&quot;,
+    &quot;HIRE_DATE&quot;: &quot;2012-03-24&quot;
+}]</pre>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
