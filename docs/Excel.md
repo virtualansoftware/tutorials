@@ -258,7 +258,6 @@ Idaithalam reads the excel and generates the Virtualan Collection and would be c
          
          6. isMatch=b~LEN("[firstname]")=3  # will create boolean variable with value
          
-         7. lenghtInDecimals=d~LEN("[length]")=3  # will create decimal variable with value
 
     
  - **Security:**  [Example download](https://github.com/virtualansoftware/idaithalam/blob/master/samples/idaithalam-excel-apitesting/src/test/resources/virtualan_collection_testcase_8.xlsx)
