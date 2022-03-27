@@ -6,8 +6,6 @@ As a user, I need to validate the Order Created  event. The OrderCreated will co
 
 
 1. Create Java project
-  
-    ![](_images/idaithalam/project_structure.jpg ':size=30%')
 
 
 2. Create excel with given format for REST api and Kafka event validation 
