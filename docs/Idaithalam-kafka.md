@@ -1,4 +1,4 @@
-## Setup to perform Message validation with Kafka events: 
+## Kafka Message validation : 
 
 Test Case: Validate the order creation API and new ordered creation event
 
