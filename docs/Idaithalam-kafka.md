@@ -27,106 +27,113 @@ As a user, I need to validate the Order Created  event. The OrderCreated contai
     - In this case, "json" is a resource for this consumer. Now the framework will look for "consumer-json.properties" in the classpath. Which would help which broker configuration would be used to consume the message.  
 
       > consumer-json.properties #  Following values can be substitued by your application specific values.
-        bootstrap.servers=microservices.virtualandemo.com:9092 # kafka broker
-        key.deserializer=org.apache.kafka.common.serialization.StringDeserializer  
-        value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
-        enable.auto.commit=true
-        auto.commit.interval.ms=1000
-        session.timeout.ms=30000
-        auto.offset.reset=earliest   
-
+         ```properties
+         bootstrap.servers=microservices.virtualandemo.com:9092 # kafka broker
+         key.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+         value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+         enable.auto.commit=true
+         auto.commit.interval.ms=1000
+         session.timeout.ms=30000
+         auto.offset.reset=earliest   
+        ```
   - TestCaseNameDesc 
     - Describes the purpose of the test case.
 
   - StepInfo  
     - Helps create meaningful step definitions for API and Kafka. 
+  
+  - StoreResponseVariables
+    - From the API response and it allows to create multiple variables using key=value; key as "variable name" and value as "jsonpath"    
 
   - Event 
     - To validate the order details by retrieving the "OrderCreated" event from the mapping kafka topic. This kafka topic with the event mapping will be specified in the "topic.properties" file and add the properties file to the classpath.
-            
-    > topic.properties
-          OrderCreated=dev01.orderCreated  # OrderCreated event would be consumed from the "dev01.orderCreated topic"
-          CreateQuote=dev01.createQuote  # CreateQuote event would be consumed from the "dev01.createQuote topic"
+    
+    > topic.properties    
+    ```properties
+         OrderCreated=dev01.orderCreated  # OrderCreated event would be consumed from the "dev01.orderCreated topic"
+         CreateQuote=dev01.createQuote  # CreateQuote event would be consumed from the "dev01.createQuote topic"
+    ```
   - Identifier 
     - To read the unique event(message) from the given kafka topic. In this case "[orderId]" is the unique order number of the "OrderCreated" event to be validated.
 
   - Csvson 
     - Comma separated value(csv) of the order information to be validated. i~ represents integer value.
   -  MessageType 
-     - This "OrderCreated" event is JSON. Predefined "JSONMessageType" can be used for this event validation.
+     - This "OrderCreated" event is JSON message. Predefined "JSONMessageType" can be used for this event validation.
      - An entry needs to be added to the "json-messagetype.properties"
      - The entry should be "eventname=JSONPath"
      > json-messagetype.properties
+       
+       ```properties
        OrderCreated=orderNumber  # "orderNumber" is the json path of the "OrderCreated" Event and the value of the "orderNumber" is used to uniquely identify the event
+       ```
+
 3. Create API Executor Plan:
     Create the following yml file under resources with "work-flow.yaml".
     > In the Resource column, which contains "orderservice". It represents the service Endpoint in the yml file where the service executed.
-    
-    > Json test scripts and Feature file generated in the "outputDir" directory that is "target/message"
-
-    > After execution, cucumber report created in the "outputJsonDir" directory that is "target/idaithalam"
-
-```yml
-        parallelExecution: 4
-        timeout:  30000
-        apiExecutor:
-        - reportTitle: "API with Kafka Event Testing"
-            env: dev
-            outputJsonDir: target/idaithalam
-            outputDir: target/message
-            inputExcel: createOrder_API_with_OrderCreated_Event.xlsx
-            cucumblanProperties:
-            service.api.orderservice: http://microservices.virtualandemo.com:9001
-```
-
+    Json test scripts and Feature file generated in the "outputDir" directory that is "target/message"
+    After execution, cucumber report created in the "outputJsonDir" directory that is "target/idaithalam"
+    ```yml
+       parallelExecution: 4
+       timeout:  30000
+       apiExecutor:
+       - reportTitle: "API with Kafka Event Testing"
+         env: dev
+         outputJsonDir: target/idaithalam
+         outputDir: target/message
+         inputExcel: createOrder_API_with_OrderCreated_Event.xlsx
+         cucumblanProperties:
+           service.api.orderservice: http://microservices.virtualandemo.com:9001
+    ```
 4. Create RestTestPlanExecutor to run the test:
 
-```java
-    package io.virtualan.test;
-    import io.virtualan.idaithalam.core.api.VirtualanTestPlanExecutor;
-    public class KafkaTestPlanExecutor {
-        @org.testng.annotations.Test
-        public void execute_orderEvent_workflow() {
-            try {
-                boolean isSuccess = VirtualanTestPlanExecutor.invoke("work-flow.yaml");
-                org.junit.Assert.assertTrue(isSuccess);
-
-            } catch (Exception e) {
-                org.junit.Assert.assertTrue(false);
-            }
-        }
-    }
-```
+   ```java
+    package io.virtualan.test;
+    import io.virtualan.idaithalam.core.api.VirtualanTestPlanExecutor;
+    public class KafkaTestPlanExecutor {
+        @org.testng.annotations.Test
+        public void execute_orderEvent_workflow() {
+            try {
+                boolean isSuccess = VirtualanTestPlanExecutor.invoke("work-flow.yaml");
+                org.junit.Assert.assertTrue(isSuccess);
+            } catch (Exception e) {
+                org.junit.Assert.assertTrue(false);
+            }
+        }
+    }
+    ```
 5. Create testng Test plan 
-
-```xml
-   <?xml version="1.0" encoding="UTF-8"?>
-   <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-   <suite name="End-2-End Message automation Suite">
-    <test name="End-2-End Message automation Suite" >
-        <classes >
-            <class name="io.virtualan.test.KafkaTestPlanExecutor" />
-        </classes>
-    </test>
-  </suite>
-```
-
+  ```xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+    <suite name="End-2-End Message automation Suite">
+      <test name="End-2-End Message automation Suite" >
+      <classes >
+      <class name="io.virtualan.test.KafkaTestPlanExecutor" />
+      </classes>
+      </test>
+    </suite>
+    ```
+ 
 6. Execute the test cases
-
-  > mvn clean install
+   > mvn clean install
 
 7. After execution, view the cucumber report under "target/idaithalam". 
 
+
 ## How to build MessageType 
-  - Each kafka topic has its own set of events (messages). Each event will have a different set of fields.
+   - Each kafka topic has its own set of events (messages). Each event will have a different set of fields.
     
     Example: "OrderCreated" events have the user specific fields. But CreateQuote events will have different sets of quote specific fields. 
+  - To implement OrderMessageType
+        
+    - Lets define the new message type for "OrderCreated" event and name it as "OrderMessageType". 
+    - In Idaithalam, all the data verification is performed as JSON message. 
+    - This handler will parse the event(message) and build "OrderMessageType" object with specific Identifier. 
     
-    - Implement OrderMessageType
-       Lets define the new message type for "OrderCreated '' event and name it as "OrderMessageType ''. In Idaithalam, all data verification is performed as JSON. This handler will parse the event(message) and build "OrderMessageType '' object with Identifier, JSON. 
     - **Following methods need to be implemented**
       - MessageType buildConsumerMessage(ConsumerRecord<T, TT> record, Map<String, String> contextMap) throws MessageNotDefinedException
-         This method will parse the consumed event and build the messageType with identifier and specific MessageType Object. It is a mandatory for event verification
+        > This method will parse the consumed event and build the messageType with identifier and specific MessageType Object. It is a mandatory for event verification
         > Example:   
         ```JAVA
            public io.virtualan.cucumblan.message.type.MessageType buildConsumerMessage(
@@ -143,7 +150,8 @@ As a user, I need to validate the Order Created  event. The OrderCreated contai
             - Key as String   
             - value as String 
         ```
-        - public String getId()  
+    - public String getId()  
+        
         This method should be implemented to return the identifier.It is also a mandatory method.
         > Example
         ```JAVA
@@ -151,8 +159,9 @@ As a user, I need to validate the Order Created  event. The OrderCreated contai
         public String getId() {
             return this.id; //return the identifier for the event.
         }       
-        ````
-        - public org.json.JSONObject getMessageAsJson()
+        ```
+    - public org.json.JSONObject getMessageAsJson()
+        
         This method should be implemented to return JSON Object.It is also a mandatory method.
         > Example
         ```JAVA
@@ -160,9 +169,10 @@ As a user, I need to validate the Order Created  event. The OrderCreated contai
         public org.json.JSONObject getMessageAsJson() {
             return new org.json.JSONObject(this.body); //return JSON Object if not have to build one.
         }      
-        ````
-        - public io.virtualan.cucumblan.message.type.MessageType buildProducerMessage(Object messages) throws io.virtualan.cucumblan.message.exception.MessageNotDefinedException
-           This method only needed for producing a event. Not a mandatory method for event verification.   
+        ```
+    - public io.virtualan.cucumblan.message.type.MessageType buildProducerMessage(Object messages) throws io.virtualan.cucumblan.message.exception.MessageNotDefinedException
+           
+        This method only needed for producing a event. Not a mandatory method for event verification.   
         
 **Build Consumer Message**
   > To validate the event, the event should be read and stored by the identifier. Have to implement the following method which is supposed to split the user information by user identifier. Generate message type based on application specific needs using the following method in the message factory.
