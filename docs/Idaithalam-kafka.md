@@ -1,4 +1,4 @@
-## Kafka Message validation : 
+## Kafka 1`````Message validation : 
 
 Test Case: Validate the order creation API and new ordered creation event
 
@@ -26,15 +26,15 @@ As a user, I need to validate the Order Created  event. The OrderCreated contai
     - The kafka broker that should be connected to validate the "OrderCreated" Event.
     - In this case, "json" is a resource for this consumer. Now the framework will look for "consumer-json.properties" in the classpath. Which would help which broker configuration would be used to consume the message.  
 
-      > consumer-json.properties #  Following values can be substitued by your application specific values.  
-        bootstrap.servers=microservices.virtualandemo.com:9092   # kafka broker 
-        key.deserializer=org.apache.kafka.common.serialization.StringDeserializer  
-        value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
-        enable.auto.commit=true
-        auto.commit.interval.ms=1000
-        session.timeout.ms=30000
-        auto.offset.reset=earliest   
-
+      > consumer-json.properties #  Following values can be substitued by your application specific values.
+        bootstrap.servers=microservices.virtualandemo.com:9092 # kafka broker
+        key.deserializer=org.apache.kafka.common.serialization.StringDeserializer  
+        value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+        enable.auto.commit=true
+        auto.commit.interval.ms=1000
+        session.timeout.ms=30000
+        auto.offset.reset=earliest   
+        
   - TestCaseNameDesc 
     - Describes the purpose of the test case.
 
