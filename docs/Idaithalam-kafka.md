@@ -1,4 +1,4 @@
-## Kafka 1`````Message validation : 
+## Kafka Message validation : 
 
 Test Case: Validate the order creation API and new ordered creation event
 
@@ -34,7 +34,7 @@ As a user, I need to validate the Order Created  event. The OrderCreated contai
         auto.commit.interval.ms=1000
         session.timeout.ms=30000
         auto.offset.reset=earliest   
-        
+
   - TestCaseNameDesc 
     - Describes the purpose of the test case.
 
