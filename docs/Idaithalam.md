@@ -46,6 +46,7 @@ This provide complete testing support for REST APIs, GraphQL, RDBMS DB and Kafka
   -  [Rest-Post](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/rest-post)
   -  [Rest-with-DB](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/rest-with-db)
   -  [Workflow-Rest](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/workflow-rest)
+  -  [Rest-kafka](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/rest-db-kafka)
   -  [DB](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/db)
   -  [Examples](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/examples)
   -  [Generate-Feature-File](https://github.com/virtualansoftware/microservices-lowcode-testautomation/tree/main/generate-feature-file)
