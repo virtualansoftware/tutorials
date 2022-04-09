@@ -55,26 +55,13 @@ This provide complete testing support for REST APIs, GraphQL, RDBMS DB and Kafka
   -  [Microservices-lowcode-testautomation Projects](https://github.com/virtualansoftware/microservices-lowcode-testautomation) 
 
 
-## Video Tutorials
-<details><summary>Toggle me!</summary>
+## Video Tutorials 
 
 
-| Name   |      Link      |  level |
-|----------|:-------------|------:|
-| What is ? | [What is Idaithalam](https://www.youtube.com/watch?v=6cz85yyVv58&list=PLXbcghgSZDrr2loEsuHEHNy_0iEj6zeso)| Beginner |
-| How to ? | [How to setup Idaithalam](https://www.youtube.com/watch?v=6cz85yyVv58&list=PLXbcghgSZDrr2loEsuHEHNy_0iEj6zeso)| Beginner |
-| Contract testing? | [ How to perform Data Contract ](https://www.youtube.com/watch?v=zi_TJ474Nmw&list=PLXbcghgSZDrr2loEsuHEHNy_0iEj6zeso&index=3)| Beginner |
-| is it Data Driven? | [How to perform Data Driven Testing](https://www.youtube.com/watch?v=Ft3lvuJeaCs&list=PLXbcghgSZDrr2loEsuHEHNy_0iEj6zeso&index=4)| Beginner |
-| How to make Orchestration of APIs? | [Orchestration of APIs](https://www.youtube.com/watch?v=iLxKfDky3_0&list=PLXbcghgSZDrr2loEsuHEHNy_0iEj6zeso&index=5)| Beginner |
-| Execute API tests in Multiple Environment | [Multiple Environment](https://www.youtube.com/watch?v=VZuhxd3TamU&list=PLXbcghgSZDrr2loEsuHEHNy_0iEj6zeso&index=6)| Beginner |
-| Use variables and validate the response | [Use variables](https://www.youtube.com/watch?v=1vD2SD866l4&list=PLXbcghgSZDrr2loEsuHEHNy_0iEj6zeso&index=8)| Beginner |
-| Basic Auth | [Basic Auth](https://www.youtube.com/watch?v=LOQ3nhJLQCQ&list=PLXbcghgSZDrr2loEsuHEHNy_0iEj6zeso&index=9)| Beginner |
-| Perform Database Testing 1 | [Perform Database Testing](https://www.youtube.com/watch?v=AInS1HbkR70&list=PLXbcghgSZDrr2loEsuHEHNy_0iEj6zeso&index=11)| Beginner |
-| Perform Database Testing 2 | [perform Database Testing](https://www.youtube.com/watch?v=QKTSO6PWPQc&list=PLXbcghgSZDrr2loEsuHEHNy_0iEj6zeso&index=10)| Beginner |
+- [What is Idaithalam](https://www.youtube.com/watch?v=qsxlRAML5-0)
+- [How to setup and perform API Idaithalam](https://www.youtube.com/watch?v=OOYkOat9c3M)
+- [How to setup and perform Data integrity testing ](https://www.youtube.com/watch?v=dS3lhIP9D2M&t=233s) 
 
-
-
-</details>
 
 ## How to Integrate: 
 
