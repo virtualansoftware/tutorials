@@ -2,7 +2,12 @@
 - Lowcode TestAutomation
   - [Idaithalam](Idaithalam.md)
   - [Excel](Excel.md)
-  - [Kafka](Idaithalam-kafka.md) 
+  - Kafka
+      - [Simple Json](Kafka-Simple-Json.md)
+      - [Json Schema](Kafka-JsonSchema.md)
+      - [ProtoBuff](Kafka-ProtoBuf.md)
+      - [Avro](Kafka-Avro.md)
+      - [More info](Idaithalam-kafka.md) 
   <!-- - [Postman](Postman.md) -->
   - [API Reports](/api/cucumber-html-reports/overview-features.html)
   - [Pipeline - CI/CD](Idaithalam-pipeline.md)
