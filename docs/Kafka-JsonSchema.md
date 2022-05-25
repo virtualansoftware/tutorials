@@ -8,7 +8,7 @@ As a user, I need to validate the Pet Created  event. The PetCreated contains a
 1. Create a Java project in your favorite IDE.
    
 
-2. Create excel with given format for REST api and Kafka event validation save the excel file under resources as CreatePet-Event.xlsx
+2. Create excel with given format of Kafka event validation save the excel file under resources as CreatePet-Event.xlsx
 
  |TestCaseName|Type|Resource|TestCaseNameDesc|StepInfo|Event|Identifier|MessageType|RequestContent|Csvson|
  |:--------------|:--------------|:-----------|:--------------|:--------------|:--------------|:--------------|:-----|:-----|:-----|
