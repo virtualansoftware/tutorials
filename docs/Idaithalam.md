@@ -6,13 +6,11 @@
 
 Idaithalam is a low code Test automation Framework,  developed using Java and Cucumber. It leverages Behavior Driven Development (BDD). Tester can create test cases/scripts in simple Excel with API Spec. Excel is a simplified way to create Json based test scripts in Idaithalam. Test cases can be created quickly and tested in minutes.
 
-
 As a tester, you need to create Excel and pass it to Idaithalam Framework. 
 
 1. First, generate the Json based test scripts(Virtualan Collection) from Excel. During test execution, this test script collection can be directly utilized.  
 2. Then it generates Feature files from the Virtualan Collection and its executed.
 3. Lastly, It generates test report in BDD/Cucumber style. 
-
 
 This provide complete testing support for REST APIs, GraphQL, RDBMS DB and Kafka Event messages
 
@@ -20,15 +18,25 @@ This provide complete testing support for REST APIs, GraphQL, RDBMS DB and Kafka
 
 **Virtualan Collection is a JSON based TestScripts generated from Excel**
 
+## QA Talks Community Presentation – Codeless Conference 2022  
+
+- Low code/No Code API Workflow Automation -  [Click here](https://docs.google.com/presentation/d/1qzo_AEwub6qWiyASA0pdKd7YQE8C3IYP/edit?usp=sharing&ouid=112196114616919270195&rtpof=true&sd=true)
+  - Youtube link [Click here](https://www.youtube.com/watch?v=R0kO8XI60Bs)
+
+- Low code/No Code KAFKA Workflow Automation - [Click here](https://docs.google.com/presentation/d/1Bt29js4sDeRi-CLGb5jZ1DH9SlQjuXDH/edit?usp=sharing&ouid=112196114616919270195&rtpof=true&sd=true)
+  - Youtube link [Click here](https://www.youtube.com/watch?v=RINHaBdam-A)
+
+- Low code/No Code API and DB Workflow Automation - [Click here](https://docs.google.com/presentation/d/1LRJjY3H-rRf-6QX054eFelURY59gnJir/edit?usp=sharing&ouid=112196114616919270195&rtpof=true&sd=true)
+  - Youtube link [Click here](https://www.youtube.com/watch?v=3a-awMK02n4)
+
 ## Maven dependency: 
-  
-  ```mvn 
-    <dependency>
-      <groupId>io.virtualan</groupId>
-       <artifactId>idaithalam</artifactId>
-       <version>${idaithalam.version}</version>
-    </dependency>
-  ```  
+```mvn 
+  <dependency>
+    <groupId>io.virtualan</groupId>
+      <artifactId>idaithalam</artifactId>
+      <version>${idaithalam.version}</version>
+  </dependency>
+```  
 
 
 ## Architecture
