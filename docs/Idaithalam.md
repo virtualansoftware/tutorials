@@ -2,7 +2,9 @@
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.virtualan/idaithalam.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.virtualan%22%20AND%20a:%22idaithalam%22) 
                           
-## What is Idaithalam( "idai" means middleware and "thalam" means platform => Middelware testing platform): 
+## What is Idaithalam
+ 
+"Idai" means middleware and "thalam" means platform => Middelware testing platform 
 
 Idaithalam is a low code Test automation Framework,  developed using Java and Cucumber. It leverages Behavior Driven Development (BDD). Tester can create test cases/scripts in simple Excel with API Spec. Excel is a simplified way to create Json based test scripts in Idaithalam. Test cases can be created quickly and tested in minutes.
 
